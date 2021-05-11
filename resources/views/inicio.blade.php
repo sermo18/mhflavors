@@ -1,6 +1,7 @@
 @extends('plantilla')
 @section('titulo', 'inicio')
 @section('contenido')
+<link rel="stylesheet" href="{{ secure_asset('css/app.css') }}">
 <div class="container">
     <div class="row ">
         <div class="card col noBorde">
