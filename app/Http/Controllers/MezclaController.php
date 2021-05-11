@@ -79,7 +79,7 @@ class MezclaController extends Controller
         $mezcla->porcentaje2 = $request->get('porcentaje2');
         $mezcla->porcentaje3 = $request->get('porcentaje3');
         $mezcla->valoracion = 0;
-        $mezcla->votos = null;
+        $mezcla->votos = 0;
         $mezcla->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
         $mezcla->save();
         return redirect()->route('mezclas.mismezclas');
