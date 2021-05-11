@@ -24,6 +24,7 @@ $(document).ready(function () {
             });
     });
 });
+
 function cargar() {
     cards = document.getElementsByClassName("ponerImagenes");
     for (let index = 0; index < cards.length; index++) {
