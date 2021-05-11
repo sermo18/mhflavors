@@ -39,7 +39,7 @@
 
             <td>No ha sido valorado</td>
             @else
-            <td>{{ $sabor->valoracion / $sabor->votos }} / 5 </td>
+            <td>{{ $sabor->valoracion }} / 5 </td>
             @endif
             @if(auth()->check())
             @if( auth()->user()->rol === 'premium')
@@ -97,7 +97,7 @@
             <td><a class="nav-link">
                     <input type="submit" class="btn btn-secondary " data-toggle="modal" data-target="#modalRegistro"
                         value="Valorar Sabor" /></a></td>
-            
+
                 <div class="modal fade" id="modalRegistro" tabindex="-1" role="dialog"
                     aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
