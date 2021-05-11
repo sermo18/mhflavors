@@ -28,10 +28,10 @@ class MezclaController extends Controller
         }else{
             $userid = 0;
         }
-        
+
         return view('mezclas.index', compact('mezclas','sabores','usuarios','userid'));
     }
-    
+
     public function misMezclas()
     {
         $mezclas = Mezcla::orderBy("id")->paginate(20);
@@ -41,8 +41,8 @@ class MezclaController extends Controller
         return view('mezclas.mismezclas', compact('mezclas','sabores','usuarios','contador'));
     }
 
-    
-     
+
+
     public function mezclaAleatoria($numeroAleatorio)
     {
         $mezclas = Mezcla::get();
@@ -92,11 +92,12 @@ class MezclaController extends Controller
         $mezcla->porcentaje1 = $mezclaA->porcentaje1;
         $mezcla->porcentaje2 = $mezclaA->porcentaje2;
         $mezcla->porcentaje3 = $mezclaA->porcentaje3;
+        $mezcla->valoracion = 0;
         $mezcla->usuario_id = Auth::id();
         $mezcla->save();
         return redirect()->route('mezclas.mismezclas');
     }
-    
+
 
     /**
      * Display the specified resource.
@@ -120,7 +121,7 @@ class MezclaController extends Controller
         //
     }
 
-      
+
     public function valorar($id)
     {
         $mezcla = Mezcla::findOrFail($id);
@@ -147,7 +148,7 @@ class MezclaController extends Controller
      */
     public function update(Request $request, $id)
     {
-      
+
     }
 
     public function hacerPremium($id)
