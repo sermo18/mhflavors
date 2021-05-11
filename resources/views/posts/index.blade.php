@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('titulo', 'Todos los Sabores')
 @section('contenido')
-<script src="{{ asset('js/ponerImagenes.js') }}"></script>
+<script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <div class="container">
@@ -11,7 +11,7 @@
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
   <br>
     <div class="row  justify-content-center align-content-center">
-        
+
         @forelse($marcas as $marca)
             <div class=" col-2">
             <a href="{{ route('post.filtrar', $marca) }}" ><input type="button"
@@ -19,12 +19,12 @@
             </div>
             @empty
         @endforelse
-        
+
     </div>
     <div class="row" id="myFlavor">
         @forelse($sabores as $sabor)
-       
-        
+
+
         <div class="col-12 col-sm-6 col-md-4 mb-3 quitar">
             <div class="card text-left ponerImagenes" >
                 <div class="card-body text-white "  style="height: 400px; ">
