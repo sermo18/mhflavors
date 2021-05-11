@@ -3,7 +3,7 @@
  <title>
  @yield('titulo')
  </title>
-<link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
+<link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 
  </head>
  <body>
@@ -72,7 +72,7 @@
       <!--Grid column-->
     </div>
     <!--Grid row-->
-    
+
   </div>
   <!-- Grid container -->
 
