@@ -1,0 +1,16 @@
+<html>
+ <head>
+ <title>
+ @yield('titulo')
+ </title>
+<link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
+
+ </head>
+ <body>
+<link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
+
+@yield('contenido')
+
+ </body>
+</html>
+
