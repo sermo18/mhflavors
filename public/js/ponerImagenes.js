@@ -15,7 +15,7 @@ function cargar() {
                 .find(".card-title:not(:covers(" + filter + "))")
                 .parents(".quitar")
                 .css({
-                    display: "none !important",
+                    "background-color": "blue",
                 });
 
         });
