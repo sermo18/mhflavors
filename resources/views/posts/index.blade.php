@@ -11,7 +11,8 @@
   <br>
     <div class="row  justify-content-center align-content-center">
 
-    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+        <div class="col-12">
+    <select class="form-select " aria-label="Default select example">
 
         @forelse($marcas as $marca)
         
@@ -23,6 +24,7 @@
         @endforelse
 
     </select>
+    </div>
     </div>
     <div class="row" id="myFlavor">
         @forelse($sabores as $sabor)
