@@ -15,15 +15,9 @@ function cargar() {
                 .find(".card-title:not(:covers(" + filter + "))")
                 .parents(".quitar")
                 .css({
-                    display: "none",
+                    display: "none !important",
                 });
-            console.log($(".quitar"));
-            $(".coverer")
-                .find(".card-title:covers(" + filter + ")")
-                .parents(".quitar")
-                .css({
-                    display: "flex",
-                });
+
         });
     });
 
