@@ -3,7 +3,6 @@ window.onload = cargar;
 
 function cargar() {
     //override the existing .covers filter
-
     $(document).ready(function() {
         jQuery.expr[":"].covers = function(a, i, m) {
             return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
@@ -15,9 +14,16 @@ function cargar() {
             $(".coverer")
                 .find(".card-title:not(:covers(" + filter + "))")
                 .parents(".quitar")
-                .addClass('remove');
-
-
+                .css({
+                    display: "none ",
+                });
+            console.log($(".quitar"));
+            $(".coverer")
+                .find(".card-title:covers(" + filter + ")")
+                .parents(".quitar")
+                .css({
+                    display: "flex",
+                });
         });
     });
 

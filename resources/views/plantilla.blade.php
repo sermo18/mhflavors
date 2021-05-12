@@ -18,6 +18,7 @@
 
 @yield('contenido')
 
+<script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
 
 <footer class="bg-dark mt-3 text-white text-lg-start">
   <!-- Grid container -->
