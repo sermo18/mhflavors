@@ -3,29 +3,29 @@ window.onload = cargar;
 
 function cargar() {
     //override the existing .covers filter
-$(document).ready(function () {
-    jQuery.expr[":"].covers = function (a, i, m) {
-        return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
-    };
-    //This is a function for filter by the brand of the flavors
-    $("#myInput").on("keyup", function () {
-        $(".card").show();
-        var filter = $(this).val().toUpperCase(); // get the value of the input, which we filter on
-        $(".coverer")
-            .find(".card-title:not(:covers(" + filter + "))")
-            .parents(".quitar")
-            .css({
-                display: "none",
-            });
-
-        $(".coverer")
-            .find(".card-title:covers(" + filter + ")")
-            .parents(".quitar")
-            .css({
-                display: "flex",
-            });
+    $(document).ready(function() {
+        jQuery.expr[":"].covers = function(a, i, m) {
+            return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+        };
+        //This is a function for filter by the brand of the flavors
+        $("#myInput").on("keyup", function() {
+            $(".card").show();
+            var filter = $(this).val().toUpperCase(); // get the value of the input, which we filter on
+            $(".coverer")
+                .find(".card-title:not(:covers(" + filter + "))")
+                .parents(".quitar")
+                .css({
+                    display: "none",
+                });
+            console.log("va");
+            $(".coverer")
+                .find(".card-title:covers(" + filter + ")")
+                .parents(".quitar")
+                .css({
+                    display: "flex",
+                });
+        });
     });
-});
 
     cards = document.getElementsByClassName("ponerImagenes");
     for (let index = 0; index < cards.length; index++) {
