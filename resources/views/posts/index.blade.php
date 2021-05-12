@@ -6,7 +6,7 @@
 
 <div class="container">
     <div class="row m-4">
-        <h1>Todos los Sabores</h1>
+        <h1 class="text-dark">Todos los Sabores</h1>
     </div>
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
   <br>
