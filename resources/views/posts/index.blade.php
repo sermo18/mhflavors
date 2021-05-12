@@ -25,7 +25,7 @@
         @forelse($sabores as $sabor)
 
 
-        <div class="col-12 col-sm-6 col-md-4 mb-3 quitar">
+        <div class="col-xs-12 col-sm-6 col-md-4 mb-3 quitar">
             <div class="card text-left ponerImagenes" >
                 <div class="card-body text-white "  style="height: 400px; ">
                     <h3 class="card-title text-left" style="height: 70px;" >{{ $sabor->nombre }}</h3>
