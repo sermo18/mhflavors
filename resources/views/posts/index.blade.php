@@ -12,12 +12,12 @@
     <div class="row  justify-content-center align-content-center">
 
         <div class="col-12">
-        <select class="form-control form-control-lg">
+        <select class="form-control form-control-lg mb-3">
 
         @forelse($marcas as $marca)
         
         <option value="1">
-        <a href="{{ route('post.filtrar', $marca) }}" > {{$marca}}</a>
+        <a href="{{ route('post.filtrar', $marca) }}" ><input type="text">{{$marca}}</input> </a>
         </option>
         
             @empty
