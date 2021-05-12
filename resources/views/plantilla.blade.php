@@ -84,7 +84,8 @@
 </footer>
 
  </body>
- <script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
+ <script type="text/javascript" src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
+
 
 </html>
 
