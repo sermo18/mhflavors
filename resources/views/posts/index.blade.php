@@ -1,8 +1,8 @@
 @extends('plantilla')
 @section('titulo', 'Todos los Sabores')
 @section('contenido')
-<script src="{{ secure_asset('js/ponerImagenes.min.js') }}"></script>
-<link href="{{ secure_asset(mix('css/app.min.css')) }}" rel="stylesheet">
+<script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
+<link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 
 <div class="container">
     <div class="row m-4">
