@@ -10,7 +10,7 @@
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
     <br>
 
-    <div class="row  justify-content-center align-content-center">
+    <div class="row">
 
       
 
@@ -21,7 +21,7 @@
 
                 <div class="dropdown-menu">
                     @forelse($marcas as $marca)
-                    <a href="{{ route('post.filtrar', $marca) }}" style="text-decoration: none;">{{$marca}}</a>
+                    <a class="dropdown-item" href="{{ route('post.filtrar', $marca) }}" style="text-decoration: none;">{{$marca}}</a>
                     @empty
                     @endforelse
                 </div>
