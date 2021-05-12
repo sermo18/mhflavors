@@ -11,7 +11,7 @@
   <br>
     <div class="row  justify-content-center align-content-center">
 
-    <select class="form-select" size="3" aria-label="size 3 select example">
+    <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
 
         @forelse($marcas as $marca)
         <a href="{{ route('post.filtrar', $marca) }}" >
