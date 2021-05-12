@@ -4,8 +4,7 @@
  @yield('titulo')
  </title>
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"> </script>
+<link href="{{ secure_asset(mix('js/app.js')) }}" rel="stylesheet">
  </head>
  <body>
  @include('partials.nav')
@@ -14,7 +13,7 @@
 <div class="row justify-content-end align-content-end" style="width: 100%; height: 60%; ">
     <div class="col-12  text-center "><h1 class="text-light" style="font-size: 90px;">MHFlavors
     </h1></div>
-    <h4 class="text-light col-12 text-center" >" Descubre Saborea, Vive. "</h4>
+    <h4 class="text-light col-12 text-center" >" Descubre, Saborea, Vive. "</h4>
 </div>
 </div>
 
