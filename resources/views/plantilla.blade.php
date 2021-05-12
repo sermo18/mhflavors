@@ -3,8 +3,8 @@
  <title>
  @yield('titulo')
  </title>
-<link href="/{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
-<link href="/{{ secure_asset(mix('js/app.js')) }}" rel="stylesheet">
+<link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
+<script src="{{ secure_asset('js/app.js') }}"></script>
  </head>
  <body>
  @include('partials.nav')

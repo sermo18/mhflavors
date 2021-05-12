@@ -2,8 +2,6 @@
 @section('titulo', 'Todos los Sabores')
 @section('contenido')
 <script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <div class="container">
     <div class="row m-4">
         <h1>Todos los Sabores</h1>
