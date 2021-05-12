@@ -12,7 +12,7 @@
     <div class="row  justify-content-center align-content-center">
 
         @forelse($marcas as $marca)
-            <div class=" col-2">
+            <div class=" col-6 col-sm-4 col-md-2">
             <a href="{{ route('post.filtrar', $marca) }}" ><input type="button"
                                 value="{{$marca}}" class="p-4 my-4" style="width: 180px;"></input></a>
             </div>
