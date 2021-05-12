@@ -4,7 +4,16 @@
  @yield('titulo')
  </title>
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
+   <!-- styles -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
 
+    <!-- scripts -->
+    <script src= "https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src= "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src= "https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
  </head>
  <body>
  @include('partials.nav')
@@ -13,7 +22,7 @@
 <div class="row justify-content-end align-content-end" style="width: 100%; height: 60%; ">
     <div class="col-12  text-center "><h1 class="text-light" style="font-size: 90px;">MHFlavors
     </h1></div>
-    <h4 class="text-light col-12 text-center" >" Descubre, Saborea, Vive. "</h4>
+    <h4 class="text-light col-12 text-center" >" Descubre Saborea, Vive. "</h4>
 </div>
 </div>
 
