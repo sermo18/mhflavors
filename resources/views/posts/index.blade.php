@@ -14,11 +14,11 @@
     <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
 
         @forelse($marcas as $marca)
-        <a href="{{ route('post.filtrar', $marca) }}" >
+        
         <option value="1">
-           {{$marca}}
+        <a href="{{ route('post.filtrar', $marca) }}" > {{$marca}}</a>
         </option>
-        </a>
+        
             @empty
         @endforelse
 
