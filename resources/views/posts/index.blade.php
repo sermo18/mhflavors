@@ -12,7 +12,7 @@
     <div class="row  justify-content-center align-content-center">
 
         <div class="col-12">
-    <select class="form-select " aria-label="Default select example">
+        <select class="form-control form-control-lg">
 
         @forelse($marcas as $marca)
         
