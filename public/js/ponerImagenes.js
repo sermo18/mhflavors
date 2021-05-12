@@ -3,6 +3,22 @@ window.onload = cargar;
 
 function cargar() {
     //override the existing .covers filter
+    if (typeof jQuery == "undefined") {
+        alert("JQuery is not installed");
+    } else {
+        alert("JQuery is installed correctly!");
+    }
+
+    /* Answer to: "test if jquery works" */
+
+
+    if (window.jQuery) {
+        // jQuery is loaded  
+        console.log("jQuery has loaded!");
+    } else {
+        // jQuery is not loaded
+        console.log("jQuery has not loaded!");
+    }
     $(document).ready(function() {
         jQuery.expr[":"].covers = function(a, i, m) {
             return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
@@ -14,9 +30,7 @@ function cargar() {
             $(".coverer")
                 .find(".card-title:not(:covers(" + filter + "))")
                 .parents(".quitar")
-                .css({
-                    "background-color": "blue",
-                });
+                .css({ display: "none" });
 
         });
     });
