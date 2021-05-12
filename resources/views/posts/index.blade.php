@@ -14,10 +14,11 @@
     <select class="form-select" size="3" aria-label="size 3 select example">
 
         @forelse($marcas as $marca)
+        <a href="{{ route('post.filtrar', $marca) }}" >
         <option value="1">
-            <a href="{{ route('post.filtrar', $marca) }}" ><input type="button"
-                                value="{{$marca}}" class="p-2 my-2" style="width: 180vm;"></input></a>
+           {{$marca}}
         </option>
+        </a>
             @empty
         @endforelse
 
