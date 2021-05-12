@@ -12,22 +12,22 @@
 
     <div class="row  justify-content-center align-content-center">
 
-        <div class="col-12">
+      
 
-            <div class="btn-group">
+            <div class="col-12 btn-group mb-3">
                 <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Action
                 </button>
 
                 <div class="dropdown-menu">
                     @forelse($marcas as $marca)
-                    <a href="{{ route('post.filtrar', $marca) }}">{{$marca}}</a>
+                    <a href="{{ route('post.filtrar', $marca) }}" style="text-decoration: none;">{{$marca}}</a>
                     @empty
                     @endforelse
                 </div>
             </div>
         </div>
-    </div>
+
     <div class="row" id="myFlavor">
         @forelse($sabores as $sabor)
 
