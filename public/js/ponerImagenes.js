@@ -17,9 +17,7 @@ function cargar() {
                 .css({
                     display: "none",
                 });
-            console.log($(".coverer")
-                .find(".card-title:not(:covers(" + filter + "))")
-                .parents(".quitar"));
+            console.log($(".quitar"));
             $(".coverer")
                 .find(".card-title:covers(" + filter + ")")
                 .parents(".quitar")
