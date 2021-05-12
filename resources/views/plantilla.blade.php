@@ -3,7 +3,7 @@
  <title>
  @yield('titulo')
  </title>
-<link href="/css/app.css" rel="stylesheet">
+<link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 
  </head>
  <body>
