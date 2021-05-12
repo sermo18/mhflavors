@@ -19,9 +19,9 @@
                     Action
                 </button>
 
-                <div class="dropdown-menu">
+                <div class="dropdown-menu col-12">
                     @forelse($marcas as $marca)
-                    <a class="dropdown-item" href="{{ route('post.filtrar', $marca) }}" style="text-decoration: none;">{{$marca}}</a>
+                    <a class="dropdown-item col-12" href="{{ route('post.filtrar', $marca) }}" style="text-decoration: none;">{{$marca}}</a>
                     @empty
                     @endforelse
                 </div>
