@@ -14,7 +14,7 @@
         @forelse($marcas as $marca)
             <div class=" col-6 col-sm-4 col-md-2">
             <a href="{{ route('post.filtrar', $marca) }}" ><input type="button"
-                                value="{{$marca}}" class="p-4 my-4" style="width: 180px;"></input></a>
+                                value="{{$marca}}" class="p-2 my-2" style="width: 180vm;"></input></a>
             </div>
             @empty
         @endforelse
