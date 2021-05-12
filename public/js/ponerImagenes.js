@@ -1,6 +1,8 @@
 window.onload = cargar;
 
-//override the existing .covers filter
+
+function cargar() {
+    //override the existing .covers filter
 $(document).ready(function () {
     jQuery.expr[":"].covers = function (a, i, m) {
         return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
@@ -25,7 +27,6 @@ $(document).ready(function () {
     });
 });
 
-function cargar() {
     cards = document.getElementsByClassName("ponerImagenes");
     for (let index = 0; index < cards.length; index++) {
         //Leer la marca del tabaco
