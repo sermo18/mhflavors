@@ -8,33 +8,35 @@
         <h1 class="text-dark">Todos los Sabores</h1>
     </div>
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
-  <br>
+    <br>
+
     <div class="row  justify-content-center align-content-center">
 
         <div class="col-12">
-        <select class="form-control form-control-lg mb-3">
 
-        @forelse($marcas as $marca)
-        
-        <option value="1">
-        <a href="{{ route('post.filtrar', $marca) }}" ><input type="text">{{$marca}}</input> </a>
-        </option>
-        
-            @empty
-        @endforelse
+            <div class="btn-group">
+                <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Action
+                </button>
 
-    </select>
-    </div>
+                <div class="dropdown-menu">
+                    @forelse($marcas as $marca)
+                    <a href="{{ route('post.filtrar', $marca) }}">{{$marca}}</a>
+                    @empty
+                    @endforelse
+                </div>
+            </div>
+        </div>
     </div>
     <div class="row" id="myFlavor">
         @forelse($sabores as $sabor)
 
 
         <div class="col-12 col-sm-6 col-md-4 mb-3 quitar">
-            <div class="card text-left ponerImagenes" >
-                <div class="card-body text-white "  style="height: 400px; ">
-                    <h3 class="card-title text-left" style="height: 70px;" >{{ $sabor->nombre }}</h3>
-                    <h5 class="card-text p-3">Descripcion:  {{$sabor->descripcion }}</h5>
+            <div class="card text-left ponerImagenes">
+                <div class="card-body text-white " style="height: 400px; ">
+                    <h3 class="card-title text-left" style="height: 70px;">{{ $sabor->nombre }}</h3>
+                    <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
                     <h5 class="card-text p-3">Marca: {{ $sabor->marca }}</h5>
                     @if(!$sabor->valoracion)
                     <h5 class="card-text p-3">Valoración: No se ha valorado aún</h5>
@@ -43,8 +45,7 @@
                     @endif
 
                     <div class="row justify-content-center align-items-right">
-                        <a href="{{ route('post.show', $sabor) }}" class=" p-4"><input type="button"
-                                value="Saber más" class="p-2"></input></a>
+                        <a href="{{ route('post.show', $sabor) }}" class=" p-4"><input type="button" value="Saber más" class="p-2"></input></a>
                     </div>
                 </div>
             </div>
@@ -52,13 +53,13 @@
         @empty
     </div>
     @endforelse
-    </div>
-    <div class="row">
-        <div class="col">
-            <div >
-                {{ $sabores->links() }}
-            </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div>
+            {{ $sabores->links() }}
         </div>
     </div>
+</div>
 </div>
 @endsection
