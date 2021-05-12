@@ -11,14 +11,17 @@
   <br>
     <div class="row  justify-content-center align-content-center">
 
+    <select class="form-select" size="3" aria-label="size 3 select example">
+
         @forelse($marcas as $marca)
-            <div class=" col-6 col-sm-4 col-md-2">
+        <option value="1">
             <a href="{{ route('post.filtrar', $marca) }}" ><input type="button"
                                 value="{{$marca}}" class="p-2 my-2" style="width: 180vm;"></input></a>
-            </div>
+        </option>
             @empty
         @endforelse
 
+    </select>
     </div>
     <div class="row" id="myFlavor">
         @forelse($sabores as $sabor)
