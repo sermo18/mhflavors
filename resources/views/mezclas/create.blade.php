@@ -15,6 +15,7 @@
          <div class="col-4 mb-3">
         
             <div class="card text-center">
+            @if($i == 1)
                 <img class="card-img-top" src="https://cachimbasbaratas.pro/wp-content/uploads/2018/12/tabaco-para-cachimba.jpg" alt="Card image cap">
                 <div class="card-img-overlay">
 
@@ -37,6 +38,53 @@
                 </div>
                 </div>
             </div>
+            @elseif($i == 2)
+            <img class="card-img-top" src="https://cachimbasbaratas.pro/wp-content/uploads/2018/12/tabaco-para-cachimba.jpg" alt="Card image cap">
+                <div class="card-img-overlay">
+
+                <div class="card-body ">
+                <select class="form-group card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+                @foreach ($sabores as $sabor)
+                <option value="{{ $sabor->id }}">
+                {{ $sabor->nombre }} de {{ $sabor->marca}}
+                </option>
+                @endforeach
+                </select>
+                
+                <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+                <div class="form-group">
+                <label>Porcentaje del primer sabor:</label>
+                <input type="number" class="form-control text-center" name="porcentaje{{$i}}"
+                id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
+                </div>
+
+                </div>
+                </div>
+            </div>
+            @elseif($i == 3)
+            <img class="card-img-top" src="https://cachimbasbaratas.pro/wp-content/uploads/2018/12/tabaco-para-cachimba.jpg" alt="Card image cap">
+                <div class="card-img-overlay">
+
+                <div class="card-body ">
+                <select class="form-group card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+                @foreach ($sabores as $sabor)
+                <option value="{{ $sabor->id }}">
+                {{ $sabor->nombre }} de {{ $sabor->marca}}
+                </option>
+                @endforeach
+                </select>
+                
+                <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+                <div class="form-group">
+                <label>Porcentaje del primer sabor:</label>
+                <input type="number" class="form-control text-center" name="porcentaje{{$i}}"
+                id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
+                </div>
+
+                </div>
+                </div>
+            </div>
+            @endif
         </div>
         @endfor
     </div>
