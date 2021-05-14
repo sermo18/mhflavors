@@ -31,7 +31,7 @@
                 <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
                 <div class="form-group">
                 <label>Porcentaje del primer sabor:</label>
-                <input type="number" class="form-control text-center" name="porcentaje{{$i}}"
+                <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}"
                 id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
                 </div>
 
@@ -54,7 +54,7 @@
                 <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
                 <div class="form-group">
                 <label>Porcentaje del primer sabor:</label>
-                <input type="number" class="form-control text-center" name="porcentaje{{$i}}"
+                <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}"
                 id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
                 </div>
 
@@ -77,7 +77,7 @@
                 <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
                 <div class="form-group">
                 <label>Porcentaje del primer sabor:</label>
-                <input type="number" class="form-control text-center" name="porcentaje{{$i}}"
+                <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}"
                 id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
                 </div>
 
