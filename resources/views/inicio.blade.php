@@ -1,6 +1,15 @@
 @extends('plantilla')
 @section('titulo', 'inicio')
 @section('contenido')
+<div class="img-header">
+
+<div class="row justify-content-end align-content-end" style="width: 100%; height: 60%; ">
+    <div class="col-12  text-center "><h1 class="text-light" style="font-size: 90px;">MHFlavors
+    </h1></div>
+    <h4 class="text-light col-12 text-center" >" Descubre Saborea, Vive. "</h4>
+</div>
+</div>
+
 <div class="container">
     <div class="row ">
         <div class="card col noBorde">

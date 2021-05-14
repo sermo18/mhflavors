@@ -8,8 +8,6 @@
 
  <body>
  @include('partials.nav')
-<div class="img-header">
-
 <div class="row justify-content-end align-content-end" style="width: 100%; height: 60%; ">
     <div class="col-12  text-center "><h1 class="text-light" style="font-size: 90px;">MHFlavors
     </h1></div>

@@ -23,12 +23,17 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlFile1">Archivo adjunto</label>
+    <div class="col-sm-10">
     <input type="file" class="form-control-file" id="exampleFormControlFile1">
+    </div>
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Example textarea</label>
+    <div class="col-sm-10">
     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Escribe aqui tu mensaje"></textarea>
-  </div>
+ 
+    </div> 
+    </div>
   <div class="form-group row">
     <div class="col-sm-10">
       <button type="submit" class="btn btn-dark">Enviar</button>
