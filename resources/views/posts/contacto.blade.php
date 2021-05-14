@@ -1,12 +1,13 @@
 @extends('plantilla')
-@section('titulo', 'Todos los Sabores')
+@section('titulo', 'Contacto')
 @section('contenido')
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 
 <div class="container" height="100%">
-    <div class="row m-4">
-    
-        <h1 class="">Contacto</h1>
+
+    <div class="m-4">
+
+        <h1>Contacto</h1>
 
     </div>
     <form>
