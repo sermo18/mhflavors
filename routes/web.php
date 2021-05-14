@@ -31,7 +31,7 @@ Route::get('/posts/contacto', function() {
     return view('posts.contacto');
     })->name('posts.contacto');
 
-Route::get('/posts/contacto', function() {
+Route::get('/posts/noticias', function() {
     return view('posts.noticias');
     })->name('posts.noticias');
     
