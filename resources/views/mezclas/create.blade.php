@@ -20,7 +20,7 @@
                 <div class="card-img-overlay">
 
                 <div class="card-body text-light">
-                <select class="form-select form-select-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+                <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
                 @foreach ($sabores as $sabor)
                 <option value="{{ $sabor->id }}">
                 {{ $sabor->nombre }} de {{ $sabor->marca}}
@@ -43,7 +43,7 @@
                 <div class="card-img-overlay">
 
                 <div class="card-body text-light ">
-                <select class="form-select form-select-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+                <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
                 @foreach ($sabores as $sabor)
                 <option value="{{ $sabor->id }}">
                 {{ $sabor->nombre }} de {{ $sabor->marca}}
@@ -66,7 +66,7 @@
                 <div class="card-img-overlay">
 
                 <div class="card-body text-light">
-                <select class="form-select form-select-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+                <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
                 @foreach ($sabores as $sabor)
                 <option value="{{ $sabor->id }}">
                 {{ $sabor->nombre }} de {{ $sabor->marca}}
