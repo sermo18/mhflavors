@@ -71,7 +71,7 @@ class MezclaController extends Controller
      */
     public function store(Request $request)
     {
-        if ($request->get('porcentaje1') + $request->get('porcentaje1') + $request->get('porcentaje1') > 100) {
+        if ($request->get('porcentaje1') + $request->get('porcentaje2') + $request->get('porcentaje3') > 100) {
             return  redirect()->route('mezclas.mismezclas')->withErrors(['El porcentaje de sabores no puede ser superior a 100%']);
         }else{
         $mezcla = new Mezcla();
