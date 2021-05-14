@@ -4,6 +4,8 @@
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
 
 <div class="container">
+<div class="table-responsive">
+
     <table class="table table-striped">
         <div class="row m-4">
             <h1>Listado de Mezclas</h1>
@@ -231,6 +233,7 @@
 
 
     </table>
+    </div>
     <div class="modal fade" id="modalPremium" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="documenta">

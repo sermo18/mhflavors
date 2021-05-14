@@ -5,6 +5,7 @@
     <div class="row m-4">
         <h1>Top 10 Mejores Sabores</h1>
     </div>
+    <div class="table-responsive">
     <table class="table">
 
         <tr>
@@ -128,6 +129,7 @@
 
 
     </table>
+    </div>
 
 
 </div>
