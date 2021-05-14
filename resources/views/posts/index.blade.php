@@ -11,9 +11,6 @@
     <br>
 
     <div class="row">
-
-      
-
             <div class="col-12 btn-group mb-3">
                 <button type="button" class="btn btn-dark btn-block dropdown-toggle text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     -- Filtrar por marca --

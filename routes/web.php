@@ -27,6 +27,10 @@ return view('inicio')->with('nombre', $nombre);
 
 
 
+Route::get('/posts/contacto', function() {
+    return view('posts.contacto');
+    })->name('posts.contacto');
+    
 Route::get('posts', [PostController::class, 'index'])->name('posts.index');
 
 Route::get('posts/marca/{marca}', [PostController::class, 'filtrarMarca'])->name('post.filtrar');
