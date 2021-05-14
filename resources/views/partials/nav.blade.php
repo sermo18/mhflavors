@@ -116,9 +116,9 @@
             </li>
             @endif
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('post.contacto') }}">
+                <a class="nav-link" href="{{ route('posts.contacto') }}">
                     Contacto</a>
-                    
+
             </li>
         </ul>
     </div>
