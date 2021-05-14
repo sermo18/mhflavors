@@ -8,24 +8,24 @@
     <table class="table">
 
         <tr>
-            <th>#</th>
+            <th scope="col">#</th>
 
-            <th>Nombre</th>
+            <th scope="col">Nombre</th>
 
-            <th>Id</th>
+            <th scope="col">Id</th>
 
-            <th>Descripción</th>
+            <th scope="col">Descripción</th>
 
-            <th>Marca</th>
+            <th scope="col">Marca</th>
 
-            <th>Valoración</th>
+            <th scope="col">Valoración</th>
 
-            <th>Actions</th>
+            <th scope="col">Actions</th>
         </tr>
         @forelse($sabores as $sabor)
         <tr>
 
-            <td>{{ $loop->index + 1 }}</td>
+            <td scope="row">{{ $loop->index + 1 }}</td>
 
             <td>{{$sabor->nombre}}</td>
 
