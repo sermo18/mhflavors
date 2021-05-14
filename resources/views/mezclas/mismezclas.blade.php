@@ -3,7 +3,10 @@
 @section('contenido')
 <div class="container">
 @if($errors->any())
-<h4>{{$errors->first()}}</h4>
+<div class="alert alert-danger" role="alert">
+{{$errors->first()}}
+</div>
+
 @endif
     <div class="row m-4">
         <h1>Tus Mezclas Favoritas ♡</h1>
