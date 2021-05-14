@@ -16,6 +16,8 @@
         
             <div class="card text-center">
                 <img class="card-img-top" src="https://cachimbasbaratas.pro/wp-content/uploads/2018/12/tabaco-para-cachimba.jpg" alt="Card image cap">
+                <div class="card-img-overlay">
+
                 <div class="card-body ">
                 <select class="form-group card-title" name="sabor{{$i}}" id="sabor{{$i}}">
                 @foreach ($sabores as $sabor)
@@ -32,6 +34,7 @@
                 id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
                 </div>
 
+                </div>
                 </div>
             </div>
         </div>
