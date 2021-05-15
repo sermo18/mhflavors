@@ -13,8 +13,7 @@
                     <h5 class="card-title">Las cachimbas, la moda de un año de pandemia
 </h5>
                     <p class="card-text">Ahora los fumadores de cachimbas desean tener en su propio hogar cachimbas, accesorios y tabacos para fumar sin salir de casa y pasar mucho mejor el encierro por la pandemia...</p>
-                    <a href="https://www.diariodecadiz.es/cadiz/cachimbas-moda-ano-pandemia_0_1573642960.html">Noticia importante</a>
-
+                    <a href="https://www.diariodecadiz.es/cadiz/cachimbas-moda-ano-pandemia_0_1573642960.html" class="btn btn-dark">Saber Más</a>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                     
 
@@ -35,7 +34,8 @@
 </h5>
                                     
                                     <p class="card-text">Se está incrementando el número de fumadores...</p>
-                                    <a href="https://www.madridiario.es/492107/las-cachimbas-una-moda-incipiente">Noticia importante</a>
+                                    
+                                    <a href="https://www.madridiario.es/492107/las-cachimbas-una-moda-incipiente" class="btn btn-dark">Saber Más</a>
 
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
@@ -54,8 +54,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">El negocio de la cachimba florece en España al borde de la ley</h5>
                                     <p class="card-text">A falta de cerrar los datos de diciembre...</p>
-                                    <a href="https://www.eldiario.es/economia/negocio-cachimba-florece-espana-borde-ley_1_6820154.html
-">Noticia importante</a>
+                                                              <a href="https://www.eldiario.es/economia/negocio-cachimba-florece-espana-borde-ley_1_6820154.html" class="btn btn-dark">Saber Más</a>
+
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             
 
@@ -74,6 +74,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="#" class="btn btn-dark">Saber Más</a>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
 
@@ -86,6 +87,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="#" class="btn btn-dark">Saber Más</a>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
 
@@ -98,7 +100,8 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="#" class="btn btn-dark">Saber Más</a>
+                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
 
                 </div>
@@ -110,6 +113,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <a href="#" class="btn btn-dark">Saber Más</a>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
 
