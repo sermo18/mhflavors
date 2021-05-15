@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <div class="card">
-                <img src="https://www.diariodecadiz.es/2021/05/14/cadiz/cachimbas-moda-ano-pandemia_1573952634_138491982_667x375.jpg" style="height: 200px;" class="card-img" alt="...">
+                <img src="https://www.diariodecadiz.es/2021/05/14/cadiz/cachimbas-moda-ano-pandemia_1573952634_138491982_667x375.jpg" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Las cachimbas, la moda de un año de pandemia
 </h5>
@@ -27,7 +27,7 @@
                     <div class="card ">
                         <div class="row no-gutters">
                             <div class="col-md-7">
-                                <img src="https://www.madridiario.es/fotos/1/231545_unnamed-71_thumb_722.jpg" style="height: 200px;" class="card-img" alt="...">
+                                <img src="https://www.madridiario.es/fotos/1/231545_unnamed-71_thumb_722.jpg" class="card-img" alt="...">
                             </div>
                             <div class="col-md-5">
                                 <div class="card-body">
@@ -48,7 +48,7 @@
                     <div class="card ">
                         <div class="row no-gutters">
                             <div class="col-md-7">
-                                <img src="https://static.eldiario.es/clip/d960ea2b-1cd0-4930-ba58-9d6a2a7be296_16-9-aspect-ratio_default_0.jpg" style="height: 200px;" class="card-img" alt="...">
+                                <img src="https://static.eldiario.es/clip/d960ea2b-1cd0-4930-ba58-9d6a2a7be296_16-9-aspect-ratio_default_0.jpg" class="card-img" alt="...">
                             </div>
                             <div class="col-md-5">
                                 <div class="card-body">
