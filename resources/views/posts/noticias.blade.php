@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-12 col-md-6">
             <div class="card">
-                <img src="https://www.diariodecadiz.es/2021/05/14/cadiz/cachimbas-moda-ano-pandemia_1573952634_138491982_667x375.jpg" style="height: 400px;" class="card-img" alt="...">
+                <img src="https://www.diariodecadiz.es/2021/05/14/cadiz/cachimbas-moda-ano-pandemia_1573952634_138491982_667x375.jpg" style="height: 200px;" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Las cachimbas, la moda de un año de pandemia
 </h5>
