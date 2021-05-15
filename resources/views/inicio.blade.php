@@ -34,7 +34,7 @@
     </div>
 
     <div class="row mt-4 ">
-        <div class="card col-12 col-md-6 noBorde shadow p-3 m-2">
+        <div class="card col-12 col-md-6 noBorde shadow p-3">
             <img class="card-img-top noBorde imgServicios" style="filter: grayscale(70%);filter:brightness(0.5);">
             <div class="card-header noBorde">
                 <h1>Servicios</h1>
@@ -51,7 +51,7 @@
                 <a href="#" class="btn btn-dark">Saber Más</a>
             </div>
         </div>
-        <div class="card col-12 col-md-6 noBorde shadow p-3 m-2">
+        <div class="card col-12 col-md-6 noBorde shadow p-3 ">
             <img class="card-img-top noBorde imgContacto" style="filter: grayscale(70%);filter:brightness(0.5);">
             <div class="card-header">
                 <h1>Contacto</h1>
@@ -125,7 +125,7 @@
                 </div>
             </div>
         </div>
-        <div class="card col-12 col-md-6 noBorde shadow p-3 m-2">
+        <div class="card col-12 col-md-6 noBorde shadow p-3">
             <img class="card-img-top noBorde imgMision" style="filter: grayscale(70%);filter:brightness(0.5);">
             <div class="card-header">
                 <h1>Misión</h1>
@@ -142,7 +142,7 @@
 
             </div>
         </div>
-        <div class="card col-12 col-md-6 noBorde shadow p-3 m-2">
+        <div class="card col-12 col-md-6 noBorde shadow p-3">
             <img class="card-img-top noBorde imgVision" style="filter: grayscale(70%);filter:brightness(0.5);">
             <div class="card-header noBorde ">
                 <h1>Visión</h1>
