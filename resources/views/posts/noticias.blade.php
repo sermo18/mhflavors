@@ -67,10 +67,10 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    <div class="row mt-4">
         <div class="col-12 col-md-3">
             <div class="card mb-3">
-                <img src="..." class="card-img" alt="...">
+                <img src="https://21noticias.com/wp-content/uploads/2021/02/91e4ccec5e1a902ba74fd6c66373a852-400x280.jpg" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -82,7 +82,7 @@
         </div>
         <div class="col-12 col-md-3">
             <div class="card mb-3">
-                <img src="..." class="card-img" alt="...">
+                <img src="https://879669.smushcdn.com/1707657/wp-content/uploads/2021/03/oficios-cachimba.jpg?lossy=1&strip=1&webp=1" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -94,7 +94,7 @@
         </div>
         <div class="col-12 col-md-3">
             <div class="card mb-3">
-                <img src="..." class="card-img" alt="...">
+                <img src="https://879669.smushcdn.com/1707657/wp-content/uploads/2020/03/como-limpiar-shisha.jpg?lossy=1&strip=1&webp=1" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -106,7 +106,7 @@
         </div>
         <div class="col-12 col-md-3">
             <div class="card mb-3">
-                <img src="..." class="card-img" alt="...">
+                <img src="https://estaticos-cdn.prensaiberica.es/clip/09190588-d4d0-49ac-a40e-bbfbab69a6fb_16-9-aspect-ratio_default_0.jpg" class="card-img" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
