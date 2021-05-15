@@ -88,7 +88,7 @@ function cargar() {
                     " background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(http://fumandoespero.com/Blog/wp-content/uploads/2017/09/logo-fumari-750x410.jpg); background-size: cover;"
                 );
                 break;
-
+                //Por aqui
             case "OVERDOZZ":
                 cards[index].setAttribute(
                     "style",

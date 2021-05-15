@@ -39,7 +39,7 @@ class PostController extends Controller
         ->paginate(21);
         $mezclas = Mezcla::get();
         
-        $allSabores = Sabor::orderBy("id");
+        $allSabores = Sabor::get();
         $marcas = [];
         for ($i=0; $i < count($allSabores); $i++) { 
             if ($allSabores[$i] && !in_array($allSabores[$i]->marca, $marcas)) {
@@ -55,7 +55,7 @@ class PostController extends Controller
         ->paginate(6);
         $sabores = Sabor::orderBy("id")->where('marca', $marca)->paginate(6);
 
-        $allSabores = Sabor::orderBy("id");
+        $allSabores = Sabor::get();
         $mezclas = Mezcla::get();
         $marcas = [];
         for ($i=0; $i < count($allSabores); $i++) { 
