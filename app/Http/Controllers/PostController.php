@@ -38,10 +38,12 @@ class PostController extends Controller
         $sabores = Sabor::orderBy("nombre")
         ->paginate(21);
         $mezclas = Mezcla::get();
+        
+        $allSabores = Sabor::orderBy("id");
         $marcas = [];
-        for ($i=0; $i < count($sabores); $i++) { 
-            if ($sabores[$i] && !in_array($sabores[$i]->marca, $marcas)) {
-                array_push($marcas, $sabores[$i]->marca);
+        for ($i=0; $i < count($allSabores); $i++) { 
+            if ($allSabores[$i] && !in_array($allSabores[$i]->marca, $marcas)) {
+                array_push($marcas, $allSabores[$i]->marca);
             }
         }
         return view('posts.index', compact('posts','mezclas','sabores','marcas'));
@@ -52,8 +54,8 @@ class PostController extends Controller
         $posts = Post::orderBy("titulo")
         ->paginate(6);
         $sabores = Sabor::orderBy("id")->where('marca', $marca)->paginate(6);
-        $allSabores = Sabor::orderBy("id")
-        ->paginate(6);
+
+        $allSabores = Sabor::orderBy("id");
         $mezclas = Mezcla::get();
         $marcas = [];
         for ($i=0; $i < count($allSabores); $i++) { 
