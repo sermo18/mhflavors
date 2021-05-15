@@ -5,6 +5,8 @@
     <div class="row m-4">
         <h1>Últimas Noticias</h1>
     </div>
+    <div class="row">
+    <div class="col-12">
     <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
     <div class="col-md-4">
@@ -19,6 +21,8 @@
     </div>
   </div>
 </div>
+</div>
+<div class="col-12">
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
     <div class="col-md-4">
@@ -33,6 +37,8 @@
     </div>
   </div>
 </div>
+</div>
+<div class="col-12">
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row no-gutters">
     <div class="col-md-4">
@@ -47,6 +53,7 @@
     </div>
   </div>
 </div>
-
+</div>
+    </div>
 </div>
 @endsection
