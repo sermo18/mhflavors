@@ -14,7 +14,7 @@
 </h5>
                     <p class="card-text">Ahora los fumadores de cachimbas desean tener en su propio hogar cachimbas, accesorios y tabacos para fumar sin salir de casa y pasar mucho mejor el encierro por la pandemia...</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    <a href="https://www.diariodecadiz.es/cadiz/cachimbas-moda-ano-pandemia_0_1573642960.html" class="btn btn-dark m-2">Saber Más</a>
+                    <a href="https://www.diariodecadiz.es/cadiz/cachimbas-moda-ano-pandemia_0_1573642960.html" class="btn btn-dark mt-2">Saber Más</a>
 
 
                 </div>
@@ -37,7 +37,7 @@
                                     
 
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    <a href="https://www.madridiario.es/492107/las-cachimbas-una-moda-incipiente" class="btn btn-dark m-2">Saber Más</a>
+                                    <a href="https://www.madridiario.es/492107/las-cachimbas-una-moda-incipiente" class="btn btn-dark mt-2">Saber Más</a>
 
                                 </div>
                             </div>
@@ -57,7 +57,7 @@
 
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                             
-                                    <a href="https://www.eldiario.es/economia/negocio-cachimba-florece-espana-borde-ley_1_6820154.html" class="btn btn-dark m-2">Saber Más</a>
+                                    <a href="https://www.eldiario.es/economia/negocio-cachimba-florece-espana-borde-ley_1_6820154.html" class="btn btn-dark mt-2">Saber Más</a>
 
                                 </div>
                             </div>
@@ -76,7 +76,7 @@
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    <a href="#" class="btn btn-dark m-2">Saber Más</a>
+                    <a href="#" class="btn btn-dark mt-2">Saber Más</a>
 
 
                 </div>
@@ -91,7 +91,7 @@
                     
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
-                    <a href="#" class="btn btn-dark m-2">Saber Más</a>
+                    <a href="#" class="btn btn-dark mt-2">Saber Más</a>
 
                 </div>
             </div>
@@ -105,7 +105,7 @@
                 
                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 
-                 <a href="#" class="btn btn-dark m-2">Saber Más</a>
+                 <a href="#" class="btn btn-dark mt-2">Saber Más</a>
 
                 </div>
             </div>
@@ -117,6 +117,7 @@
                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <a href="#" class="btn btn-dark mt-2">Saber Más</a>
 
 
                 </div>
