@@ -6,7 +6,7 @@
         <h1>Últimas Noticias</h1>
     </div>
     <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <div class="card mb-3" >
                 <div class="row no-gutters">
                     <div class="col-md-4">
@@ -22,6 +22,8 @@
                 </div>
             </div>
         </div>
+        <div class="col-6">
+        <div class="row">
         <div class="col-12">
             <div class="card mb-3 shadow p-3 m-2" >
                 <div class="row no-gutters">
@@ -54,6 +56,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        </div>
         </div>
     </div>
 </div>
