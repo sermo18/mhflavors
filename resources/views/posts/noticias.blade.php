@@ -6,7 +6,7 @@
         <h1>Últimas Noticias</h1>
     </div>
     <div class="row">
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-6">
             <div class="card mb-3">
                 <img src="https://www.diariodecadiz.es/2021/05/14/cadiz/cachimbas-moda-ano-pandemia_1573952634_138491982_667x375.jpg" class="card-img" alt="...">
                 <div class="card-body">
@@ -14,12 +14,14 @@
 </h5>
                     <p class="card-text">Ahora los fumadores de cachimbas desean tener en su propio hogar cachimbas, accesorios y tabacos para fumar sin salir de casa y pasar mucho mejor el encierro por la pandemia...</p>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-
+                    https://www.eldiario.es/economia/negocio-cachimba-florece-espana-borde-ley_1_6820154.html
+                    https://www.madridiario.es/492107/las-cachimbas-una-moda-incipiente
+                                    <a href="https://www.diariodecadiz.es/cadiz/cachimbas-moda-ano-pandemia_0_1573642960.html">Noticia importante</a>
 
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-8">
+        <div class="col-12 col-md-6">
             <div class="row">
                 <div class="col-12">
                     <div class="card mb-3 ">
@@ -33,8 +35,7 @@
 </h5>
                                     <p class="card-text">Se está incrementando el número de fumadores que utilizan la cachimba como sistema alternativo al cigarrillo, pipa o puro...</p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    https://www.madridiario.es/492107/las-cachimbas-una-moda-incipiente
-                                    <a href="https://www.diariodecadiz.es/cadiz/cachimbas-moda-ano-pandemia_0_1573642960.html">Noticia importante</a>
+                                  
                                 </div>
                             </div>
                         </div>
@@ -49,9 +50,9 @@
                             <div class="col-md-6">
                                 <div class="card-body">
                                     <h5 class="card-title">El negocio de la cachimba florece en España al borde de la ley</h5>
-                                    <p class="card-text">A falta de cerrar los datos de diciembre, en 2020 se comercializaron más de 2 millones de kilos de tabaco de pipa de agua...</p>
+                                    <p class="card-text">A falta de cerrar los datos de diciembre, en 2020 se comercializaron más de 2 millones de kilos de tabaco de pipa de agua... </p>
                                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                    https://www.eldiario.es/economia/negocio-cachimba-florece-espana-borde-ley_1_6820154.html
+                                   
                                 </div>
                             </div>
                         </div>
