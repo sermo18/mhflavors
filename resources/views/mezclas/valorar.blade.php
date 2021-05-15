@@ -14,7 +14,7 @@
             <div class="row ">
                 <div class="col-4 ">
                     <div class="card">
-                            <div class="ponerImagenes">
+                            <div class="ponerImagenes shadow p-3">
                                 <div class="card-body" style="height: 400px;">
                                     @foreach ($sabores as $sabor)
                                     @if($mezcla->sabor1 == $sabor->id)
@@ -40,7 +40,7 @@
                     <div class="card  " >
                         
 
-                            <div class="ponerImagenes" >
+                            <div class="ponerImagenes shadow p-3" >
                                 <div class="card-body" style="height: 400px; ">
                                     @foreach ($sabores as $sabor)
                                     @if($mezcla->sabor3 == $sabor->id)
@@ -60,7 +60,7 @@
                 <div class="col-4">
                     <div class="card" >
                         
-                            <div class="ponerImagenes">
+                            <div class="ponerImagenes shadow p-3">
                                 <div class="card-body" style="height: 400px; ">
                                     @foreach ($sabores as $sabor)
                                     @if($mezcla->sabor2 == $sabor->id)

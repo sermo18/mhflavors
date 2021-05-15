@@ -14,7 +14,7 @@
 
          <div class="col-4 mb-3">
         
-            <div class="card text-center">
+            <div class="card text-center shadow p-3">
             @if($i == 1)
                 <img class="card-img-top"  style="filter:brightness(40%);" src="https://cachimbasbaratas.pro/wp-content/uploads/2018/12/tabaco-para-cachimba.jpg" alt="Card image cap">
                 <div class="card-img-overlay">

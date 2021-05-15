@@ -6,7 +6,7 @@
     <div class="row m-4">
         <h1>¿Qué Fumo Hoy?</h1>
     </div>
-    <div class="imagenMezclaAleatoria row ">
+    <div class="imagenMezclaAleatoria row shadow p-3">
 
         <div class="col-12 align-self-center">
             <div class="row justify-content-between">

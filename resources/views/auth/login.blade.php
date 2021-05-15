@@ -12,14 +12,14 @@
 @endif
 <form action="{{ route('auth.login') }}" method="POST">
 @csrf
-<div class="form-group">
+<div class="form-group ">
 <label for="login">Login:</label>
-<input type="text" class="form-control"
+<input type="text" class="form-control shadow p-3"
 name="login" id="login" />
 </div>
 <div class="form-group">
 <label for="password">Password:</label>
-<input type="password" class="form-control"
+<input type="password" class="form-control shadow p-3"
 name="password" id="password" />
 </div>
 <input type="submit" name="enviar" value="Enviar"

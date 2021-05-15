@@ -76,19 +76,19 @@
             </div>
             <div class="form-group mt-4">
                 <label for="nombre">Nombre:</label>
-                <input type="text" class="form-control" name="nombre" id="nombre" />
+                <input type="text" class="form-control shadow" name="nombre" id="nombre" />
             </div>
             <div class="form-group">
                 <label for="login">Login:</label>
-                <input type="text" class="form-control" name="login" id="login" />
+                <input type="text" class="form-control shadow " name="login" id="login" />
             </div>
             <div class="form-group">
                 <label for="nacimiento">Fecha de nacimiento:</label>
-                <input type="number" class="form-control" name="nacimiento" id="nacimiento" min="1910" max="2022" />
+                <input type="number" class="form-control shadow " name="nacimiento" id="nacimiento" min="1910" max="2022" />
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" name="password" id="password" />
+                <input type="password" class="form-control shadow " name="password" id="password" />
             </div>
 
             <input type="submit" name="enviar" value="Registrarse" class="btn btn-dark btn-block mt-4">
