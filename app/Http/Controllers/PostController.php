@@ -36,7 +36,7 @@ class PostController extends Controller
         $posts = Post::orderBy("titulo")
         ->paginate(6);
         $sabores = Sabor::orderBy("nombre")
-        ->paginate(20);
+        ->paginate(21);
         $mezclas = Mezcla::get();
         $marcas = [];
         for ($i=0; $i < count($sabores); $i++) { 
