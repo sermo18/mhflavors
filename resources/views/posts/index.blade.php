@@ -31,7 +31,7 @@
 
         <div class="col-12 col-sm-6 col-md-4 mb-3 quitar ">
             <div class="card text-left ponerImagenes shadow p-3">
-                <div class="card-body text-white " style="height: 400px; ">
+                <div class="card-body text-white ">
                     <h3 class="card-title text-left" style="height: 70px;">{{ $sabor->nombre }}</h3>
                     <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
                     <h5 class="card-text p-3">Marca: {{ $sabor->marca }}</h5>
