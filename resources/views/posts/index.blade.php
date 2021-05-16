@@ -42,10 +42,14 @@
                     @endif
                     @if(strlen($sabor->descripcion) >37)
                     
+                    @elseif(strlen($sabor->descripcion) >12  && 37 > strlen($sabor->descripcion))
+                    <br/>
                     @elseif(strlen($sabor->descripcion) >12)
+                    <br/>
                     <br/>
 
                     @else
+                    <br/>
                     <br/>
                     <br/>
                     @endif
