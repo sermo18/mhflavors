@@ -41,7 +41,7 @@
                     <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion }} / 5 </h5>
                     @endif
 
-                    <div class="row justify-content-center align-items-right" style="position: relative; top:20px">
+                    <div class="row justify-content-center align-items-right" style="position: relative; bottom:25px">
                         <a href="{{ route('post.show', $sabor) }}" class=" p-4"><input type="button" value="Saber más" class="p-2"></input></a>
                     </div>
                 </div>
