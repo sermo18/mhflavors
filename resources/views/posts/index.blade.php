@@ -40,19 +40,7 @@
                     @else
                     <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion }} / 5 </h5>
                     @endif
-                    @if(strlen($sabor->descripcion) >37)
-                    
-                    @elseif(strlen($sabor->descripcion) >12  && 37 > strlen($sabor->descripcion))
-                    <br/>
-                    @elseif(strlen($sabor->descripcion) >12)
-                    <br/>
-                    <br/>
-
-                    @else
-                    <br/>
-                    <br/>
-                    <br/>
-                    @endif
+                  
                     <div class="row justify-content-center align-items-right" style="position: relative; bottom: 25px;">
                         <a href="{{ route('post.show', $sabor) }}" class=" p-4"><input type="button" value="Saber más" class="p-2"></input></a>
                     </div>
