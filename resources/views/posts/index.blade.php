@@ -31,7 +31,7 @@
 
         <div class="col-12 col-sm-6 col-md-4 mb-3 quitar ">
             <div class="card text-left ponerImagenes shadow p-3">
-                <div class="card-body text-white ">
+                <div class="card-body text-white">
                     <h3 class="card-title text-left" style="height: 70px;">{{ $sabor->nombre }}</h3>
                     <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
                     <h5 class="card-text p-3">Marca: {{ $sabor->marca }}</h5>
@@ -41,7 +41,7 @@
                     <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion }} / 5 </h5>
                     @endif
 
-                    <div class="row justify-content-center align-items-right">
+                    <div class="row justify-content-center align-items-right" style="position: relative; bottom: 25px;">
                         <a href="{{ route('post.show', $sabor) }}" class=" p-4"><input type="button" value="Saber más" class="p-2"></input></a>
                     </div>
                 </div>
