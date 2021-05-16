@@ -40,9 +40,9 @@
                     @else
                     <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion }} / 5 </h5>
                     @endif
-                    @if(strlen($sabor->descripcion) >19)
+                    @if(strlen($sabor->descripcion) >28)
                     
-                    @elseif(strlen($sabor->descripcion) >9)
+                    @elseif(strlen($sabor->descripcion) >14)
                     <br/>
 
                     @else
