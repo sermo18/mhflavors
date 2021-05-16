@@ -33,24 +33,15 @@
             <div class="card text-left ponerImagenes shadow p-3">
                 <div class="card-body text-white " style="height: 400px; ">
                     <h3 class="card-title text-left" style="height: 70px;">{{ $sabor->nombre }}</h3>
-                    @if(strlen($sabor->descripcion)> 19)
                     <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
-                    @elseif(strlen($sabor->descripcion)> 9)
-                    <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
-                    <br/>
-                    @else
-                    <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }} </h5>
-                    <br/>
-                    <br/>
-                    @endif
                     <h5 class="card-text p-3">Marca: {{ $sabor->marca }}</h5>
                     @if(!$sabor->valoracion)
-                    <h5 class="card-text p-3">Valoración: 0 / 5</h5>
+                    <h5 class="card-text p-3">Valoración: No se ha valorado aún</h5>
                     @else
                     <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion }} / 5 </h5>
                     @endif
 
-                    <div class="row justify-content-center align-items-right" style="position: relative; bottom:25px">
+                    <div class="row justify-content-center align-items-right">
                         <a href="{{ route('post.show', $sabor) }}" class=" p-4"><input type="button" value="Saber más" class="p-2"></input></a>
                     </div>
                 </div>
