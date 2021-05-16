@@ -36,11 +36,11 @@
                     <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
                     <h5 class="card-text p-3">Marca: {{ $sabor->marca }}</h5>
                     @if(!$sabor->valoracion)
-                    <h5 class="card-text p-3">Valoración: 0/5</h5>
+                    <h5 class="card-text p-3">Valoración: 0 / 5</h5>
                     @else
                     <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion }} / 5 </h5>
                     @endif
-                    @if(strlen($sabor->descripcion) >28)
+                    @if(strlen($sabor->descripcion) >40)
                     
                     @elseif(strlen($sabor->descripcion) >14)
                     <br/>
