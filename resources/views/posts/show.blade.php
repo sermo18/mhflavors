@@ -77,7 +77,9 @@
     </div>
    
     <div class="row justify-content-md-center align-items-center mt-3">
-
+        <div class="col-12">
+        <h3>Más sabores de $sabor->marca</h3>
+        </div>
         @forelse($saboresmarca as $sabormarca)
 
         <div class="card text-left ponerImagenes col-3">
