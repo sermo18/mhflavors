@@ -84,8 +84,8 @@
 
         <div class="card text-left ponerImagenes col-3 agrandar" style="height: 200px; width: 200px; transition: transform .2s;">
             <div class="card-body text-white " >
-                <h3 class="card-title text-left" style="height: 70px;">{{ $sabormarca->nombre }}</h3>
-                <h5 class="card-text ">Descripcion: {{$sabormarca->descripcion }}</h5>
+                <h3 class="card-title text-left" style="height: 30px;">{{ $sabormarca->nombre }}</h3>
+                <h5 class="card-text "></h5>
                 <h5 class="card-text ">Marca: {{ $sabormarca->marca }}</h5>
                 @if(!$sabormarca->valoracion)
                 <h5 class="card-text ">Valoración: 0 / 5 </h5>
