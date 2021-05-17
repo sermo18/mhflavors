@@ -82,12 +82,17 @@
         </div>
         @forelse($saboresmarca as $sabormarca)
 
-        <div class="card text-left ponerImagenes col-3">
-            <div class="card-body text-white " style="height: 200px; width: 200px;">
+        <div class="card text-left ponerImagenes col-3" style="height: 200px; width: 200px; -webkit-transform:scale(1.25);
+-moz-transform:scale(1.25);
+-ms-transform:scale(1.25);
+-o-transform:scale(1.25);
+transform:scale(1.25);
+-webkit-transition:all .9s ease; /* Safari y Chrome */
+-moz-transition:all .9s ease; /* Firefox */
+-o-transition:all .9s ease; /* IE 9 */
+-ms-transition:all .9s ease; /* Opera */">
+            <div class="card-body text-white " >
                 <h3 class="card-title text-left" style="height: 70px;">{{ $sabormarca->nombre }}</h3>
-                <h5 class="card-text p-3">Descripcion: {{$sabormarca->descripcion }}</h5>
-                <h5 class="card-text p-3">Marca: {{ $sabormarca->marca }}</h5>
-                @if(!$sabormarca->valoracion)
                 <h5 class="card-text p-3">Valoración: 0 / 5 </h5>
                 @else
                 <h5 class="card-text p-3">Valoración: {{ $sabormarca->valoracion }} / 5 </h5>
