@@ -75,6 +75,8 @@
             @endif
         </div>
     </div>
+   
+    <div class="row justify-content-md-center align-items-center mt-3">
     <div class="row">
     <div class="col">
         <div>
@@ -82,7 +84,6 @@
         </div>
     </div>
 </div>
-    <div class="row justify-content-md-center align-items-center mt-3">
         @forelse($saboresmarca as $sabormarca)
         
         <div class="card text-left ponerImagenes">
