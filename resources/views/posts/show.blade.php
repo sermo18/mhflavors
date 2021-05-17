@@ -4,7 +4,7 @@
 <div class="container">
     <!-- Show the flavor that we selected -->
     <div class="row justify-content-md-center align-items-center mt-3">
-        <div class="card text-left ponerImagenes">
+        <div class="card text-left ponerImagenes col">
             <div class="card-body text-white " style="height: 400px; width: 400px;">
                 <h3 class="card-title text-left" style="height: 70px;">{{ $sabor->nombre }}</h3>
                 <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
@@ -86,7 +86,7 @@
 
         @forelse($saboresmarca as $sabormarca)
 
-        <div class="card text-left ponerImagenes">
+        <div class="card text-left ponerImagenes col-3">
             <div class="card-body text-white " style="height: 400px; width: 400px;">
                 <h3 class="card-title text-left" style="height: 70px;">{{ $sabormarca->nombre }}</h3>
                 <h5 class="card-text p-3">Descripcion: {{$sabormarca->descripcion }}</h5>
