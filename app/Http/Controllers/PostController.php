@@ -31,10 +31,9 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
 
+     // This function take all flavors, mixings and brands and send the information to the view index of all flavors
     public function index()
     {
-        $posts = Post::orderBy("titulo")
-        ->paginate(6);
         $sabores = Sabor::orderBy("nombre")
         ->paginate(21);
         $mezclas = Mezcla::get();
@@ -49,6 +48,7 @@ class PostController extends Controller
         return view('posts.index', compact('posts','mezclas','sabores','marcas'));
     }
 
+    // This function take the flavors with the brand that we pass in the parametrer '$marca' and send it to the index
     public function filtrarMarca($marca){
 
         $posts = Post::orderBy("titulo")
@@ -66,6 +66,8 @@ class PostController extends Controller
         
         return view('posts.index', compact('posts','mezclas','sabores','marcas'));
     }
+
+    // This function it's to show the view of a map of lounges that you can go to smoke shisha
     public function locales()
     {
         $posts = Post::orderBy("titulo")
@@ -76,6 +78,7 @@ class PostController extends Controller
         return view('posts.mapa', compact('posts','mezclas','sabores'));
     }
 
+    // Take all flavors ordered by the valoration of these flavors
     public function topSabores()
     {
         $sabores =  Sabor::orderBy('valoracion', 'DESC')->get()->take(10);
@@ -86,6 +89,7 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    //Deprecated
     public function create()
     {
         $usuarios = Usuario::get();
@@ -98,6 +102,7 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+    //DEPRECATED
     public function store(Request $request)
     {
         $post = new Post();
@@ -114,11 +119,13 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+
+     // This function show one flavor selected and more flavors of the brand of that flavor
+    public function show($id,$marca)
     {
-        $post = Post::find($id);
         $sabor= Sabor::find($id);
-        return view('posts.show',compact('post','sabor'));
+        $saboresmarca = Sabor::orderBy("id")->where('marca', $marca);
+        return view('posts.show',compact('sabor,saboresmarca'));
     }
 
     /**
@@ -140,6 +147,8 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    
+    //This function adds the value of the petition to that of the flavor and divides it between the votes
     public function update(Request $request, $id)
     {
         
@@ -156,6 +165,8 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+     //Deprecated
     public function destroy($id)
     {
 

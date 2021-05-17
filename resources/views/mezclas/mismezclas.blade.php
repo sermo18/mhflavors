@@ -14,9 +14,9 @@
 
 @endif
     <div class="row m-4">
-        <h1>Tus Mezclas Favoritas ♡</h1>
+        <h1>Tus Mezclas</h1>
     </div>
-
+<!-- This page shows all of your favourite mixings -->
     <div class="table-responsive">
 
         <table class="table table-striped">

@@ -9,7 +9,7 @@
         <h1>Valorar Mezcla</h1>
     </div>
     <div class=" row ">
-
+<!-- This page its for valorate the mixing that you have smoked -->
         <div class="col-12 align-self-center">
             <div class="row ">
                 <div class="col-4 ">

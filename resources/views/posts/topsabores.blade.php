@@ -5,6 +5,7 @@
     <div class="row m-4">
         <h1>Top 10 Mejores Sabores</h1>
     </div>
+    <!-- Show the top 10 flavors of the all web  -->
     <div class="table-responsive">
     <table class="table">
 

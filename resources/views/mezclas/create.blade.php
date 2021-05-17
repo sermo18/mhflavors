@@ -8,6 +8,7 @@
 <form action="{{ route('mezclas.store') }}" method="GET">
 @csrf
 
+<!-- This page its for create a new mixing  -->
 <div class="row">
 @for ($i = 1; $i < 4; $i++)
    

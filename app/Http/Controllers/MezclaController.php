@@ -18,6 +18,8 @@ class MezclaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+     // This function show all mixings ordered by valoration
     public function index()
     {
         $mezclas = Mezcla::orderBy('valoracion', 'DESC')->paginate(20);
@@ -31,7 +33,7 @@ class MezclaController extends Controller
 
         return view('mezclas.index', compact('mezclas','sabores','usuarios','userid'));
     }
-
+    // This function show the favourite mixings of the user 
     public function misMezclas()
     {
         $mezclas = Mezcla::orderBy("id")->paginate(20);
@@ -42,7 +44,7 @@ class MezclaController extends Controller
     }
 
 
-
+    // This function return the view aleatoria with a random number to show a random mixing 
     public function mezclaAleatoria($numeroAleatorio)
     {
         $mezclas = Mezcla::get();
@@ -55,6 +57,7 @@ class MezclaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    // This function return the view create
     public function create()
     {
         $usuarios = Usuario::get();
@@ -69,6 +72,8 @@ class MezclaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+     // This function add a new mixing created by the user, if the percentage of mixing it's bigger than 100% will send error
     public function store(Request $request)
     {
         if ($request->get('porcentaje1') + $request->get('porcentaje2') + $request->get('porcentaje3') > 100) {
@@ -89,6 +94,7 @@ class MezclaController extends Controller
         }
     }
 
+    //This function add a new mixing to the mixings of the users.
     public function añadirMezcla(Mezcla $mezclaA)
     {
         $mezcla = new Mezcla();
@@ -127,7 +133,7 @@ class MezclaController extends Controller
         //
     }
 
-
+    // This function return the view valorar with the mixing that we would valorate
     public function valorar($id)
     {
         $mezcla = Mezcla::findOrFail($id);
@@ -137,6 +143,7 @@ class MezclaController extends Controller
         return view('mezclas.valorar', compact('mezcla','usuarios','sabores','userid'));
     }
 
+    // This function add to the mixing valoration the request valoration and divides it between the number of votes
     public function valorarMezcla(Request $request, $id){
 
         $mezcla = Mezcla::findOrFail($id);
@@ -157,6 +164,7 @@ class MezclaController extends Controller
 
     }
 
+    //This function its to do a user premium
     public function hacerPremium($id)
     {
         $usuario = Usuario::findOrFail($id);
@@ -172,6 +180,8 @@ class MezclaController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+     //This function it's for destroy a mixing of your favourite mixings
     public function destroy($id)
     {
         $mezcla = Mezcla::findOrFail($id);

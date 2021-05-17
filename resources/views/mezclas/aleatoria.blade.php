@@ -16,6 +16,7 @@
                         <div class="row g-0">
                             <div class="col-md-12">
                                 <div class="card-body">
+                                <!-- Depend of a aleatory number the page shows a aleatory mixing that you will smoke today -->
                                     @foreach ($sabores as $sabor)
                                     @if($mezclas[$numeroAleatorio]->sabor1 == $sabor->id)
                                     <h5 class="card-title text-light"> {{$sabor->nombre}} </h5>

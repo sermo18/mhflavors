@@ -5,7 +5,7 @@
 
 <div class="container">
 <div class="table-responsive">
-
+<!-- This page shows all mixings that the users had created -->
     <table class="table table-striped">
         <div class="row m-4">
             <h1>Listado de Mezclas</h1>

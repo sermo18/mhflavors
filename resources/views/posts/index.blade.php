@@ -9,7 +9,7 @@
     </div>
     <input class="form-control" id="myInput" type="text" placeholder="Search..">
     <br>
-
+<!-- This page shows all the flavors -->
     <div class="row">
             <div class="col-12 btn-group mb-3">
                 <button type="button" class="btn btn-dark btn-block dropdown-toggle text-left" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,7 +42,7 @@
                     @endif
                   
                     <div class="row justify-content-center align-items-right" style="position: relative; bottom: 25px;">
-                        <a href="{{ route('post.show', $sabor) }}" class=" p-4"><input type="button" value="Saber más" class="p-2"></input></a>
+                        <a href="{{ route('post.show', $sabor, $sabor->marca) }}" class=" p-4"><input type="button" value="Saber más" class="p-2"></input></a>
                     </div>
                 </div>
             </div>

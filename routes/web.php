@@ -39,7 +39,7 @@ Route::get('posts', [PostController::class, 'index'])->name('posts.index');
 
 Route::get('posts/marca/{marca}', [PostController::class, 'filtrarMarca'])->name('post.filtrar');
 
-Route::get('posts/{id}', [PostController::class, 'show'])
+Route::get('posts/{id}/{marca}', [PostController::class, 'show'])
 ->where('id', "[0-9]+")
 ->name('post.show');
 

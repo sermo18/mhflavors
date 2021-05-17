@@ -11,7 +11,7 @@
         <h4 class="text-light col-12 text-center">" Descubre, Saborea, Vive. "</h4>
     </div>
 </div>
-
+<!-- A little description of our page -->
 <div class="container">
     <div class="row ">
         <div class="card col noBorde shadow p-3">

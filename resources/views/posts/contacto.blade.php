@@ -6,7 +6,7 @@
 <div class="container" height="100%">
     <div class="row m-4">
         <h1 class="text-dark">Contacto</h1>
-
+<!-- This is the contact page -->
     </div>
     <form>
         <div class="form-group row">
