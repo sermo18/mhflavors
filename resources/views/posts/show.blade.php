@@ -91,7 +91,7 @@
             </div>
         </div>
         @empty
-        {{No}}
+        
         </div>
         @endforelse
     </div>
