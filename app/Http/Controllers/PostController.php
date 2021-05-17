@@ -45,7 +45,7 @@ class PostController extends Controller
                 array_push($marcas, $allSabores[$i]->marca);
             }
         }
-        return view('posts.index', compact('posts','mezclas','sabores','marcas'));
+        return view('posts.index', compact('mezclas','sabores','marcas'));
     }
 
     // This function take the flavors with the brand that we pass in the parametrer '$marca' and send it to the index
@@ -64,7 +64,7 @@ class PostController extends Controller
             }
         }
         
-        return view('posts.index', compact('posts','mezclas','sabores','marcas'));
+        return view('posts.index', compact('mezclas','sabores','marcas'));
     }
 
     // This function it's to show the view of a map of lounges that you can go to smoke shisha
