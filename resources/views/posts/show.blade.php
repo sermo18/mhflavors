@@ -75,29 +75,29 @@
             @endif
         </div>
     </div>
+    <div class="row justify-content-md-center align-items-center mt-3">
 
-</div>
-<div class="row justify-content-md-center align-items-center mt-3">
-    
-    @forelse($saboresmarca as $sabormarca)
+        @forelse($saboresmarca as $sabormarca)
 
-    <div class="card text-left ponerImagenes">
-        <div class="card-body text-white " style="height: 400px; width: 400px;">
-            <h3 class="card-title text-left" style="height: 70px;">{{ $sabormarca->nombre }}</h3>
-            <h5 class="card-text p-3">Descripcion: {{$sabormarca->descripcion }}</h5>
-            <h5 class="card-text p-3">Marca: {{ $sabormarca->marca }}</h5>
-            @if(!$sabormarca->valoracion)
-            <h5 class="card-text p-3">Valoración: 0 / 5 </h5>
-            @else
-            <h5 class="card-text p-3">Valoración: {{ $sabormarca->valoracion }} / 5 </h5>
-            @endif
+        <div class="card text-left ponerImagenes">
+            <div class="card-body text-white " style="height: 400px; width: 400px;">
+                <h3 class="card-title text-left" style="height: 70px;">{{ $sabormarca->nombre }}</h3>
+                <h5 class="card-text p-3">Descripcion: {{$sabormarca->descripcion }}</h5>
+                <h5 class="card-text p-3">Marca: {{ $sabormarca->marca }}</h5>
+                @if(!$sabormarca->valoracion)
+                <h5 class="card-text p-3">Valoración: 0 / 5 </h5>
+                @else
+                <h5 class="card-text p-3">Valoración: {{ $sabormarca->valoracion }} / 5 </h5>
+                @endif
+            </div>
         </div>
+        @empty
+        @endforelse
     </div>
-    @empty
-    @endforelse
 </div>
 
-</div>
+
+
 
 
 @endsection
