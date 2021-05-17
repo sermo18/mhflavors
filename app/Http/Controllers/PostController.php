@@ -125,7 +125,7 @@ class PostController extends Controller
     {
         $sabor= Sabor::find($id);
 
-        $saboresmarca = Sabor::orderBy("id")->where('marca', $sabor->marca)->paginate(4)->get();
+        $saboresmarca = Sabor::orderBy("id")->where('marca', $sabor->marca)->paginate(4);
         return view('posts.show',compact('sabor','saboresmarca'));
     }
 
