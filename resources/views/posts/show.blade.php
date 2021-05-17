@@ -82,8 +82,7 @@
         </div>
         @forelse($saboresmarca as $sabormarca)
 
-        <div class="card text-left ponerImagenes col-3" style="{height: 200px; width: 200px; transition: transform .2s;}
- :hover {transform: scale(1.5);}">
+        <div class="card text-left ponerImagenes col-3 agrandar" style="height: 200px; width: 200px; transition: transform .2s;">
             <div class="card-body text-white " >
                 <h3 class="card-title text-left" style="height: 70px;">{{ $sabormarca->nombre }}</h3>
                 @if(!$sabormarca->valoracion)
