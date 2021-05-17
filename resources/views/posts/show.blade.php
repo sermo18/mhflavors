@@ -82,11 +82,11 @@
         </div>
         @forelse($saboresmarca as $sabormarca)
 
-        <div class="card text-left ponerImagenes col-3 agrandar" style="height: 200px; width: 200px; transition: transform .2s;">
-            <div class="card-body text-white " >
+        <div class="card text-left ponerImagenes col-3 " style="height: 200px; width: 200px;">
+            <div class="card-body text-white agrandar" >
                 <h3 class="card-title text-left" style="height: 30px;">{{ $sabormarca->nombre }}</h3>
-                <h5 class="card-text "></h5>
-                <h5 class="card-text ">Marca: {{ $sabormarca->marca }}</h5>
+                <h5 class="card-text"></h5>
+                <h5 class="card-text p-3">Marca: {{ $sabormarca->marca }}</h5>
                 @if(!$sabormarca->valoracion)
                 <h5 class="card-text ">Valoración: 0 / 5 </h5>
                 @else
