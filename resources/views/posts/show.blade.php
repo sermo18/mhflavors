@@ -77,8 +77,8 @@
     </div>
    
     <div class="row justify-content-md-center align-items-center mt-3">
-        <div class="col-12">
-        <h3>Más sabores de $sabor->marca</h3>
+        <div class="col-12 mt-3">
+        <h3 class="text-secondary text-center">Más sabores de {{$sabor->marca}}</h3>
         </div>
         @forelse($saboresmarca as $sabormarca)
 
