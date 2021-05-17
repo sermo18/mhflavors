@@ -76,7 +76,7 @@
         </div>
     </div>
     <div class="row justify-content-md-center align-items-center mt-3">
-
+    {{$saboresmarca}}
         @forelse($saboresmarca as $sabormarca)
 
         <div class="card text-left ponerImagenes">
@@ -92,10 +92,11 @@
             </div>
         </div>
         @empty
+        </div>
         @endforelse
     </div>
 </div>
-</div>
+
 
 
 
