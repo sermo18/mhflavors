@@ -42,7 +42,7 @@
                     @endif
                   
                     <div class="row justify-content-center align-items-right" style="position: relative; bottom: 25px;">
-                        <a href="{{ route('post.show', $sabor, $sabor->marca) }}" class=" p-4"><input type="button" value="Saber más" class="p-2"></input></a>
+                        <a href="{{ route('post.show', $sabor) }}" class=" p-4"><input type="button" value="Saber más" class="p-2"></input></a>
                     </div>
                 </div>
             </div>

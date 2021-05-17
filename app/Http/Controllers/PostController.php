@@ -121,10 +121,10 @@ class PostController extends Controller
      */
 
      // This function show one flavor selected and more flavors of the brand of that flavor
-    public function show($id,$marca)
+    public function show($id)
     {
         $sabor= Sabor::find($id);
-        $saboresmarca = Sabor::orderBy("id")->where('marca', $marca);
+        $saboresmarca = Sabor::orderBy("id")->where('marca', $sabor->marca);
         return view('posts.show',compact('sabor,saboresmarca'));
     }
 

@@ -27,7 +27,7 @@ function cargar() {
         });
     });
 
-    //Get the cards of the view and her brand, depend on the brand of this flavor we put a image of the brand on the background 
+    //Get the cards of the view and her brand, depending on the brand of this flavor we put a image of the brand on the background 
     cards = document.getElementsByClassName("ponerImagenes");
     for (let index = 0; index < cards.length; index++) {
         //Leer la marca del tabaco
