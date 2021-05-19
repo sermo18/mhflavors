@@ -35,10 +35,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-12"  style="width: 100%; height: 700px !important;">
+        <div class="col-12"  >
         <div class="row ">
             <div class="col-12 col-md-6">
-                <div class="card  noBorde ">
+                <div class="card  noBorde "style="width: 100%; height: 700px !important;">
 
                     <img class="card-img-top noBorde imgServicios" style="filter: grayscale(70%);filter:brightness(0.5);">
                     <div class="card-img-overlay">
@@ -61,7 +61,7 @@
                 </div>
             </div>
             <div class="col-12 col-md-6">
-                <div class="card  noBorde ">
+                <div class="card  noBorde " style="width: 100%; height: 700px !important;">
                     <img class="card-img-top noBorde imgContacto" style="filter: grayscale(70%);filter:brightness(0.5);">
                     <div class="card-img-overlay">
                         <div class="card-header">
