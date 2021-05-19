@@ -13,6 +13,8 @@
 </div>
 <!-- A little description of our page -->
 <div class="container-fluid">
+<div class="col-12 my-4 sandback ">
+
     <div class="row ">
         <div class="card col noBorde shadow p-3">
             <div class="card-header noBorde">
@@ -32,7 +34,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <div class="row mt-4 ">
         <div class="card col-12 col-md-6 noBorde shadow pl-3 pb-3">
             <img class="card-img-top noBorde imgServicios" style="filter: grayscale(70%);filter:brightness(0.5);">
