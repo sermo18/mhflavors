@@ -36,7 +36,7 @@
             </div>
         </div>
 
-        <div class="card col-12 col-md-6 noBorde shadow pl-3 pb-3">
+        <div class="card col-12 col-md-6 noBorde ">
             <img class="card-img-top noBorde imgServicios" style="filter: grayscale(70%);filter:brightness(0.5);">
             <div class="card-img-overlay">
 
@@ -57,7 +57,7 @@
             </div>
         </div>
 
-        <div class="card col-12 col-md-6 noBorde shadow pr-3 pb-3 ">
+        <div class="card col-12 col-md-6 noBorde ">
             <img class="card-img-top noBorde imgContacto" style="filter: grayscale(70%);filter:brightness(0.5);">
             <div class="card-img-overlay">
                 <div class="card-header">
@@ -77,7 +77,7 @@
             </div>
         </div>
 
-        <div class="col-12 my-4 sandback ">
+        <div class="col-12 sandback ">
             <div class="row ">
                 <div class="col-12">
                     <h1 class="text-white text-center mb-4">Comunidad</h1>
