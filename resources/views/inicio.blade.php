@@ -35,8 +35,9 @@
                 </div>
             </div>
         </div>
-
+        <div class="row ">
         <div class="card col-12 col-md-6 noBorde ">
+       
             <img class="card-img-top noBorde imgServicios" style="filter: grayscale(70%);filter:brightness(0.5);">
             <div class="card-img-overlay">
 
@@ -52,7 +53,7 @@
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                         with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                         publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                    <a href="#" class="btn btn-dark">Saber Más</a>
+                    <p><a href="#" class="btn btn-dark">Contacta con nosotros</a></p>
                 </div>
             </div>
         </div>
@@ -72,11 +73,11 @@
                         leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                         with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                         publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                    <a href="#" class="btn btn-dark">Contacta con nosotros</a>
+                    <p><a href="#" class="btn btn-dark">Contacta con nosotros</a></p>
                 </div>
             </div>
         </div>
-
+        </div>
         <div class="col-12 sandback ">
             <div class="row ">
                 <div class="col-12">
