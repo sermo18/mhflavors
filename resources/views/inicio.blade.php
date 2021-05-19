@@ -13,10 +13,10 @@
 </div>
 <!-- A little description of our page -->
 <div class="container-fluid">
-<div class="col-12 my-4 sandback ">
 
+<div class="col-12 sandback ">
     <div class="row ">
-        <div class="card col noBorde shadow p-3">
+        <div class="card col-4 noBorde shadow p-3">
             <div class="card-header noBorde">
                 <h1>¿Quiénes Somos?</h1>
             </div>
