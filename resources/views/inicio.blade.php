@@ -74,7 +74,7 @@
 
             <div class="row ">
                 <div class="col-12">
-                    <h1 class="text-white">Comunidad</h1>
+                    <h1 class="text-white text-center">Comunidad</h1>
                 </div>
                 <div class="col-12">
                     <div class="row">
