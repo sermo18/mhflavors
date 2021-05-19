@@ -69,9 +69,9 @@
             </div>
         </div>
         <div class="col-12 my-4">
-            <div class="row shadow p-3">
+            <div class="row shadow p-3" style="background-color: blue;" >
 
-                <div class="card col-6 col-md-3 noBorde" style="border: none; border-radius: 0;">
+                <div class="card col-6 col-md-3 noBorde" style="border: none; border-radius: 0; background-color: transparent;">
                     <div class="card-body text-center noBorde ">
                         <div class="card-title  noBorde ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#343a40" class="bi bi-person-plus-fill" viewBox="0 0 16 16">
