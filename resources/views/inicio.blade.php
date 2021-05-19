@@ -18,12 +18,12 @@
             <div class="row align-content-center justify-content-center">
                 <div class=" col-4 noBorde ">
                     <div>
-                        <h1 class="text-white text-center p-4">¿Quiénes Somos?</h1>
+                        <h1 class=" text-center p-4">¿Quiénes Somos?</h1>
                     </div>
                     <div class="align-content-center justify-content-center">
 
-                        <h5 class="text-white text-center p-2">¿Que és SeventeenSmoke?</h5>
-                        <p class="text-white text-center p-2">
+                        <h5 class=" text-center p-2">¿Que és SeventeenSmoke?</h5>
+                        <p class=" text-center p-2">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                             and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
