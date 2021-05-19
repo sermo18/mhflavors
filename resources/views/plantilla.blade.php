@@ -69,9 +69,9 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.9);">
+  <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.8);">
     © 2020 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">Sergio Moreno Garcia</a>
+    <a class="text-dark" href="#">Sergio Moreno Garcia</a>
   </div>
   <!-- Copyright -->
 </footer>
