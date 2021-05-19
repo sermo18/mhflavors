@@ -4403,8 +4403,7 @@ input[type=button].btn-block {
 }
 
 .serviceback {
-    background-image: url("./imgs/servicios.jpg");
-    background-color: rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) url("./imgs/servicios.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -4416,8 +4415,7 @@ input[type=button].btn-block {
 }
 
 .contactoback {
-    background-image: url("./imgs/contacto.jpg");
-    background-color: rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) url("./imgs/contacto.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
