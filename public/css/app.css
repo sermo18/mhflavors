@@ -4427,7 +4427,7 @@ input[type=button].btn-block {
 }
 
 .misionback {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/mision.jpeg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/mision.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
