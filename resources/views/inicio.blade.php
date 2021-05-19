@@ -68,10 +68,7 @@
                 <a href="#" class="btn btn-dark">Contacta con nosotros</a>
             </div>
         </div>
-        <div class="col-12 my-4 sandback justify-content-end align-content-end">
-
-
-
+        <div class="col-12  sandback">
             <div class="row ">
                 <div class="col-12">
                     <h1 class="text-white text-center">Comunidad</h1>
