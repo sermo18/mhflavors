@@ -68,8 +68,10 @@
                 <a href="#" class="btn btn-dark">Contacta con nosotros</a>
             </div>
         </div>
-        <div class="col-12 my-4 ">
-            <div class="row shadow p-3 sandback">
+        <div class="col-12 my-4">
+            <div class="sandback">
+
+            <div class="row shadow p-3 ">
 
                 <div class="card col-6 col-md-3 noBorde" style="border: none; border-radius: 0; background-color: transparent;">
                     <div class="card-body text-center noBorde ">
@@ -123,6 +125,7 @@
 
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         <div class="card col-12 col-md-6 noBorde shadow pl-3 pb-3">
