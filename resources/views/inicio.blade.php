@@ -41,7 +41,7 @@
                     <div >
                         <h1 class="p-4">Servicios</h1>
                     </div>
-                    <div class="align-content-center justify-content-center">
+                    <div >
                         <h5 class="p-2">¿Que ofrecemos?</h5>
                         <p class=" p-2">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -59,7 +59,7 @@
                     <div >
                         <h1 class="p-4">Contacto</h1>
                     </div>
-                    <div class="align-content-center justify-content-center">
+                    <div >
                         <h5 class="p-2">¿Necesitas Algo?</h5>
                         <p class=" p-2">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
