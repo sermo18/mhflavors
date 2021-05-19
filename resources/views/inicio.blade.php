@@ -39,7 +39,7 @@
             <div class="row ">
                 <div class="col-12 col-md-6 serviceback">
                     
-                    <div >
+                    <div class="align-content-center justify-content-center" >
                     <h1 class=" text-white p-4">Servicios</h1>
                         <h5 class="text-white p-2">¿Que ofrecemos?</h5>
                         <p class="text-white p-2">
@@ -56,7 +56,7 @@
 
                 <div class="col-12 col-md-6 contactoback">
                   
-                    <div >
+                    <div class="align-content-center justify-content-center" >
                     <h1 class=" text-white p-4">Contacto</h1>
                         <h5 class= "text-white p-2">¿Necesitas Algo?</h5>
                         <p class="text-white p-2">
