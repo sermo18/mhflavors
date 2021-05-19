@@ -12,7 +12,7 @@
     </div>
 </div>
 <!-- A little description of our page -->
-<div class="container">
+<div class="container-fluid">
     <div class="row ">
         <div class="card col noBorde shadow p-3">
             <div class="card-header noBorde">
