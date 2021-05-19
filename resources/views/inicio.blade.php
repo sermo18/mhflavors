@@ -68,10 +68,10 @@
                 <a href="#" class="btn btn-dark">Contacta con nosotros</a>
             </div>
         </div>
-        <div class="col-12 my-4 ">
+        <div class="col-12 my-4 sandback justify-content-end align-content-end">
             
 
-            <div class="row justify-content-end align-content-end sandback">
+            <div class="row justify-content-end align-content-end">
 
                 <div class="card col-6 col-md-3 noBorde" style="border: none; border-radius: 0; background-color: transparent;">
                     <div class="card-body text-center noBorde ">
