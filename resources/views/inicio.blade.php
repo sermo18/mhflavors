@@ -71,7 +71,7 @@
         <div class="col-12 my-4 sandback justify-content-end align-content-end">
             
             <div class="row ">
-                <h2 class="text-white">Comunidad</h2>
+                <h1 class="text-white col-12">Comunidad</h1>
             </div>
 
             <div class="row ">
