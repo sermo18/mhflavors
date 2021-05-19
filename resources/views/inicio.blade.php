@@ -14,23 +14,23 @@
 <!-- A little description of our page -->
 <div class="container-fluid">
 
-<div class="col-12 sandback ">
-    <div class="row ">
-        <div class="card col-4 noBorde shadow p-3">
-            <div class="card-header noBorde">
-                <h1>¿Quiénes Somos?</h1>
+<div class="sandback ">
+    <div class="row align-items-center">
+        <div class="card col-4 noBorde ">
+            <div >
+                <h1 class="text-white text-center p-4">¿Quiénes Somos?</h1>
             </div>
-            <div class="card-body noBorde">
+            <div >
 
-                <h5 class="card-title noBorde">¿Que és SeventeenSmoke?</h5>
-                <p class="card-text noBorde">
+                <h5 class="text-white text-center p-2">¿Que és SeventeenSmoke?</h5>
+                <p class="text-white text-center p-2">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
                     leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                <a href="#" class="btn btn-dark">Saber Más</a>
+                <a href="#" class="btn btn-dark text-center">Saber Más</a>
             </div>
         </div>
     </div>
