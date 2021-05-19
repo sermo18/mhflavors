@@ -13,7 +13,7 @@
 
 <script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
 
-<footer class="bg-dark mt-3 text-white text-lg-start">
+<footer class="bg-light mt-3 text-dark text-lg-start">
   <!-- Grid container -->
   <div class="container p-4">
     <!--Grid row-->
@@ -69,7 +69,7 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.9);">
     © 2020 Copyright:
     <a class="text-white" href="https://mdbootstrap.com/">Sergio Moreno Garcia</a>
   </div>
