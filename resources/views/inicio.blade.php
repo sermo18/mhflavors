@@ -15,8 +15,8 @@
 <div class="container-fluid">
 
 <div class="sandback ">
-    <div class="row align-items-center">
-        <div class="card col-4 noBorde ">
+    <div class="row align-content-center justify-content-center">
+        <div class=" col-4 noBorde ">
             <div >
                 <h1 class="text-white text-center p-4">¿Quiénes Somos?</h1>
             </div>
