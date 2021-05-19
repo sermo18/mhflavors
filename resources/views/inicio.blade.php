@@ -14,7 +14,7 @@
 <!-- A little description of our page -->
 <div class="container-fluid">
 <div class="row">
-<div class="maderaback col-12 ">
+<div class="maderitaback col-12 ">
     <div class="row align-content-center justify-content-center">
         <div class=" col-4 noBorde ">
             <div >
