@@ -68,7 +68,7 @@
                 <a href="#" class="btn btn-dark">Contacta con nosotros</a>
             </div>
         </div>
-        <div class="col-12 my-4 sandback align-content-center">
+        <div class="col-12 my-4 sandback ">
             <div class="row ">
                 <div class="col-12">
                     <h1 class="text-white text-center">Comunidad</h1>
