@@ -20,7 +20,7 @@
             <div >
                 <h1 class="text-white text-center p-4">¿Quiénes Somos?</h1>
             </div>
-            <div >
+            <div class="align-content-center justify-content-center" >
 
                 <h5 class="text-white text-center p-2">¿Que és SeventeenSmoke?</h5>
                 <p class="text-white text-center p-2">
@@ -41,7 +41,7 @@
             <div class="card-header noBorde">
                 <h1>Servicios</h1>
             </div>
-            <div class="card-body noBorde">
+            <div class="card-body noBorde ">
                 <h5 class="card-title noBorde">¿Que ofrecemos?</h5>
                 <p class="card-text noBorde">
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
