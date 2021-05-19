@@ -13,7 +13,7 @@
 
 <script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
 
-<footer class="bg-light mt-3 text-dark text-lg-start">
+<footer class=" mt-3 text-dark text-lg-start" style="background-color: rgba(243, 243, 243, 0.932);">
   <!-- Grid container -->
   <div class="container p-4">
     <!--Grid row-->
@@ -54,10 +54,10 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!" class="text-white">Principales Locales</a>
+            <a href="#!" class="text-dark">Principales Locales</a>
           </li>
           <li>
-            <a href="#!" class="text-white">Contacto</a>
+            <a href="#!" class="text-dark">Contacto</a>
           </li>
         </ul>
       </div>
@@ -69,7 +69,7 @@
   <!-- Grid container -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.8);">
+  <div class="text-center p-3" style="background-color: rgba(243, 243, 243, 0.932);">
     © 2020 Copyright:
     <a class="text-dark" href="#">Sergio Moreno Garcia</a>
   </div>
