@@ -13,8 +13,8 @@
 </div>
 <!-- A little description of our page -->
 <div class="container-fluid">
-
-<div class="sandback ">
+<div class="row">
+<div class="sandback col-12 ">
     <div class="row align-content-center justify-content-center">
         <div class=" col-4 noBorde ">
             <div >
@@ -173,6 +173,8 @@
 
 
 
+
+</div>
 
 </div>
 
