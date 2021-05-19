@@ -68,8 +68,8 @@
                 <a href="#" class="btn btn-dark">Contacta con nosotros</a>
             </div>
         </div>
-        <div class="col-12 my-4">
-            <div class="sandback">
+        <div class="col-12 my-4 sandback">
+            
 
             <div class="row shadow p-3 ">
 
