@@ -70,12 +70,13 @@
         </div>
         <div class="col-12 my-4 sandback justify-content-end align-content-end">
             
-            <div class="row ">
-                <h1 class="text-white col-12">Comunidad</h1>
-            </div>
+            
 
             <div class="row ">
-
+                <div class="col-12">
+                    <h1 class="text-white">Comunidad</h1>
+                </div>
+                <div class="col-12">
                 <div class="card col-6 col-md-3 noBorde" style="border: none; border-radius: 0; background-color: transparent;">
                     <div class="card-body text-center noBorde ">
                         <div class="card-title  noBorde ">
@@ -127,6 +128,7 @@
                         </h3>
 
                     </div>
+                </div>
                 </div>
             </div>
             </div>
