@@ -14,7 +14,7 @@
 <!-- A little description of our page -->
 <div class="container-fluid">
 <div class="row">
-<div class="sandback col-12 ">
+<div class="maderaback col-12 ">
     <div class="row align-content-center justify-content-center">
         <div class=" col-4 noBorde ">
             <div >
@@ -30,7 +30,7 @@
                     leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
                     with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
                     publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
-                <a href="#" class="btn btn-dark text-center">Saber Más</a>
+                <p class="text-center"><a href="#" class="btn btn-dark">Saber Más</a></p>
             </div>
         </div>
     </div>

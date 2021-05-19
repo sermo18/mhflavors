@@ -4391,6 +4391,17 @@ input[type=button].btn-block {
     align-items: center;
 }
 
+.maderaback {
+    background-image: url("./imgs/sand.jpg");
+    background-repeat: repeat;
+    width: 100%;
+    height: 700px !important;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .imgporlacara {
     background-image: url("./imgs/fondo2.jpeg");
     background-repeat: no-repeat;
