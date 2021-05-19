@@ -36,7 +36,7 @@
             </div>
         </div>
         <div class="col-12">
-            <div class="row ">
+            
                 <div class="col-12 col-md-6 serviceback">
                     <div >
                         <h1 class="p-4">Servicios</h1>
@@ -71,7 +71,7 @@
                         <p class="text-center"><a href="#" class="btn btn-dark">Contacta con nosotros</a></p>
                     </div>
                 </div>
-            </div>
+            
         </div>
         <div class="col-12 sandback ">
             <div class="row ">
