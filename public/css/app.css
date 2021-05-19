@@ -4404,8 +4404,7 @@ input[type=button].btn-block {
 
 .serviceback {
     background-image: url("./imgs/servicios.jpg");
-    filter: grayscale(70%);
-    filter: brightness(0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -4418,8 +4417,7 @@ input[type=button].btn-block {
 
 .contactoback {
     background-image: url("./imgs/contacto.jpg");
-    filter: grayscale(70%);
-    filter: brightness(0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
