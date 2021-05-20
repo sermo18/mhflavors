@@ -4376,8 +4376,11 @@ input[type=button].btn-block {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 100%;
-    background-attachment: fixed
+    height: 700px !important;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sandback {
