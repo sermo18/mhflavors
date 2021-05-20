@@ -4,8 +4,6 @@
 
 <!-- A little description of our page -->
 <div class="container-fluid">
-<div class="img-header">
-
     <div class="row justify-content-end align-content-end" style="height: 60%; ">
         <div class="col-12 center text- ">
             <h1 class="text-light" style="font-size: 90px;">MHFlavors
@@ -13,7 +11,7 @@
         </div>
         <h4 class="text-light col-12 text-center">" Descubre, Saborea, Vive. "</h4>
     </div>
-</div>
+
     <div class="row">
         <div class="maderitaback col-12 ">
             <div class="row align-content-center justify-content-center">
