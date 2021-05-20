@@ -6,7 +6,7 @@
     <div class="row ">
 
         <div class="col-12  text-center registroback">
-            <form action="{{ route('auth.registrarUsuario') }}" class="p-4 col-6 m-4" style="background-color: white;  opacity: 0.9; border-radius:22px;" method="POST">
+            <form action="{{ route('auth.registrarUsuario') }}" class="p-4 col-6 m-4" style="background-color: white;  opacity: 0.85; border-radius:22px;" method="POST">
                 @csrf
                 @if (!empty($error))
                 <div class="text-danger">
