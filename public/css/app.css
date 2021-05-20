@@ -73,6 +73,11 @@ section {
     display: block;
 }
 
+footer{
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 body {
     margin: 0;
     font-family: "Nunito", sans-serif;
