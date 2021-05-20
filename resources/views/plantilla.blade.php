@@ -19,7 +19,7 @@
     <!--Grid row-->
     <div class="row">
       <!--Grid column-->
-      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0 text-center">
         <h5 class="text-uppercase">MHFLAVORS</h5>
 
         <p>
@@ -31,25 +31,25 @@
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
         <h5 class="text-uppercase">CATEGORÍAS DESTACADAS</h5>
 
         <ul class="list-unstyled mb-0">
           <li>
-            <a href="#!" >Top Sabores</a>
+            <a href="#!"class="text-dark" >Top Sabores</a>
           </li>
           <li>
-            <a href="#!" >Nuestras Mezclas</a>
+            <a href="#!"class="text-dark" >Nuestras Mezclas</a>
           </li>
           <li>
-            <a href="#!" >Tus Mezclas Favoritas</a>
+            <a href="#!"class="text-dark" >Tus Mezclas Favoritas</a>
           </li>
         </ul>
       </div>
       <!--Grid column-->
 
       <!--Grid column-->
-      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0 text-center">
         <h5 class="text-uppercase mb-0">SOBRE NOSOTROS</h5>
 
         <ul class="list-unstyled">
