@@ -12,7 +12,7 @@
 
         <div id="map-container " class=" map-container mb-4 col-6" >
             <!-- This page show us a map with the most popular lounges that we can go to smoke -->
-            <iframe class="mb-4 shadow p-3" src="https://www.google.com/maps/d/embed?mid=1LmlfBYmV4ljXxjqELdmLOBscH02e-GxV&hl=es" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+            <iframe class="mb-4 shadow p-3" src="https://www.google.com/maps/d/embed?mid=1LmlfBYmV4ljXxjqELdmLOBscH02e-GxV&hl=es" width="500px" height="500px" frameborder="0" style="border:0"></iframe>
         </div>
 
 
