@@ -2,13 +2,12 @@
 @section('titulo', 'Contacto')
 @section('contenido')
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
-
-<div class="container" height="100%">
-    <div class="row m-4">
-        <h1 class="text-dark">Contacto</h1>
 <!-- This is the contact page -->
-    </div>
-    <form>
+<div class="container" height="100%">
+
+<div class="row">
+        <div class="col-12 text-center img-header">
+        <form>
         <div class="form-group row">
             <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
@@ -40,6 +39,14 @@
             </div>
         </div>
     </form>
+
+
+        </div>
+    </div>
+    <div class="row m-4">
+        <h1 class="text-dark">Contacto</h1>
+
+    </div>
 
 
 </div>
