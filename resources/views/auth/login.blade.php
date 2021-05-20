@@ -3,17 +3,17 @@
 @section('contenido')
 <div class="container-fluid">
 
-    <div class="col-12 text-center  loginback">
-    <div class="row p-4">
-        <h1>Login</h1>
-    </div>
+    <div class="row text-center  loginback">
+
     @if (!empty($error))
     <div class="text-danger">
         {{ $error }}
     </div>
     @endif
-    <form action="{{ route('auth.login') }}" class="px-4" style="background-color: white;" method="POST">
+
+    <form action="{{ route('auth.login') }}" class="px-4 col-12" style="background-color: white;" method="POST">
         @csrf
+        <h1 class="text-dark p-3">Login</h1>
         <div class="form-group ">
             <label for="login">Login:</label>
             <input type="text" class="form-control shadow p-3" name="login" id="login" />
