@@ -11,7 +11,7 @@
     </div>
     @endif
 
-    <form action="{{ route('auth.login') }}" class="p-4 col-6" style="background-color: white;" method="POST">
+    <form action="{{ route('auth.login') }}" class="p-4 col-6" style="background-color: white;  opacity: 0.5;" method="POST">
         @csrf
         <h1 class="text-dark p-3">Login</h1>
         <div class="form-group ">
