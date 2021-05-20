@@ -7,9 +7,7 @@
 
         <div class="col-12  text-center mapaback">
 
-            <h1 class="text-light text-center">Principales Lounges</h1>
-
-
+            <h1 class="text-light text-center col-12">Principales Lounges</h1>
 
             <div id="map-container " class=" map-container mb-4 col-8">
                 <!-- This page show us a map with the most popular lounges that we can go to smoke -->
