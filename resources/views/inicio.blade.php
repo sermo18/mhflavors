@@ -6,7 +6,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 text-center img-header">
-            <div class="row justify-content-end align-content-end" style="height: 60%; ">
+            <div class="row" style="height: 60%; ">
                 <div class="col-12 text-center">
                     <h1 class="text-light" style="font-size: 90px;">MHFlavors
                     </h1>
