@@ -8,11 +8,11 @@
         <div class="col-12 text-center img-header">
             <div class="row" >
 
-                <div class="col-12 .d-none .d-sm-block">
+                <div class="col-12 d-none d-sm-block">
                 <h1 class="text-light" style="font-size: 90px;">MHFlavors
                     </h1>
                 </div>
-                <div class="col-12 .d-block .d-sm-none">
+                <div class="col-12 d-block d-sm-none">
                 <h1 class="text-light ">MHFlavors
                     </h1>
                 </div>
