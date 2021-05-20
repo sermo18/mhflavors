@@ -7,9 +7,9 @@
 
 <div class="row">
         <div class="col-12 text-center contactoback">
-        <form>
-        <h1 class="text-white">Contacto</h1>
-        <div class="form-group row" style="background-color: white;">
+        <form style="background-color: white;">
+        <h1 class="text-white p-3">Contacto</h1>
+        <div class="form-group row" >
             <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
                 <input type="email" class="form-control shadow p-3" id="inputEmail3" placeholder="tuemail@example.com">
