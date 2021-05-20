@@ -8,12 +8,15 @@
         <div class="col-12 text-center img-header">
             <div class="row" >
                 <div class="col-12 text-center">
-
-                <h1 class="text-light .d-none .d-sm-block" style="font-size: 90px;">MHFlavors
+                <div class=".d-none .d-sm-block">
+                <h1 class="text-light" style="font-size: 90px;">MHFlavors
                     </h1>
-
-                <h1 class="text-light .d-block .d-sm-none">MHFlavors
+                </div>
+                <div class=".d-block .d-sm-none">
+                <h1 class="text-light ">MHFlavors
                     </h1>
+                </div>
+
 
                 <h4 class="text-light col-12 text-center">" Descubre, Saborea, Vive. "</h4>
                 </div>
