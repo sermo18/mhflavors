@@ -14,12 +14,12 @@
 
     <script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
 
-    <footer class="text-light text-lg-start bg-dark">
+    <footer class="text-light text-lg-start " style="background-color: rgb(10, 10, 10);">
 
         <!-- Copyright -->
         <div class="text-center p-3">
             © 2020 Copyright:
-            <a  href="#">Sergio Moreno Garcia</a>
+            <a class="text-light" href="#">Sergio Moreno Garcia</a>
         </div>
         <!-- Copyright -->
     </footer>
