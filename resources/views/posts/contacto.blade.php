@@ -6,7 +6,7 @@
 <div class="container-fluid" height="100%">
 
 <div class="row">
-        <div class="col-12 text-center contactoback">
+        <div class="col-12 text-center contactoback2">
         <form class="px-4" style="background-color: white;">
         <h1 class="text-dark p-3">Contacto</h1>
         <div class="form-group row p-3" >
