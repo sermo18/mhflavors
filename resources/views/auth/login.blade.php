@@ -5,14 +5,15 @@
 
     <div class="row text-center  loginback" >
 
-    @if (!empty($error))
+
+
+    <form action="{{ route('auth.login') }}" class="p-4 col-6" style="background-color: white;  opacity: 0.8; border-radius:22px;" method="POST">
+        @csrf
+        @if (!empty($error))
     <div class="text-danger">
         {{ $error }}
     </div>
     @endif
-
-    <form action="{{ route('auth.login') }}" class="p-4 col-6" style="background-color: white;  opacity: 0.8; border-radius:22px;" method="POST">
-        @csrf
         <h1 class="text-dark p-3">Login</h1>
         <div class="form-group ">
             <label for="login">Login:</label>
