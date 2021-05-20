@@ -6,9 +6,13 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-12 text-center img-header">
-            <div class="row" style="height: 60%; ">
+            <div class="row" >
                 <div class="col-12 text-center">
-                    <h1 class="text-light" style="font-size: 90px;">MHFlavors
+
+                <h1 class="text-light .d-none .d-sm-block" style="font-size: 90px;">MHFlavors
+                    </h1>
+
+                <h1 class="text-light .d-block .d-sm-none">MHFlavors
                     </h1>
 
                 <h4 class="text-light col-12 text-center">" Descubre, Saborea, Vive. "</h4>
