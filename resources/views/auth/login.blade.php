@@ -1,9 +1,9 @@
 @extends('plantilla')
 @section('titulo', 'Login')
 @section('contenido')
-<div class="container-fluid">
+<div class="container-fluid  loginback">
 
-    <div class="row text-center  loginback ">
+    <div class="row text-center  ">
 
 
 
