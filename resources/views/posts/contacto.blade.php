@@ -44,11 +44,6 @@
 
         </div>
     </div>
-    <div class="row m-4">
-        <h1 class="text-dark">Contacto</h1>
-
-    </div>
-
 
 </div>
 </div>
