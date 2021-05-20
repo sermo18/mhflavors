@@ -3,7 +3,7 @@
 @section('contenido')
 <div class="container-fluid">
 
-    <div class="row text-center  loginback">
+    <div class="row text-center  registroback">
 
 
         <form action="{{ route('auth.registrarUsuario') }}" class="p-4 col-6 m-4" style="background-color: white;  opacity: 0.8; border-radius:22px;" method="POST">

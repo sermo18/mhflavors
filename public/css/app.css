@@ -4445,12 +4445,24 @@ input[type=button].btn-block {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
 
+}
+
+.registroback{
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/loginback.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mapaback {
