@@ -3,11 +3,11 @@
 @section('contenido')
 <div class="container-fluid">
 
-    <div class="row text-center  loginback m-4">
+    <div class="row text-center  loginback ">
 
 
 
-        <form action="{{ route('auth.login') }}" class="p-4 col-6" style="background-color: white;  opacity: 0.8; border-radius:22px;" method="POST">
+        <form action="{{ route('auth.login') }}" class="p-4 col-6 m-4" style="background-color: white;  opacity: 0.8; border-radius:22px;" method="POST">
             @csrf
             @if (!empty($error))
             <div class="text-danger">
