@@ -15,7 +15,7 @@
 
 <footer class=" mt-3 text-dark text-lg-start" style="background-color: rgba(243, 243, 243, 0.932);">
   <!-- Grid container -->
-  <div class="container p-4">
+  <div class="container-fluid p-4">
     <!--Grid row-->
     <div class="row">
       <!--Grid column-->
