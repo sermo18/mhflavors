@@ -1,18 +1,19 @@
 @extends('plantilla')
 @section('titulo', 'inicio')
 @section('contenido')
+
+<!-- A little description of our page -->
+<div class="container-fluid">
 <div class="img-header">
 
-    <div class="row justify-content-end align-content-end" style="width: 100%; height: 60%; ">
-        <div class="col-12  text-center ">
+    <div class="row justify-content-end align-content-end" style="height: 60%; ">
+        <div class="col-12 center text- ">
             <h1 class="text-light" style="font-size: 90px;">MHFlavors
             </h1>
         </div>
         <h4 class="text-light col-12 text-center">" Descubre, Saborea, Vive. "</h4>
     </div>
 </div>
-<!-- A little description of our page -->
-<div class="container-fluid">
     <div class="row">
         <div class="maderitaback col-12 ">
             <div class="row align-content-center justify-content-center">
