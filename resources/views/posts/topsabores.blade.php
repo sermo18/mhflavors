@@ -96,7 +96,7 @@
             </div>
             @endif
             @else
-            <td><a class="nav-link">
+            <td><a class="nav-link" title="Texto flotante">
                     <input type="submit" class="btn btn-secondary " data-toggle="modal" data-target="#modalRegistro"
                         value="Valorar Sabor" /></a></td>
 
