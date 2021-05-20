@@ -14,7 +14,7 @@
 
     <script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
 
-    <footer class=" mt-3 text-dark text-lg-start" style="background-color: rgba(243, 243, 243, 0.932);">
+    <footer class=" mt-3 text-light text-lg-start bg-dark">
 
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(243, 243, 243, 0.932);">
