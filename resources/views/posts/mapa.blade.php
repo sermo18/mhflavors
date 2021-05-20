@@ -4,18 +4,18 @@
 
 <div class="container-fluid ">
 
-    <div class="row">
-        <div class="col-12 text-center mapaback">
 
-                <h1 class="text-light text-center col-12">Principales Lounges</h1>
+    <div class="row text-center mapaback">
+
+        <h1 class="text-light text-center col-12">Principales Lounges</h1>
 
 
-                <div id="map-container " class=" map-container mb-4 col-12" style="height: 100%">
-                    <!-- This page show us a map with the most popular lounges that we can go to smoke -->
-                    <iframe class="mb-4 shadow p-3" src="https://www.google.com/maps/d/embed?mid=1LmlfBYmV4ljXxjqELdmLOBscH02e-GxV&hl=es" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
-                </div>
-
+        <div id="map-container " class=" map-container mb-4 col-12" style="height: 100%">
+            <!-- This page show us a map with the most popular lounges that we can go to smoke -->
+            <iframe class="mb-4 shadow p-3" src="https://www.google.com/maps/d/embed?mid=1LmlfBYmV4ljXxjqELdmLOBscH02e-GxV&hl=es" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
         </div>
+
+
     </div>
 </div>
 @endsection
