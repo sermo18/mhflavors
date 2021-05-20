@@ -4450,6 +4450,7 @@ input[type=button].btn-block {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius:22px;
 }
 
 .mapaback {
