@@ -6,17 +6,10 @@ function cargar() {
 
     buscar = document.getElementsByClassName("buscador");
 
-    buscar.addEventListener("keyup", event => {
-        if (event.isComposing || event.keyCode === 229) {
-            return;
-        }
+    buscar.addEventListener("keyup", filtrar());
 
+    function filtrar(event) {
         console.log(event);
-        // do something
-    });
-
-    function filtrar() {
-
     }
     //Get the cards of the view and her brand, depending on the brand of this flavor we put a image of the brand on the background 
     cards = document.getElementsByClassName("ponerImagenes");
