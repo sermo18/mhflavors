@@ -84,12 +84,11 @@
         </div>
         <div class="col-12 sandback ">
             <div class="row ">
+                
+                    
                 <div class="col-12">
-                    <h1 class="text-white text-center mb-4">Comunidad</h1>
-                </div>
-                <div class="col-12">
+                <h1 class="text-white text-center mb-4">Comunidad</h1>
                     <div class="row">
-                    <div class="col-12">
                         <div class="card col-6 col-md-3 noBorde" style="border: none; border-radius: 0; background-color: transparent;">
                             <div class="card-body text-center noBorde ">
                                 <div class="card-title  noBorde ">
@@ -142,8 +141,6 @@
 
                             </div>
                         </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
