@@ -6,7 +6,7 @@
     <div class="row imagenMezclaAleatoria ">
 
 
-        <h1 class="col-12 text-light">¿Qué Fumo Hoy?</h1>
+        <h1 class="col-12 text-light text-center">¿Qué Fumo Hoy?</h1>
 
 
 
