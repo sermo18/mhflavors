@@ -9,7 +9,7 @@ function cargar() {
     buscar[0].addEventListener("keyup", filtrar);
 
     function filtrar(event) {
-        console.log(event);
+        console.log(event.key);
     }
     //Get the cards of the view and her brand, depending on the brand of this flavor we put a image of the brand on the background 
     cards = document.getElementsByClassName("ponerImagenes");
