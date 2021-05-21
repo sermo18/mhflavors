@@ -7,7 +7,7 @@
     <div class="row m-4">
         <h1 class="text-dark">Todos los Sabores</h1>
     </div>
-    <input class="form-control" id="myInput" type="text" placeholder="Search..">
+    <input class="form-control buscador" id="myInput" type="text" placeholder="Search..">
     <br>
 <!-- This page shows all the flavors -->
     <div class="row">
