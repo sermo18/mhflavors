@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('titulo', 'Tus Mezclas Favoritas ♡')
 @section('contenido')
-<div class="container-fluid" height="100%">
+<div class="container-fluid" style="height: 100vh;">
 @if($errors->any())
 
 <div class="alert alert-warning alert-dismissible fade show" role="alert">
