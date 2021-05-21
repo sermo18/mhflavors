@@ -6,7 +6,7 @@ function cargar() {
 
     buscar = document.getElementsByClassName("buscador");
 
-    buscar.addEventListener("keyup", filtrar());
+    buscar.addEventListener("keyup", filtrar);
 
     function filtrar(event) {
         console.log(event);
