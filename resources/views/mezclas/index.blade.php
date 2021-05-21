@@ -4,9 +4,9 @@
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
 
 <div class="container-fluid ">
-    
+    <div class="row maderitaBack ">
 
-        <div class="table-responsive row maderitaback ">
+        <div class="table-responsive col-12">
             <!-- This page shows all mixings that the users had created -->
             <table class="table table-striped">
                 <div class="row m-4 text-center align-content-center justify-content-center">
