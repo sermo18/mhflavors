@@ -3,7 +3,7 @@
 @section('contenido')
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
 
-<div class="container-fluid">
+<div class="container-fluid" height=100%>
 <div class="table-responsive">
 <!-- This page shows all mixings that the users had created -->
     <table class="table table-striped">
