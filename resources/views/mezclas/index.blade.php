@@ -3,11 +3,12 @@
 @section('contenido')
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
 
-<div class="container-fluid">
+<div class="container-fluid maderitaBack">
+
 <div class="table-responsive">
 <!-- This page shows all mixings that the users had created -->
     <table class="table table-striped">
-        <div class="row m-4 text-center">
+        <div class="row m-4 text-center align-content-center justify-content-center">
             <h1 class="text-center">Listado de Mezclas</h1>
         </div>
         <tr>
