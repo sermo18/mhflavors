@@ -15,9 +15,11 @@ function cargar() {
     palabra = "";
 
     function filtrar(event) {
-        palabra = palabra + "" + event.key;
+
         if (event.key === "Backspace") {
             palabra = palabra.substring(0, palabra.length -2);
+        }else{
+            palabra = palabra + "" + event.key;
         }
         console.log(palabra);
     }
