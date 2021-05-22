@@ -24,7 +24,7 @@ function cargar() {
 
                 console.log("Esta");
             }else{
-                cards[index].classList.add("ocultar");
+                cards[index].parentNode.classList.add("ocultar");
             }
 
 
