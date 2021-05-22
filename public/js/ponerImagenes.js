@@ -20,7 +20,7 @@ function cargar() {
 
         for (let index = 0; index < cards.length; index++) {
 
-            if  (buscar[0].value == cards[index].children[0].children[0].innerText) {
+            if  (cards[index].children[0].children[0].innerText.indexOf(buscar[0].value) == 0) {
 
                 cards[index].parentNode.classList.remove("ocultar");
             }else{
