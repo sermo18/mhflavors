@@ -4,15 +4,20 @@ window.onload = cargar;
 
 function cargar() {
 
+    //Get the cards of the view and her brand, depending on the brand of this flavor we put a image of the brand on the background
+    cards = document.getElementsByClassName("ponerImagenes");
+
+
     buscar = document.getElementsByClassName("buscador");
 
     buscar[0].addEventListener("keyup", filtrar);
 
+    palabra = "";
     function filtrar(event) {
-        console.log(event.key);
+        palabra += event.key;
+        console.log(palabra);
     }
-    //Get the cards of the view and her brand, depending on the brand of this flavor we put a image of the brand on the background 
-    cards = document.getElementsByClassName("ponerImagenes");
+
     for (let index = 0; index < cards.length; index++) {
         //Leer la marca del tabaco
 
