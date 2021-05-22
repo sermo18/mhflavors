@@ -4483,6 +4483,14 @@ input[type=button].btn-block {
 
 .ocultar{
     display: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 0; /* sólo en caso de elementos inline-block */
+    overflow: hidden;
+
 }
 
 .misionback {
