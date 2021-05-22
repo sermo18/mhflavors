@@ -14,19 +14,25 @@ function cargar() {
 
     palabra = "";
 
-    function filtrar(event) {
+    function filtrar() {
 
         console.log(buscar[0].value)
-        // if (event.key === "Backspace") {
-        //     palabra = palabra.substring(0, palabra.length -1);
-        // }else{
-        //     if (event.which <= 90 && event.which >= 48){
-        //         palabra = palabra + "" + event.key;
 
-        //     }
+        for (let index = 0; index < cards.length; index++) {
 
-        // }
-        // console.log(palabra);
+            if  (buscar[0].value == cards[index].children[0].children[0].innerText) {
+
+                console.log("Esta");
+            }else{
+                cards[index].classList.add("ocultar");
+            }
+
+
+        }
+
+
+
+
     }
 
     for (let index = 0; index < cards.length; index++) {

@@ -4481,6 +4481,10 @@ input[type=button].btn-block {
     align-items: center;
 }
 
+.ocultar{
+    display: none;
+}
+
 .misionback {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/mision.jpg");
     background-size: cover;
