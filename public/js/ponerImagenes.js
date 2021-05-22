@@ -19,8 +19,8 @@ function cargar() {
         console.log(buscar[0].value)
 
         for (let index = 0; index < cards.length; index++) {
-
-            if  (cards[index].children[0].children[0].innerText.indexOf(buscar[0].value) == 0) {
+            cards[index].children[0].children[0].innerText.toUpperCase();
+            if  (cards[index].children[0].children[0].innerText.indexOf(buscar[0].value.toUpperCase()) == 0) {
 
                 cards[index].parentNode.classList.remove("ocultar");
             }else{
