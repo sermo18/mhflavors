@@ -14,7 +14,7 @@ function cargar() {
 
     palabra = "";
     function filtrar(event) {
-        palabra += event.key;
+        palabra = palabra + "" + event.key;
         console.log(palabra);
     }
 
