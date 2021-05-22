@@ -16,7 +16,7 @@ function cargar() {
 
     function filtrar(event) {
 
-        console.log(buscar.innerText)
+        console.log(buscar[0].value)
         // if (event.key === "Backspace") {
         //     palabra = palabra.substring(0, palabra.length -1);
         // }else{
