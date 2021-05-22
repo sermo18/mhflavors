@@ -16,12 +16,17 @@ function cargar() {
 
     function filtrar(event) {
 
-        if (event.key === "Backspace") {
-            palabra = palabra.substring(0, palabra.length -1);
-        }else{
-            palabra = palabra + "" + event.key;
-        }
-        console.log(palabra);
+        console.log(buscar.value)
+        // if (event.key === "Backspace") {
+        //     palabra = palabra.substring(0, palabra.length -1);
+        // }else{
+        //     if (event.which <= 90 && event.which >= 48){
+        //         palabra = palabra + "" + event.key;
+
+        //     }
+
+        // }
+        // console.log(palabra);
     }
 
     for (let index = 0; index < cards.length; index++) {
