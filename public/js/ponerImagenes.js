@@ -15,6 +15,9 @@ function cargar() {
     palabra = "";
     function filtrar(event) {
         palabra = palabra + "" + event.key;
+        if (event.key === "Backspace") {
+            console.log("Borrar")
+        }
         console.log(palabra);
     }
 
