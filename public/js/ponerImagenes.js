@@ -22,7 +22,7 @@ function cargar() {
 
             if  (buscar[0].value == cards[index].children[0].children[0].innerText) {
 
-                console.log("Esta");
+                cards[index].parentNode.classList.remove("ocultar");
             }else{
                 cards[index].parentNode.classList.add("ocultar");
             }
