@@ -9,7 +9,7 @@
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row " style="height: 40vh;">
+        <div class="row " style="height: 60vh;">
             @for ($i = 1; $i < 4; $i++) <div class="col-12 col-md-4 mb-3 " >
 
                 <div class="card text-center shadow p-3 saborBack{{$i}} ">
