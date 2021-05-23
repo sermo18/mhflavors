@@ -24,7 +24,6 @@
                                 {{ $sabor->nombre }} de {{ $sabor->marca}}
                             </option>
                             @endforeach
-                        </select>
                     </datalist>
                         <p class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</p>
                         <div class="form-group py-4">
