@@ -2,14 +2,14 @@
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
 <div class="container-fluid">
-    <div class="row m-4" >
+    <div class="row m-4">
         <h1>Crea tu nueva Mezcla</h1>
     </div>
     <form action="{{ route('mezclas.store') }}" method="GET">
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row" >
+        <div class="row">
             @for ($i = 1; $i < 4; $i++) <div class="col-4 mb-3" style="height: 80vh;">
 
                 <div class="card text-center shadow p-3 saborBack{{$i}}">
@@ -17,14 +17,18 @@
 
 
                     <div class="card-body text-light py-4">
-                    <input class="form-control buscador1 py-4" id="myInput1" type="text" placeholder="Search..">
-                        <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
+
+                        <input list="brow" class="form-control buscador1 py-4" id="myInput1" type="text" placeholder="Search..">
+                        <datalist id="brow" class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
+
+
+
                             @foreach ($sabores as $sabor)
                             <option value="{{ $sabor->id }}">
                                 {{ $sabor->nombre }} de {{ $sabor->marca}}
                             </option>
                             @endforeach
-                        </select>
+                        </datalist>
 
                         <p class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</p>
                         <div class="form-group py-4">
@@ -39,7 +43,7 @@
 
                 @elseif($i == 2)
                 <div class="card-body text-light py-4">
-                <input class="form-control buscador2 py-4" id="myInput2" type="text" placeholder="Search..">
+                    <input class="form-control buscador2 py-4" id="myInput2" type="text" placeholder="Search..">
                     <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
                         @foreach ($sabores as $sabor)
                         <option value="{{ $sabor->id }}">
@@ -60,7 +64,7 @@
 
 
         <div class="card-body text-light py-4">
-        <input class="form-control buscador3 py-4" id="myInput3" type="text" placeholder="Search..">
+            <input class="form-control buscador3 py-4" id="myInput3" type="text" placeholder="Search..">
             <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
                 @foreach ($sabores as $sabor)
                 <option value="{{ $sabor->id }}">
