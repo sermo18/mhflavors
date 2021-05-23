@@ -17,7 +17,7 @@
 
 
                     <div class="card-body text-light py-4">
-                    <input class="form-control buscador{{$i}} py-4" id="myInput{{$i}}" type="text" placeholder="Search..">
+                    <input class="form-control buscador1 py-4" id="myInput1" type="text" placeholder="Search..">
                         <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
                             @foreach ($sabores as $sabor)
                             <option value="{{ $sabor->id }}">
@@ -39,6 +39,7 @@
 
                 @elseif($i == 2)
                 <div class="card-body text-light py-4">
+                <input class="form-control buscador2 py-4" id="myInput2" type="text" placeholder="Search..">
                     <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
                         @foreach ($sabores as $sabor)
                         <option value="{{ $sabor->id }}">
@@ -59,6 +60,7 @@
 
 
         <div class="card-body text-light py-4">
+        <input class="form-control buscador3 py-4" id="myInput3" type="text" placeholder="Search..">
             <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
                 @foreach ($sabores as $sabor)
                 <option value="{{ $sabor->id }}">
