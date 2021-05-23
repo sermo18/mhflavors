@@ -8,11 +8,14 @@ function cargar() {
     cards = document.getElementsByClassName("ponerImagenes");
 
 
-    buscar = document.getElementsByClassName("buscador");
+    if (document.getElementsByClassName("buscador")) {
+        buscar = document.getElementsByClassName("buscador");
 
-    buscar[0].addEventListener("keyup", filtrar);
+        buscar[0].addEventListener("keyup", filtrar);
 
-    palabra = "";
+        palabra = "";
+    }
+
 
     function filtrar() {
 
