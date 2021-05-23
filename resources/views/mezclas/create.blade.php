@@ -1,8 +1,8 @@
 @extends('plantilla')
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
-<div class="container">
-<div class="row m-4"> 
+<div class="container-fluid">
+<div class="row m-4">
         <h1>Crea tu nueva Mezcla</h1>
     </div>
 <form action="{{ route('mezclas.store') }}" method="GET">
@@ -11,10 +11,10 @@
 <!-- This page its for create a new mixing  -->
 <div class="row">
 @for ($i = 1; $i < 4; $i++)
-   
 
-         <div class="col-4 mb-3">
-        
+
+         <div class="col-4 mb-3" style="height: 100vh;">
+
             <div class="card text-center shadow p-3">
             @if($i == 1)
                 <img class="card-img-top"  style="filter:brightness(40%);" src="https://cachimbasbaratas.pro/wp-content/uploads/2018/12/tabaco-para-cachimba.jpg" alt="Card image cap">
@@ -28,7 +28,7 @@
                 </option>
                 @endforeach
                 </select>
-                
+
                 <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
                 <div class="form-group">
                 <label>Porcentaje del primer sabor:</label>
@@ -51,7 +51,7 @@
                 </option>
                 @endforeach
                 </select>
-                
+
                 <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
                 <div class="form-group">
                 <label>Porcentaje del primer sabor:</label>
@@ -74,7 +74,7 @@
                 </option>
                 @endforeach
                 </select>
-                
+
                 <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
                 <div class="form-group">
                 <label>Porcentaje del primer sabor:</label>
@@ -94,7 +94,7 @@
     <input type="hidden" class="form-control" name="usuario"
     id="usuario" value="{{$userid}}">
     </div>
-   
+
 
 @if(auth()->check())
 <input type="submit" name="enviar" value="Enviar" class="btn btn-dark btn-block">
