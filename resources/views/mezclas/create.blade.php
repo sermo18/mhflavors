@@ -12,7 +12,7 @@
         <div class="row">
             @for ($i = 1; $i < 4; $i++) <div class="col-4 mb-3" style="height: 100vh;">
 
-                <div class="card text-center shadow p-3">
+                <div class="card text-center shadow p-3 saborBack{{$i}}">
                     @if($i == 1)
 
 
