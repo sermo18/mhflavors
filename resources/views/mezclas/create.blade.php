@@ -16,8 +16,8 @@
                     @if($i == 1)
 
 
-                    <div class="card-body text-light">
-                        <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+                    <div class="card-body text-light py-4">
+                        <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
                             @foreach ($sabores as $sabor)
                             <option value="{{ $sabor->id }}">
                                 {{ $sabor->nombre }} de {{ $sabor->marca}}
@@ -25,8 +25,8 @@
                             @endforeach
                         </select>
 
-                        <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
-                        <div class="form-group">
+                        <p class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+                        <div class="form-group py-4">
                             <label>Porcentaje del primer sabor:</label>
                             <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
                         </div>
@@ -37,8 +37,8 @@
                 </div>
 
                 @elseif($i == 2)
-                <div class="card-body text-light ">
-                    <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+                <div class="card-body text-light py-4">
+                    <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
                         @foreach ($sabores as $sabor)
                         <option value="{{ $sabor->id }}">
                             {{ $sabor->nombre }} de {{ $sabor->marca}}
@@ -46,8 +46,8 @@
                         @endforeach
                     </select>
 
-                    <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
-                    <div class="form-group">
+                    <p class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+                    <div class="form-group py-4">
                         <label>Porcentaje del primer sabor:</label>
                         <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
                     </div>
@@ -57,8 +57,8 @@
         @elseif($i == 3)
 
 
-        <div class="card-body text-light">
-            <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+        <div class="card-body text-light py-4">
+            <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
                 @foreach ($sabores as $sabor)
                 <option value="{{ $sabor->id }}">
                     {{ $sabor->nombre }} de {{ $sabor->marca}}
@@ -66,8 +66,8 @@
                 @endforeach
             </select>
 
-            <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
-            <div class="form-group">
+            <p class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+            <div class="form-group py-4">
                 <label>Porcentaje del primer sabor:</label>
                 <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
             </div>
