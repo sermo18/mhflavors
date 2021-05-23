@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
-<div class="container-fluid">
+<div class="container-fluid"  style="height: 80vh;">
     <div class="row m-4">
         <h1>Crea tu nueva Mezcla</h1>
     </div>
@@ -9,7 +9,7 @@
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row align-content-center justify-content-center" style="height: 80vh;">
+        <div class="row align-content-center justify-content-center">
             @for ($i = 1; $i < 4; $i++) <div class="col-12 col-md-4 mb-3 " >
 
                 <div class="card text-center shadow p-3 saborBack{{$i}}">
