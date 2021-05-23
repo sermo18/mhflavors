@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
-<div class="container-fluid align-content-center justify-content-center"  style="height: 80vh;">
+<div class="container-fluid align-items-center justify-content-center"  style="height: 80vh;">
     <div class="row m-4">
         <h1>Crea tu nueva Mezcla</h1>
     </div>
