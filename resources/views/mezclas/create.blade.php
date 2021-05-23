@@ -17,8 +17,8 @@
 
 
                     <div class="card-body text-light py-4">
-                    <input class="form-control  buscador1 " list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-                    <datalist class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="datalistOptions">
+                    <input class="form-control  buscador1 " list="datalistOptions" name="sabor{{$i}}" id="exampleDataList" placeholder="Type to search...">
+                    <datalist id="datalistOptions">
                             @foreach ($sabores as $sabor)
                             <option value="{{ $sabor->id }}">
                                 {{ $sabor->nombre }} de {{ $sabor->marca}}
