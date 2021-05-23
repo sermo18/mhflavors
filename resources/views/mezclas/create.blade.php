@@ -11,7 +11,7 @@
         <!-- This page its for create a new mixing  -->
         <div class="row" >
             @for ($i = 1; $i < 4; $i++) <div class="col-4 mb-3" style="height: 80vh;">
-
+            <input class="form-control buscador{{$i}}" id="myInput{{$i}}" type="text" placeholder="Search..">
                 <div class="card text-center shadow p-3 saborBack{{$i}}">
                     @if($i == 1)
 
