@@ -17,15 +17,15 @@
 
 
                     <div class="card-body text-light py-4">
-                    <input class="form-control buscador1 py-4" id="myInput1" type="text" placeholder="Search..">
-                        <select class="form-control form-control-lg card-title py-4 mdb-select md-form  " name="sabor{{$i}}" id="sabor{{$i}}" searchable="Search here..">
+                    <input class="form-control  buscador1 " list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                    <datalist class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="datalistOptions">
                             @foreach ($sabores as $sabor)
                             <option value="{{ $sabor->id }}">
                                 {{ $sabor->nombre }} de {{ $sabor->marca}}
                             </option>
                             @endforeach
                         </select>
-
+                    </datalist>
                         <p class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</p>
                         <div class="form-group py-4">
                             <label>Porcentaje del primer sabor:</label>
