@@ -33,7 +33,7 @@ class MezclaController extends Controller
 
         return view('mezclas.index', compact('mezclas','sabores','usuarios','userid'));
     }
-    // This function show the favourite mixings of the user 
+    // This function show the favourite mixings of the user
     public function misMezclas()
     {
         $mezclas = Mezcla::orderBy("id")->paginate(20);
@@ -44,7 +44,7 @@ class MezclaController extends Controller
     }
 
 
-    // This function return the view aleatoria with a random number to show a random mixing 
+    // This function return the view aleatoria with a random number to show a random mixing
     public function mezclaAleatoria($numeroAleatorio)
     {
         $mezclas = Mezcla::get();
