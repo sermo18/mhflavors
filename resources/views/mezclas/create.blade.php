@@ -34,49 +34,50 @@
 
                     </div>
 
-
-
-                    <div class="card-body text-light ">
-                        <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
-                            @foreach ($sabores as $sabor)
-                            <option value="{{ $sabor->id }}">
-                                {{ $sabor->nombre }} de {{ $sabor->marca}}
-                            </option>
-                            @endforeach
-                        </select>
-
-                        <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
-                        <div class="form-group">
-                            <label>Porcentaje del primer sabor:</label>
-                            <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
-                        </div>
-
-                    </div>
                 </div>
-                    @elseif($i == 3)
 
+                @elseif($i == 2)
+                <div class="card-body text-light ">
+                    <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+                        @foreach ($sabores as $sabor)
+                        <option value="{{ $sabor->id }}">
+                            {{ $sabor->nombre }} de {{ $sabor->marca}}
+                        </option>
+                        @endforeach
+                    </select>
 
-                    <div class="card-body text-light">
-                        <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
-                            @foreach ($sabores as $sabor)
-                            <option value="{{ $sabor->id }}">
-                                {{ $sabor->nombre }} de {{ $sabor->marca}}
-                            </option>
-                            @endforeach
-                        </select>
-
-                        <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
-                        <div class="form-group">
-                            <label>Porcentaje del primer sabor:</label>
-                            <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
-                        </div>
-
-
+                    <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+                    <div class="form-group">
+                        <label>Porcentaje del primer sabor:</label>
+                        <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
                     </div>
+
                 </div>
-                @endif
         </div>
-        @endfor
+        @elseif($i == 3)
+
+
+        <div class="card-body text-light">
+            <select class="form-control form-control-lg card-title" name="sabor{{$i}}" id="sabor{{$i}}">
+                @foreach ($sabores as $sabor)
+                <option value="{{ $sabor->id }}">
+                    {{ $sabor->nombre }} de {{ $sabor->marca}}
+                </option>
+                @endforeach
+            </select>
+
+            <p class="card-text">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+            <div class="form-group">
+                <label>Porcentaje del primer sabor:</label>
+                <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
+            </div>
+
+
+        </div>
+</div>
+@endif
+</div>
+@endfor
 </div>
 
 <div class="form-group">
