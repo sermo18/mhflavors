@@ -17,7 +17,7 @@
 
 
                     <div class="card-body text-light py-4">
-                    <input class="form-control buscador{{$i}}" id="myInput{{$i}}" type="text" placeholder="Search..">
+                    <input class="form-control buscador{{$i}} py-4" id="myInput{{$i}}" type="text" placeholder="Search..">
                         <select class="form-control form-control-lg card-title py-4" name="sabor{{$i}}" id="sabor{{$i}}">
                             @foreach ($sabores as $sabor)
                             <option value="{{ $sabor->id }}">
