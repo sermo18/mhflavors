@@ -4,9 +4,9 @@ window.onload = cargar;
 
 function cargar() {
 
-    $(document).ready(function() {
-        $('.mdb-select').materialSelect();
-        });
+
+        document.getElementsByClassName('.mdb-select')[0].materialSelect();
+
 
     //Get the cards of the view and her brand, depending on the brand of this flavor we put a image of the brand on the background
     cards = document.getElementsByClassName("ponerImagenes");
