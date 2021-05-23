@@ -25,9 +25,9 @@
                             </option>
                             @endforeach
                         </datalist>
-                        <p class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+                        <h2 class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</h2>
                         <div class="form-group py-4">
-                            <label>Porcentaje del primer sabor:</label>
+                            <label><h2>Porcentaje del primer sabor:</h2></label>
                             <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
                         </div>
 
@@ -47,9 +47,9 @@
                         @endforeach
                     </datalist>
 
-                    <p class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+                    <h2 class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</h2>
                     <div class="form-group py-4">
-                        <label>Porcentaje del primer sabor:</label>
+                        <label><h2>Porcentaje del primer sabor:</h2></label>
                         <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
                     </div>
 
@@ -68,9 +68,9 @@
                 @endforeach
             </datalist>
 
-            <p class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+            <h2 class="card-text py-4">Elige el sabor e indica la cantidad que quieres ponerle.</h2>
             <div class="form-group py-4">
-                <label>Porcentaje del primer sabor:</label>
+                <label><h2>Porcentaje del primer sabor:</h2></label>
                 <input type="number" class="form-control text-center mt-3" name="porcentaje{{$i}}" id="porcentaje{{$i}}" value="" min="0" max="100" step="10">
             </div>
 
