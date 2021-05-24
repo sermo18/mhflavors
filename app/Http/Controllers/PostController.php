@@ -115,6 +115,7 @@ class PostController extends Controller
         $posts = Post::get();
         $usuarios = Usuario::get();
         $userid = Auth::id();
+        
         return view('posts.show',compact('sabor','saboresmarca','posts','userid'));
     
     }
