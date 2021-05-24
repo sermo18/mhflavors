@@ -115,7 +115,7 @@ class PostController extends Controller
         $posts = Post::get();
         $usuarios = Usuario::get();
         $userid = Auth::id();
-        
+        $saboresmarca = Sabor::orderBy("id")->where('marca', $sabor->marca)->paginate(4);
         return view('posts.show',compact('sabor','saboresmarca','posts','userid'));
     
     }
