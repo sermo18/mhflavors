@@ -84,16 +84,16 @@
                 <label for="exampleFormControlTextarea1">Comentarios:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3"></textarea>
             </div>
-            <div class="row">
-                
-                    <input type="submit" class="btn btn-secondary" value="Enviar" />
-            </div>
+            
             <div class="form-group">
                 <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
             </div>
             <div class="form-group">
                 <input type="hidden" class="form-control" name="idsabor" id="idsabor" value="{{$sabor->id}}">
             </div>
+           
+            <input type="submit" class="btn btn-secondary" value="Enviar" />
+            
         </form>
     </div>
 </div>
