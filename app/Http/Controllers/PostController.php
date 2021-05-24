@@ -106,11 +106,12 @@ class PostController extends Controller
     public function store(Request $request)
     {
         $post = new Post();
-        $post->titulo = "";
+        $post->titulo = "P";
         $post->contenido = $request->get('contenido');
         $post->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
-        $post->sabor_id =  $request->get('idsabor');
+        $post->sabor_id = $request->get('idsabor');
         $post->save();
+
         $sabor= Sabor::find($request->get('idsabor'));
         $posts = Post::get();
         $usuarios = Usuario::get();

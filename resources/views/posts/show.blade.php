@@ -78,14 +78,14 @@
 </div>
 <div class="row mt-3">
     <div class="col-12">
-        <form action="" method="GET">
+        <form action="{{ route('posts.store') }}" method="GET">
             @csrf
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comentarios:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3"></textarea>
             </div>
             <div class="row">
-                <a class="nav-link" href="{{ route('posts.store') }}">
+                <a class="nav-link" href="#">
                     <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
             </div>
             <div class="form-group">
