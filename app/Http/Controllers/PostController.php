@@ -7,7 +7,7 @@ use App\Models\Sabor;
 use App\Models\Mezcla;
 use App\Models\Usuario;
 use App\Http\Requests\PostRequest;
-
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Pagination\LengthAwarePaginator;
