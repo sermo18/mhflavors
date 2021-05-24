@@ -75,6 +75,7 @@
             @endif
         </div>
     </div>
+    <div class="row mt-3">
     <form action="" method="GET">
     @csrf
         <div class="form-group">
@@ -86,6 +87,7 @@
                     <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
         </div>
     </form>
+    </div>
     <div class="row justify-content-md-center align-items-center mt-3">
         <div class="col-12 mt-3">
             <h3 class="text-secondary text-center">Más sabores de {{$sabor->marca}}</h3>
