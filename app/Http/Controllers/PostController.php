@@ -103,7 +103,7 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     //Save new comment in the post
-    public function store(Request $request, $id)
+    public function store(Request $request, $id, $userid)
     {
         $post = new Post();
         $post->titulo = "P";

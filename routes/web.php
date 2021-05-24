@@ -50,7 +50,7 @@ Route::get('posts/locales', [PostController::class, 'locales'])->name('posts.map
 
 Route::get('posts/logout', [LoginController::class, 'logout'])->name('auth_logout');
 
-Route::get('posts/{id}/store', [PostController::class, 'store'])->name('posts.store');
+Route::get('posts/{id}/{userid}/store', [PostController::class, 'store'])->name('posts.store');
 
 Route::put('posts/update/{id}', [PostController::class, 'update'])->name('posts.update');
 
