@@ -81,7 +81,7 @@
         <h3 class="text-secondary text-center">Más sabores de {{$sabor->marca}}</h3>
         </div>
         @forelse($saboresmarca as $sabormarca)
-
+        <a href="{{ route('post.show', $sabormarca) }}">
         <div class="card text-left ponerImagenes col-3 agrandar" style="height: 200px; width: 200px;">
             <div class="card-body text-white " >
                 <h3 class="card-title text-left" style="height: 30px;">{{ $sabormarca->nombre }}</h3>
@@ -94,6 +94,7 @@
                 @endif
             </div>
         </div>
+        </a>
         @empty
     </div>
     @endforelse
