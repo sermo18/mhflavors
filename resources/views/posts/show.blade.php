@@ -82,8 +82,8 @@
         </div>
 
         @forelse($saboresmarca as $sabormarca)
-        <div class="card text-left ponerImagenes col-3 agrandar" style="height: 200px; width: 200px;">
-        <a href="{{ route('post.show', $sabormarca) }}">
+        <a class="col-3" href="{{ route('post.show', $sabormarca) }}">
+        <div class="card text-left ponerImagenes  agrandar" style="height: 200px; width: 200px;">
             <div class="card-body text-white " >
                 <h3 class="card-title text-left" style="height: 30px;">{{ $sabormarca->nombre }}</h3>
                 <h5 class="card-text"></h5>
@@ -94,9 +94,9 @@
                 <h5 class="card-text p-3">Valoración: {{ $sabormarca->valoracion }} / 5 </h5>
                 @endif
             </div>
-            </a>
+            
         </div>
-     
+        </a>
         @empty
     </div>
     @endforelse
