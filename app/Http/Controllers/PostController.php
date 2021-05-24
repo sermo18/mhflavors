@@ -103,10 +103,8 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     //Save new comment in the post
-    public function store(Request $request)
+    public function store(Request $request, $id)
     {
-        alert("Tarea Guardada");
-
         $post = new Post();
         $post->titulo = "P";
         $post->contenido = $request->get('contenido');

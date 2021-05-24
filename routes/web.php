@@ -48,11 +48,9 @@ Route::get('posts/topsabores', [PostController::class, 'topSabores'])->name('pos
 
 Route::get('posts/locales', [PostController::class, 'locales'])->name('posts.mapa');
 
-
 Route::get('posts/logout', [LoginController::class, 'logout'])->name('auth_logout');
 
-
-Route::get('posts/store', [PostController::class, 'store'])->name('posts.store');
+Route::get('posts/{id}/store', [PostController::class, 'store'])->name('posts.store');
 
 Route::put('posts/update/{id}', [PostController::class, 'update'])->name('posts.update');
 
