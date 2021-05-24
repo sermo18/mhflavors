@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('contenido')
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
-<div class="container">
+<div class="container-fluid">
     <!-- Show the flavor that we selected -->
     <div class="row justify-content-md-center align-items-center mt-3">
         <div class="card text-left ponerImagenes col-4 ">
@@ -76,17 +76,17 @@
         </div>
     </div>
     <div class="row mt-3">
-    <form action="" method="GET">
-    @csrf
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Comentarios:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="row justify-content-center align-items-right">
+        <form action="" method="GET">
+            @csrf
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comentarios:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="row justify-content-center align-items-right">
                 <a class="nav-link" href="{{ route('posts.edit', $sabor->id) }}">
                     <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
-        </div>
-    </form>
+            </div>
+        </form>
     </div>
     <div class="row justify-content-md-center align-items-center mt-3">
         <div class="col-12 mt-3">
