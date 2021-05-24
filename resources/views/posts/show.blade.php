@@ -4,7 +4,7 @@
 <div class="container-fluid">
     <!-- Show the flavor that we selected -->
     <div class="row justify-content-md-center align-items-center mt-3">
-        <div class="card text-left ponerImagenes col-4 ">
+        <div class="card text-left ponerImagenes col-4">
             <div class="card-body text-white " style="height: 400px; width: 400px;">
                 <h3 class="card-title text-left" style="height: 70px;">{{ $sabor->nombre }}</h3>
                 <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
@@ -75,19 +75,19 @@
             @endif
         </div>
     </div>
-    <div class="row mt-3">
-    <div class="col-12">
-        <form action="" method="GET">
-            @csrf
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Comentarios:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="row justify-content-center align-items-right">
-                <a class="nav-link" href="{{ route('posts.edit', $sabor->id) }}">
-                    <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
-            </div>
-        </form>
+    <div class="row justify-content-md-center align-items-center mt-3">
+        <div class="col-12">
+            <form action="" method="GET">
+                @csrf
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Comentarios:</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="row justify-content-center align-items-right">
+                    <a class="nav-link" href="{{ route('posts.edit', $sabor->id) }}">
+                        <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
+                </div>
+            </form>
         </div>
     </div>
     <div class="row justify-content-md-center align-items-center mt-3">
