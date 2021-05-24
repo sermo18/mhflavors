@@ -105,6 +105,8 @@ class PostController extends Controller
     //Save new comment in the post
     public function store(Request $request, $id, $userid)
     {
+
+
         $post = new Post();
         $post->titulo = "P";
         $post->contenido = $request->get('contenido');
@@ -117,7 +119,7 @@ class PostController extends Controller
         $usuarios = Usuario::get();
         $userid = Auth::id();
 
-        return view('posts.show',compact('sabor','saboresmarca','posts','userid'));
+        return "view('posts.show',compact('sabor','saboresmarca','posts','userid'))";
     
     }
 
