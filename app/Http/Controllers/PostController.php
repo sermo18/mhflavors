@@ -105,6 +105,8 @@ class PostController extends Controller
     //Save new comment in the post
     public function store(Request $request)
     {
+        alert("Tarea Guardada");
+
         $post = new Post();
         $post->titulo = "P";
         $post->contenido = $request->get('contenido');
