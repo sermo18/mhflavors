@@ -75,39 +75,49 @@
             @endif
         </div>
     </div>
-   
+    <form action="" method="GET">
+    @csrf
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comentarios:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="row justify-content-center align-items-right">
+                <a class="nav-link" href="{{ route('posts.edit', $sabor->id) }}">
+                    <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
+        </div>
+    </form>
     <div class="row justify-content-md-center align-items-center mt-3">
         <div class="col-12 mt-3">
-        <h3 class="text-secondary text-center">Más sabores de {{$sabor->marca}}</h3>
+            <h3 class="text-secondary text-center">Más sabores de {{$sabor->marca}}</h3>
         </div>
 
         @forelse($saboresmarca as $sabormarca)
         <a class="col-3" href="{{ route('post.show', $sabormarca) }}" style="text-decoration: none;">
-        <div class="card text-left ponerImagenes  agrandar" style="height: 200px; width: 200px;">
-            <div class="card-body text-white " >
-                <h3 class="card-title text-left" style="height: 30px;">{{ $sabormarca->nombre }}</h3>
-                <h5 class="card-text"></h5>
-                <h5 class="card-text p-3">Marca: {{ $sabormarca->marca }}</h5>
-                @if(!$sabormarca->valoracion)
-                <h5 class="card-text p-3">Valoración: 0 / 5 </h5>
-                @else
-                <h5 class="card-text p-3">Valoración: {{ $sabormarca->valoracion }} / 5 </h5>
-                @endif
+            <div class="card text-left ponerImagenes  agrandar" style="height: 200px; width: 200px;">
+                <div class="card-body text-white ">
+                    <h3 class="card-title text-left" style="height: 30px;">{{ $sabormarca->nombre }}</h3>
+                    <h5 class="card-text"></h5>
+                    <h5 class="card-text p-3">Marca: {{ $sabormarca->marca }}</h5>
+                    @if(!$sabormarca->valoracion)
+                    <h5 class="card-text p-3">Valoración: 0 / 5 </h5>
+                    @else
+                    <h5 class="card-text p-3">Valoración: {{ $sabormarca->valoracion }} / 5 </h5>
+                    @endif
+                </div>
+
             </div>
-            
-        </div>
         </a>
         @empty
     </div>
     @endforelse
 </div>
 <div class="row justify-content-md-center align-items-center mt-3">
-        <div class="col-12">
-            <div>
-                {{ $saboresmarca->links() }}
-            </div>
+    <div class="col-12">
+        <div>
+            {{ $saboresmarca->links() }}
         </div>
     </div>
+</div>
 </div>
 
 
