@@ -89,10 +89,10 @@
                     <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
             </div>
             <div class="form-group">
-        <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
+                <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
             </div>
             <div class="form-group">
-        <input type="hidden" class="form-control" name="idsabor" id="idsabor" value="{{$sabor->id}}">
+                <input type="hidden" class="form-control" name="idsabor" id="idsabor" value="{{$sabor->id}}">
             </div>
         </form>
     </div>
@@ -120,7 +120,7 @@
                 </blockquote>
             </div>
         </div>
-        endif
+        @endif
     </div>
 </div>
 @empty
