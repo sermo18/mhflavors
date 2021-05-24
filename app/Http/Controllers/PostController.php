@@ -102,15 +102,22 @@ class PostController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    //DEPRECATED
+    //Save new comment in the post
     public function store(Request $request)
     {
         $post = new Post();
-        $post->titulo = $request->get('titulo');
+        $post->titulo = "";
         $post->contenido = $request->get('contenido');
         $post->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
+        $post->sabor_id =  $request->get('idsabor');
         $post->save();
-        return redirect()->route('posts.index');
+        $sabor= Sabor::find($request->get('idsabor'));
+        $posts = Post::get();
+        $usuarios = Usuario::get();
+        $userid = Auth::id();
+
+        return view('posts.show',compact('sabor','saboresmarca','posts','userid'));
+    
     }
 
     /**
@@ -125,8 +132,10 @@ class PostController extends Controller
     {
         $sabor= Sabor::find($id);
         $posts = Post::get();
+        $usuarios = Usuario::get();
+        $userid = Auth::id();
         $saboresmarca = Sabor::orderBy("id")->where('marca', $sabor->marca)->paginate(4);
-        return view('posts.show',compact('sabor','saboresmarca','posts'));
+        return view('posts.show',compact('sabor','saboresmarca','posts','userid'));
     }
 
     /**

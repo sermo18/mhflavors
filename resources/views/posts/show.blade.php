@@ -82,11 +82,17 @@
             @csrf
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comentarios:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3"></textarea>
             </div>
             <div class="row">
                 <a class="nav-link" href="{{ route('posts.edit', $sabor->id) }}">
                     <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
+            </div>
+            <div class="form-group">
+        <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
+            </div>
+            <div class="form-group">
+        <input type="hidden" class="form-control" name="idsabor" id="idsabor" value="{{$sabor->id}}">
             </div>
         </form>
     </div>
@@ -97,14 +103,19 @@
     <div class="col-12">
         @if($post->sabor_id == $sabor->id)
         <div class="card">
-            <div class="card-header">{{auth()->user()->name}}</div>
+            <div class="card-header"> @foreach ($usuarios as $usuario)
+                @if($post->usuario_id == $usuario->id)
+                {{ $usuario->nombre }}
+                @endif
+                @endforeach
+            </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
                     <p>
                         {{$post->contenido}}
                     </p>
                     <footer class="blockquote-footer">
-                     <cite title="Source Title">{{date('Y-m-d H:i:s')}}</cite>
+                        <cite title="Source Title">{{date('Y-m-d H:i:s')}}</cite>
                     </footer>
                 </blockquote>
             </div>
