@@ -103,23 +103,19 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     //Save new comment in the post
-    public function store(Request $request, $id, $userid)
+    public function store(Request $request)
     {
-
-
         $post = new Post();
         $post->titulo = "P";
         $post->contenido = $request->get('contenido');
         $post->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
         $post->sabor_id = $request->get('idsabor');
         $post->save();
-
         $sabor= Sabor::find($request->get('idsabor'));
         $posts = Post::get();
         $usuarios = Usuario::get();
         $userid = Auth::id();
-
-        return "view('posts.show',compact('sabor','saboresmarca','posts','userid'))";
+        return view('posts.show',compact('sabor','saboresmarca','posts','userid'));
     
     }
 
@@ -164,7 +160,6 @@ class PostController extends Controller
     //This function adds the value of the petition to that of the flavor and divides it between the votes
     public function update(Request $request, $id)
     {
-        
         $sabor = Sabor::findOrFail($id);
         $sabor->votos += 1;
         $sabor->valoracion = ($sabor->valoracion + $request->get('valoracion'))/$sabor->votos;
