@@ -84,7 +84,7 @@
                     <label for="exampleFormControlTextarea1">Comentarios:</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <div class="row justify-content-center align-items-right">
+                <div class="row">
                     <a class="nav-link" href="{{ route('posts.edit', $sabor->id) }}">
                         <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
                 </div>
