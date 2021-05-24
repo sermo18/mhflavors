@@ -41,13 +41,13 @@
                     <p class="card-text py-4 my-2">Elige el sabor e indica la cantidad que quieres ponerle.</p>
 
                     <input class="form-control  buscador1 my-2" list="datalistOptions2" name="sabor{{$i}}" id="sabor{{$i}}" placeholder="Type to search...">
-                    <datalist id="datalistOptions2 ">
-                        @foreach ($sabores as $sabor)
-                        <option value="{{ $sabor->id }}">
-                            {{ $sabor->nombre }} de {{ $sabor->marca}}
-                        </option>
-                        @endforeach
-                    </datalist>
+                        <datalist id="datalistOptions2">
+                            @foreach ($sabores as $sabor)
+                            <option value="{{ $sabor->id }}">
+                                {{ $sabor->nombre }} de {{ $sabor->marca}}
+                            </option>
+                            @endforeach
+                        </datalist>
 
                     <div class="form-group py-4 my-2">
                         <label>Porcentaje del primer sabor:</label>

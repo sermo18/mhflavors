@@ -24,10 +24,10 @@ function cargar() {
 
         for (let index = 0; index < cards.length; index++) {
 
-            if  (cards[index].children[0].children[0].innerText.toUpperCase().indexOf(buscar[0].value.toUpperCase()) == 0) {
+            if (cards[index].children[0].children[0].innerText.toUpperCase().indexOf(buscar[0].value.toUpperCase()) == 0) {
 
                 cards[index].parentNode.classList.remove("ocultar");
-            }else{
+            } else {
                 cards[index].parentNode.classList.add("ocultar");
             }
 
