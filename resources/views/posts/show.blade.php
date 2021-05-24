@@ -85,7 +85,7 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3"></textarea>
             </div>
             <div class="row">
-                <a class="nav-link" href="{{ route('posts.edit', $sabor->id) }}">
+                <a class="nav-link" href="{{ route('post.store') }}">
                     <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
             </div>
             <div class="form-group">
