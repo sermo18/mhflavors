@@ -10,7 +10,7 @@ function cargar() {
     cards = document.getElementsByClassName("ponerImagenes");
     buscar = document.getElementsByClassName("buscador");
     console.log(buscar[0]);
-    if (buscar[0] != "undefined") {
+    if (buscar[0] != undefined) {
 
         buscar[0].addEventListener("keyup", filtrar);
 
