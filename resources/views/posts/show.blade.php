@@ -85,8 +85,8 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3"></textarea>
             </div>
             <div class="row">
-                <a class="nav-link" href="#">
-                    <input type="submit" class="btn btn-secondary" value="Enviar" /></a>
+                
+                    <input type="submit" class="btn btn-secondary" value="Enviar" />
             </div>
             <div class="form-group">
                 <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
