@@ -78,7 +78,7 @@
 </div>
 <div class="row mt-3">
     <div class="col-12">
-        <form action="{{ route('posts.store', $sabor->id) }}" method="GET">
+        <form action="{{ route('posts.store', $sabor->id, $userid) }}" method="GET">
             @csrf
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comentarios:</label>
