@@ -104,7 +104,7 @@
         @if($post->sabor_id == $sabor->id)
         <div class="card">
             <div class="card-header">
-            @if({{ $post->usuario->nombre }})
+            @if( $post->usuario->nombre)
             {{ $post->usuario->nombre }}
             @else
             Anónimo
