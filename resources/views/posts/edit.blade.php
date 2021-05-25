@@ -6,14 +6,14 @@
 <!-- This view it's to valorate the flavors -->
 <div class="row justify-content-md-center align-items-center pt-3">
     <div class="card text-left ponerImagenes">
-        <div class="card-body text-white " style="height: 450px; width:450px ">
+        <div class="card-body text-white ">
             <h3 class="card-title text-left" style="height: 70px;">{{ $sabor->nombre }}</h3>
             <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
             <h5 class="card-text p-3">Marca: {{ $sabor->marca }}</h5>
             @if(!$sabor->valoracion)
             <h5 class="card-text p-3">Valoración: </h5>
             @else
-            <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion / $sabor->votos }} / 5 </h5>
+            <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion }} / 5 </h5>
             @endif
 
             <div class="row text-center">
