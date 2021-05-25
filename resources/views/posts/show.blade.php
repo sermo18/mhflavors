@@ -82,7 +82,7 @@
             @csrf
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comentarios:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3" placeholder="Deja tu comentario..."></textarea>
             </div>
 
             <div class="form-group">
@@ -100,9 +100,9 @@
 @forelse($posts as $post)
 
 <div class="row">
-    <div class="col-12">
+    <div class="col-12 mt-1">
         @if($post->sabor_id == $sabor->id)
-        <div class="card mt-1">
+        <div class="card ">
             <div class="card-header">
             @if( $post->usuario->nombre)
             {{ $post->usuario->nombre }}
