@@ -102,7 +102,7 @@
 <div class="row">
     <div class="col-12">
         @if($post->sabor_id == $sabor->id)
-        <div class="card">
+        <div class="card mt-1">
             <div class="card-header">
             @if( $post->usuario->nombre)
             {{ $post->usuario->nombre }}
