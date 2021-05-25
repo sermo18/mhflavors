@@ -104,15 +104,14 @@
         @if($post->sabor_id == $sabor->id)
         <div class="card">
             <div class="card-header">
-            @if(auth()->check())
-            @foreach ($usuarios as $usuario)
+
+            {{ $post->usuario_id->nombre }}
+            <!-- @foreach ($usuarios as $usuario)
                 @if($post->usuario_id == $usuario->id)
                 {{ $usuario->nombre }}
                 @endif
                 @endforeach
-            @else
-            Anónimo
-            @endif
+      -->
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
