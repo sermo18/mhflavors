@@ -105,7 +105,7 @@
         <div class="card">
             <div class="card-header">
 
-            {{ $post->usuario_id->nombre }}
+            {{ $post->usuario->nombre }}
             <!-- @foreach ($usuarios as $usuario)
                 @if($post->usuario_id == $usuario->id)
                 {{ $usuario->nombre }}
