@@ -106,8 +106,6 @@
             <div class="card-header"> @foreach ($usuarios as $usuario)
                 @if($post->usuario_id == $usuario->id && auth()->check())
                 {{ $usuario->nombre }}
-                @else
-                Anónimo
                 @endif
                 @endforeach
             </div>
