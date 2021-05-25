@@ -104,18 +104,16 @@
         @if($post->sabor_id == $sabor->id)
         <div class="card">
             <div class="card-header">
-
+            @if({{ $post->usuario->nombre }})
             {{ $post->usuario->nombre }}
-            <!-- @foreach ($usuarios as $usuario)
-                @if($post->usuario_id == $usuario->id)
-                {{ $usuario->nombre }}
-                @endif
-                @endforeach
-      -->
+            @else
+            Anónimo
+            @endif
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
                     <p>
+
                         {{$post->contenido}}
                     </p>
                     <footer class="blockquote-footer">
