@@ -110,6 +110,8 @@
                 {{ $usuario->nombre }}
                 @endif
                 @endforeach
+            @else
+            Anónimo
             @endif
             </div>
             <div class="card-body">
