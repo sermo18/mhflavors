@@ -4,41 +4,31 @@ window.onload = cargar;
 
 function cargar() {
 
-
-
     //Get the cards of the view and her brand, depending on the brand of this flavor we put a image of the brand on the background
     cards = document.getElementsByClassName("ponerImagenes");
+
+    //Getting the input that his class name it's `buscador` and we will filter the flavors name with the function filtrar()
     buscar = document.getElementsByClassName("buscador");
     if (buscar[0] != undefined) {
-
         buscar[0].addEventListener("keyup", filtrar);
-
         palabra = "";
     }
 
 
     function filtrar() {
-
         for (let index = 0; index < cards.length; index++) {
-
             if (cards[index].children[0].children[0].innerText.toUpperCase().indexOf(buscar[0].value.toUpperCase()) == 0) {
 
                 cards[index].parentNode.classList.remove("ocultar");
             } else {
                 cards[index].parentNode.classList.add("ocultar");
             }
-
-
         }
-
-
-
-
     }
 
     for (let index = 0; index < cards.length; index++) {
-        //Leer la marca del tabaco
 
+        //Checking the brand of the tobacco and putting the respective image to this
         marca = cards[index].children[0].children[2].innerText.split(": ")[1];
         switch (marca.toUpperCase()) {
             case "HOOKAIN":
