@@ -107,7 +107,7 @@
                 @if($post->usuario_id == $usuario->id && auth()->check())
                 {{ $usuario->nombre }}
                 @else
-                {{Anónimo}}
+                Anónimo
                 @endif
                 @endforeach
             </div>
