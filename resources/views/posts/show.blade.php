@@ -76,7 +76,7 @@
         @endif
     </div>
 </div>
-<div class="row">
+<div class="row mt-3">
     <div class="col-12">
         <form action="{{ route('post.store') }}" method="GET">
             @csrf
@@ -99,13 +99,15 @@
 </div>
 @forelse($posts as $post)
 
-<div class="row mt-3">
+<div class="row">
     <div class="col-12">
         @if($post->sabor_id == $sabor->id)
         <div class="card">
             <div class="card-header"> @foreach ($usuarios as $usuario)
-                @if($post->usuario_id == $usuario->id)
+                @if($post->usuario_id == $usuario->id && auth()->check())
                 {{ $usuario->nombre }}
+                @else
+                {{Anónimo}}
                 @endif
                 @endforeach
             </div>
