@@ -106,8 +106,6 @@
             <div class="card-header">
             @if( $post->usuario->nombre)
             {{ $post->usuario->nombre }}
-            @else
-            Anónimo
             @endif
             </div>
             <div class="card-body">
