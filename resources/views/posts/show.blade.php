@@ -103,11 +103,14 @@
     <div class="col-12">
         @if($post->sabor_id == $sabor->id)
         <div class="card">
-            <div class="card-header"> @foreach ($usuarios as $usuario)
-                @if($post->usuario_id == $usuario->id && auth()->check())
+            <div class="card-header">
+            @if(auth()->check())
+            @foreach ($usuarios as $usuario)
+                @if($post->usuario_id == $usuario->id)
                 {{ $usuario->nombre }}
                 @endif
                 @endforeach
+            @endif
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
