@@ -34,7 +34,7 @@ Route::get('/posts/contacto', function() {
 Route::get('/posts/noticias', function() {
     return view('posts.noticias');
     })->name('posts.noticias');
-    
+
 Route::get('posts', [PostController::class, 'index'])->name('posts.index');
 
 Route::get('posts/marca/{marca}', [PostController::class, 'filtrarMarca'])->name('post.filtrar');
@@ -80,7 +80,7 @@ Route::post('registro', [LoginController::class, 'registrarUsuario'])->name('aut
 Route::apiResource('posts', PostController::class);
 
 
-//Mezclas
+//Routes of the mixings
 
 Route::get('mezclas', [MezclaController::class, 'index'])->name('mezclas.index');
 
