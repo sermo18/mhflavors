@@ -22,7 +22,7 @@ class PostController extends Controller
            // $this->middleware('auth',
             //['only' => ['create', 'store', 'edit', 'update', 'destroy']]);
            // $this->middleware(['auth', 'roles:admin']);
-            
+
 
         }
     /**
@@ -37,10 +37,10 @@ class PostController extends Controller
         $sabores = Sabor::orderBy("nombre")
         ->paginate(21);
         $mezclas = Mezcla::get();
-        
+
         $allSabores = Sabor::get();
         $marcas = [];
-        for ($i=0; $i < count($allSabores); $i++) { 
+        for ($i=0; $i < count($allSabores); $i++) {
             if ($allSabores[$i] && !in_array($allSabores[$i]->marca, $marcas)) {
                 array_push($marcas, $allSabores[$i]->marca);
             }
@@ -58,12 +58,12 @@ class PostController extends Controller
         $allSabores = Sabor::get();
         $mezclas = Mezcla::get();
         $marcas = [];
-        for ($i=0; $i < count($allSabores); $i++) { 
+        for ($i=0; $i < count($allSabores); $i++) {
             if ($allSabores[$i] && !in_array($allSabores[$i]->marca, $marcas)) {
                 array_push($marcas, $allSabores[$i]->marca);
             }
         }
-        
+
         return view('posts.index', compact('mezclas','sabores','marcas'));
     }
 
@@ -108,7 +108,12 @@ class PostController extends Controller
         $post = new Post();
         $post->titulo = "P";
         $post->contenido = $request->get('contenido');
-        $post->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
+        if(auth()->check()){
+            $post->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
+        }else{
+            $post->usuario()->associate(Usuario::find(999));
+        }
+
         $post->sabor_id = $request->get('idsabor');
         $post->save();
         $sabor= Sabor::find($request->get('idsabor'));
@@ -117,7 +122,7 @@ class PostController extends Controller
         $userid = Auth::id();
         $saboresmarca = Sabor::orderBy("id")->where('marca', $sabor->marca)->paginate(4);
         return view('posts.show',compact('sabor','saboresmarca','posts','userid','usuarios'));
-    
+
     }
 
     /**
@@ -157,7 +162,7 @@ class PostController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    
+
     //This function adds the value of the petition to that of the flavor and divides it between the votes
     public function update(Request $request, $id)
     {
@@ -183,7 +188,7 @@ class PostController extends Controller
         $sabor->delete();
         return redirect()->route('posts.index');
 
-      
+
 
     }
 }
