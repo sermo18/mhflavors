@@ -5,7 +5,7 @@
 <div class="container-fluid" style="height: 80vh;">
     <!-- This view it's to valorate the flavors -->
     <div class="row ">
-        <div class="col-12 col-md-4 back text-center pt-3">
+        <div class="col-12 back text-center pt-3">
             <div class="card text-center ponerImagenes" style="border-radius:22px;">
                 <div class="card-body text-white " style="height:50vh;">
                     <h3 class="card-title " style="height: 70px;">{{ $sabor->nombre }}</h3>
