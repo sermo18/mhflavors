@@ -28,7 +28,7 @@ function cargar() {
 
     for (let index = 0; index < cards.length; index++) {
 
-        //Checking the brand of the tobacco and putting the respective image to this
+        //Checking the brand of the tobacco and putting the respective image to this.
         marca = cards[index].children[0].children[2].innerText.split(": ")[1];
         switch (marca.toUpperCase()) {
             case "HOOKAIN":
