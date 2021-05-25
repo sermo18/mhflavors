@@ -105,7 +105,7 @@
         <div class="card ">
             <div class="card-header">
             @if( $post->usuario->login)
-            {{ $post->usuario->nombre }}
+            {{ $post->usuario->login }}
             @endif
             </div>
             <div class="card-body">
