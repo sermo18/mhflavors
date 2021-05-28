@@ -2,7 +2,7 @@
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
 <div class="container-fluid " style="height: 100vh;">
-    <div class="row imagenMezclaCreada ">
+    <div class="imagenMezclaCreada ">
         <div class="row m-4">
             <h1>Crea tu nueva Mezcla</h1>
         </div>
