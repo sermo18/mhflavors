@@ -3,8 +3,8 @@
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
 <div class="container-fluid">
     <!-- Show the flavor that we selected -->
-    <div class="row justify-content-md-center align-items-center mt-3">
-        <div class="card text-left ponerImagenes col-4">
+    <div class="row justify-content-md-center align-items-center mt-4">
+        <div class="card text-left ponerImagenes col-4 mt-4">
             <div class="card-body text-white " style="height: 400px; width: 400px;">
                 <h3 class="card-title text-left" style="height: 70px;">{{ $sabor->nombre }}</h3>
                 <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
@@ -82,40 +82,41 @@
             @csrf
             <div class="form-group">
                 <label for="exampleFormControlTextarea1">Comentarios:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3" placeholder="Deja tu comentario..."></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3"></textarea>
             </div>
-
+            
             <div class="form-group">
                 <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
             </div>
             <div class="form-group">
                 <input type="hidden" class="form-control" name="idsabor" id="idsabor" value="{{$sabor->id}}">
             </div>
-
+           
             <input type="submit" class="btn btn-secondary" value="Enviar" />
-
+            
         </form>
     </div>
 </div>
 @forelse($posts as $post)
 
-<div class="row">
-    <div class="col-12 mt-1">
+<div class="row mt-3">
+    <div class="col-12">
         @if($post->sabor_id == $sabor->id)
-        <div class="card ">
-            <div class="card-header">
-            @if( $post->usuario->login)
-            {{ $post->usuario->login }}
-            @endif
+        <div class="card">
+            <div class="card-header"> 
+            @foreach ($usuarios as $usuario)
+                @if($post->usuario_id == $usuario->id)
+                {{ $usuario->nombre }}
+                @endif
+                @endforeach
             </div>
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
                     <p>
-
                         {{$post->contenido}}
                     </p>
                     <footer class="blockquote-footer">
-                        <cite title="Source Title">{{$post->created_at}}</cite>
+                        <cite title="Source Title">{{date('Y-m-d H:i:s')}}</cite>
                     </footer>
                 </blockquote>
             </div>
