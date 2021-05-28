@@ -148,7 +148,7 @@ class MezclaController extends Controller
 
         $mezcla = Mezcla::findOrFail($id);
         $mezcla->votos += 1;
-        $mezcla->valoracion = ($mezcla->valoracion + $request->get('valoracion'))/ $mezcla->votos ;
+        $mezcla->valoracion = ($mezcla->valoracion + $request->get('valoracion'));
         $mezcla->save();
         return redirect()->route('mezclas.index');
     }

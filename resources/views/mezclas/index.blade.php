@@ -135,7 +135,7 @@
             @if(!$mezcla->valoracion)
                     N/S
             @else
-                    {{ $mezcla->valoracion }} / 5
+            {{ $mezcla->valoracion / $mezcla->votos}} / 5
             @endif
             </td>
             <td class="text-center">

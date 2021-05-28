@@ -169,7 +169,7 @@ class PostController extends Controller
     {
         $sabor = Sabor::findOrFail($id);
         $sabor->votos += 1;
-        $sabor->valoracion = ($sabor->valoracion + $request->get('valoracion') ) /$sabor->votos;
+        $sabor->valoracion = ($sabor->valoracion + $request->get('valoracion') );
         $sabor->save();
         return redirect()->route('posts.index');
     }

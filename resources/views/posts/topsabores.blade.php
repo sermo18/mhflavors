@@ -41,7 +41,7 @@
 
             <td>No ha sido valorado</td>
             @else
-            <td>{{ $sabor->valoracion }} / 5 </td>
+            <td>{{ $sabor->valoracion / $sabor->votos}} / 5 </td>
             @endif
             @if(auth()->check())
             @if( auth()->user()->rol === 'premium')

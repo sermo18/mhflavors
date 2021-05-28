@@ -12,7 +12,7 @@
                 @if(!$sabor->valoracion)
                 <h5 class="card-text p-3">Valoración: 0 / 5</h5>
                 @else
-                <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion}} / 5 </h5>
+                <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion / $sabor->votos}} / 5 </h5>
                 @endif
 
                 @if(auth()->check())
