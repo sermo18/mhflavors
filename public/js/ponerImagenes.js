@@ -10,6 +10,7 @@ function cargar() {
     comentarios = document.getElementsByClassName("comentarios");
 
     if (comentarios.length > 2) {
+        console.log(comentarios)
         verMenosComentarios();
     }
     botonVerMas = document.getElementsByClassName("vermas");
