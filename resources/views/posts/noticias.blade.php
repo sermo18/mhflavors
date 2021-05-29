@@ -1,12 +1,12 @@
 @extends('plantilla')
 @section('titulo', 'Ultimas Noticias')
 @section('contenido')
-<div class="container-fluid">
+<div class="container-fluid p-0 m-0">
 
     <!-- This page show us the last news -->
-    <div class="row p-4 notiback">
+    <div class="row p-0 m-0 notiback">
         <div class="col-12">
-            <h1>Últimas Noticias</h1>
+            <h1 class="text-white">Últimas Noticias</h1>
         </div>
         <div class="col-12">
             <div class="row">
