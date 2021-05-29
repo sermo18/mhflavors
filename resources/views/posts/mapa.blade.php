@@ -1,13 +1,12 @@
 @extends('plantilla')
 @section('titulo', 'Tus Mezclas Favoritas ♡')
 @section('contenido')
-
 <div class="container-fluid ">
     <div class="row ">
         <div class="col-12  text-center mapaback">
             <div class="row ">
                 <div class="col-12">
-                    <h1 class="text-light text-center pt-4">Principales Lounges</h1>
+                    <h1 class="text-light text-center pt-4 m-4">Principales Lounges</h1>
                 </div>
                 <div class="col-12">
                     <div id="map-container " class=" map-container mb-4">
