@@ -76,7 +76,7 @@
         @endif
     </div>
 </div>
-<div class="row mt-3">
+<div class="row my-3">
     <div class="col-12">
         <form action="{{ route('post.store') }}" method="GET">
             @csrf
@@ -84,27 +84,27 @@
                 <label for="exampleFormControlTextarea1">Comentarios:</label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" name="contenido" id="contenido" rows="3"></textarea>
             </div>
-            
+
             <div class="form-group">
                 <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
             </div>
             <div class="form-group">
                 <input type="hidden" class="form-control" name="idsabor" id="idsabor" value="{{$sabor->id}}">
             </div>
-           
+
             <input type="submit" class="btn btn-secondary" value="Enviar" />
-            
+
         </form>
     </div>
-</div>
-@forelse($posts as $post)
 
-<div class="row mt-3">
-    <div class="col-12">
+
+
+    @forelse($posts as $post)
+    <div class="col-12 mt-3">
         @if($post->sabor_id == $sabor->id)
         <div class="card comentarios">
-            <div class="card-header"> 
-            @foreach ($usuarios as $usuario)
+            <div class="card-header">
+                @foreach ($usuarios as $usuario)
                 @if($post->usuario_id == $usuario->id)
                 {{ $usuario->nombre }}
                 @endif
