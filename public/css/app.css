@@ -4491,7 +4491,7 @@ input[type=button].btn-block {
 }
 
 .mapaback {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/mapaback.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/map.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
