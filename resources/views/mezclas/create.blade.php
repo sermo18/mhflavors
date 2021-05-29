@@ -80,7 +80,6 @@
 
 
         </div>
-</div>
 @endif
 </div>
 @endfor
@@ -100,6 +99,5 @@
 
 @endif
 </form>
-</div>
 </div>
 @endsection
