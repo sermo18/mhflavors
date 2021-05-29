@@ -91,7 +91,7 @@
 
 
 @if(auth()->check())
-<div class="my-1 col-12">
+<div class="my-1 col-12 align-content-center justify-content-center text-center">
 
     <input type="submit" name="enviar" value="Enviar" class="btn btn-dark"> 
 
