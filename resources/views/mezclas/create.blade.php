@@ -92,9 +92,9 @@
 
 
 @if(auth()->check())
-<div class="my-1">
+<div class="my-1 row">
 
-    <input type="submit" name="enviar" value="Enviar" class="btn btn-dark"> 
+    <input type="submit" name="enviar" value="Enviar" class="btn btn-dark col-12"> 
 
 </div>
 
