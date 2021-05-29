@@ -119,7 +119,7 @@
 
 
             <td>{{$mezclaFavorita->mezcla->porcentaje1}}%, {{$mezclaFavorita->mezcla->porcentaje2}}%
-                @if($mezclaFavorita->mezcla->porcentaje3)
+                @if($mezclaFavorita->mezcla->porcentaje3 != null)
                 <span>, {{$mezclaFavorita->mezcla>porcentaje3}}%</span>
                 @endif
             </td>
