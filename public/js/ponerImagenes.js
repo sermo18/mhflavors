@@ -13,7 +13,10 @@ function cargar() {
         verMenosComentarios();
     }
     botonVerMas = document.getElementsByClassName("vermas");
-    botonVerMas[0].addEventListener("click", verMasComentarios);
+    if (botonVerMas[0] != undefined) {
+        botonVerMas[0].addEventListener("click", verMasComentarios);
+    }
+
     //Getting the input that his class name it's `buscador` and we will filter the flavors name with the function filtrar()
     buscar = document.getElementsByClassName("buscador");
     if (buscar[0] != undefined) {
