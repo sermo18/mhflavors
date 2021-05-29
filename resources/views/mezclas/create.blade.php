@@ -7,7 +7,7 @@
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="col-12 ">
+        <div class="col-4 ">
 
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
