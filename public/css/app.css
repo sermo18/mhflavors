@@ -4369,6 +4369,7 @@ input[type=button].btn-block {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .imagenMezclaCreada {
@@ -4381,6 +4382,8 @@ input[type=button].btn-block {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .noBorde {
