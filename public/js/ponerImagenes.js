@@ -40,16 +40,18 @@ function cargar() {
 
         for (let index = 2; index < comentarios.length; index++) {
 
-            comentarios[index].classList.toggle("ocultar");
+            comentarios[index].classList.add("ocultar");
         }
     }
 
     function verMasComentarios() {
 
         for (let index = 0; index < comentarios.length; index++) {
-            comentarios[index].classList.toggle("ocultar");
+            comentarios[index].classList.remove("ocultar");
+
         }
-        botonVerMas[0].classList.toggle("ocultar");
+
+        botonVerMas[0].classList.add("ocultar");
 
     }
 
