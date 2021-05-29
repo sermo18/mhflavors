@@ -18,7 +18,7 @@ class MezclaFavorita extends Model
     }
     public function mezclas()
     {
-    return $this->belongsTo('App\Models\Usuario', 'mezclas_id');
+    return $this->belongsTo('App\Models\Mezcla', 'mezclas_id');
     }
 
 }
