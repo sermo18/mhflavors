@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Models\Sabor;
 use App\Models\Mezcla;
 use App\Models\Usuario;
+use App\Models\MezclaFavorita;
 use Illuminate\Support\Facades\Auth;
 
 
@@ -25,13 +26,14 @@ class MezclaController extends Controller
         $mezclas = Mezcla::orderBy('valoracion', 'DESC')->paginate(20);
         $sabores= Sabor::get();
         $usuarios = Usuario::get();
+        $mezclasFavoritas = MezclaFavorita::get();
         if( Auth::id()){
             $userid = Auth::id();
         }else{
             $userid = 0;
         }
 
-        return view('mezclas.index', compact('mezclas','sabores','usuarios','userid'));
+        return view('mezclas.index', compact('mezclas','sabores','usuarios','userid','mezclasFavoritas'));
     }
     // This function show the favourite mixings of the user
     public function misMezclas()
@@ -39,8 +41,9 @@ class MezclaController extends Controller
         $mezclas = Mezcla::orderBy("id")->paginate(20);
         $sabores= Sabor::get();
         $usuarios = Usuario::get();
+        $mezclasFavoritas = MezclaFavorita::get();
         $contador =  1 ;
-        return view('mezclas.mismezclas', compact('mezclas','sabores','usuarios','contador'));
+        return view('mezclas.mismezclas', compact('mezclas','sabores','usuarios','contador','mezclasFavoritas'));
     }
 
 
@@ -97,16 +100,10 @@ class MezclaController extends Controller
     //This function add a new mixing to the mixings of the users.
     public function añadirMezcla(Mezcla $mezclaA)
     {
-        $mezcla = new Mezcla();
-        $mezcla->sabor1 = $mezclaA->sabor1;
-        $mezcla->sabor2 =  $mezclaA->sabor2;
-        $mezcla->sabor3 =  $mezclaA->sabor3;
-        $mezcla->porcentaje1 = $mezclaA->porcentaje1;
-        $mezcla->porcentaje2 = $mezclaA->porcentaje2;
-        $mezcla->porcentaje3 = $mezclaA->porcentaje3;
-        $mezcla->valoracion = $mezclaA->valoracion;
-        $mezcla->usuario_id = Auth::id();
-        $mezcla->save();
+        $mezclaFavorita = new MezclaFavorita();
+        $mezclaFavorita->mezcla_id = $mezclaA->id;
+        $mezclaFavorita->usuario_id = Auth::id();
+        $mezclaFavorita->save();
         return redirect()->route('mezclas.mismezclas');
     }
 
