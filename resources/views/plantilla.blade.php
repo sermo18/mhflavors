@@ -10,6 +10,8 @@
 <body>
     @include('partials.nav')
     <div style="height:96px;"></div>
+    <div style="height:96px;"></div>
+
     @yield('contenido')
 
     <script src="{{ secure_asset('js/ponerImagenes.js') }}"></script>
