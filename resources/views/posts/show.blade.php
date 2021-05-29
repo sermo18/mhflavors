@@ -100,7 +100,7 @@
 @forelse($posts as $post)
 
 
-    <div class="col-12">
+    <div class="col-12 mt-3">
         @if($post->sabor_id == $sabor->id)
         <div class="card comentarios">
             <div class="card-header"> 
