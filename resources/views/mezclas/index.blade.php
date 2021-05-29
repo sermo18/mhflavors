@@ -142,7 +142,7 @@
 
                 @if(auth()->check())
                 @if( auth()->user()->rol === 'premium')
-                @if($mezclasFavoritas && $mezclaFavorita->mezcla->usuario_id == $mezclaFavorita->usuario_id && $mezclaFavorita->mezcla->id == $mezclasFavoritas->mezcla_id )
+                @if($mezclasFavoritas && $mezclaFavorita->mezcla->usuario_id == $mezclaFavorita->usuario_id && $mezclaFavorita->mezcla->id == $mezclaFavorita->mezcla_id )
                 <a class="m-1 " title="Añadir a favoritas"><button type="button" class="btn btn-dark px-3"><svg xmlns="http://www.w3.org/2000/svg"
                             width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
