@@ -1,13 +1,13 @@
 @extends('plantilla')
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
-<div style="height: 100vh;">
+<div class="row" style="height: 100vh;">
 
     <form action="{{ route('mezclas.store') }}" class="imagenMezclaCreada" method="GET">
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row  ">
+        <div class="col-12 ">
 
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
@@ -92,7 +92,7 @@
 
 
 @if(auth()->check())
-<div class="my-1 row">
+<div class="my-1 col-12">
 
     <input type="submit" name="enviar" value="Enviar" class="btn btn-dark col-12"> 
 
