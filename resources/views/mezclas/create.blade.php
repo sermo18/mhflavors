@@ -2,19 +2,21 @@
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
 <div class="container-fluid " style="height: 100vh;">
-    
+
     <form action="{{ route('mezclas.store') }}" method="GET">
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row imagenMezclaCreada" >
-            
-        <div class="col-12 text-light text-center">
-        <h1>Crea tu nueva Mezcla</h1>
-    </div>
-            @for ($i = 1; $i < 4; $i++) <div class="col-12 col-md-4 mb-3 ">
+        <div class="row imagenMezclaCreada">
 
-                <div class="card text-center shadow p-3 saborBack{{$i}} ">
+            <div class="col-12 text-light text-center">
+                <h1>Crea tu nueva Mezcla</h1>
+            </div>
+            @for ($i = 1; $i < 4; $i++) 
+            
+            <div class="col-12 col-md-4 mb-3 ">
+
+                <div class="card text-center shadow p-3">
                     @if($i == 1)
 
 
@@ -43,13 +45,13 @@
                     <p class="card-text py-4 my-2">Elige el sabor e indica la cantidad que quieres ponerle.</p>
 
                     <input class="form-control  buscador1 my-2" list="datalistOptions2" name="sabor{{$i}}" id="sabor{{$i}}" placeholder="Type to search...">
-                        <datalist id="datalistOptions2">
-                            @foreach ($sabores as $sabor)
-                            <option value="{{ $sabor->id }}">
-                                {{ $sabor->nombre }} de {{ $sabor->marca}}
-                            </option>
-                            @endforeach
-                        </datalist>
+                    <datalist id="datalistOptions2">
+                        @foreach ($sabores as $sabor)
+                        <option value="{{ $sabor->id }}">
+                            {{ $sabor->nombre }} de {{ $sabor->marca}}
+                        </option>
+                        @endforeach
+                    </datalist>
 
                     <div class="form-group py-4 my-2">
                         <label>Porcentaje del primer sabor:</label>
