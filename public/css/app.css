@@ -4514,7 +4514,7 @@ input[type=button].btn-block {
 }
 
 .ocultar {
-    display: none;
+    display: none !important;
     overflow: hidden;
 }
 

@@ -38,7 +38,7 @@ function cargar() {
 
     function verMenosComentarios() {
 
-        for (let index = 1; index < comentarios.length; index++) {
+        for (let index = 2; index < comentarios.length; index++) {
 
             comentarios[index].classList.add("ocultar");
         }
