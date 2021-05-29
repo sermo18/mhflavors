@@ -135,7 +135,7 @@
             @if(!$mezclaFavorita->mezcla->valoracion)
                     N/S
             @else
-            {{ $$mezclaFavorita->mezcla->valoracion / $mezclaFavorita->mezcla->votos}} / 5
+            {{ $mezclaFavorita->mezcla->valoracion / $mezclaFavorita->mezcla->votos}} / 5
             @endif
             </td>
             <td class="text-center">
