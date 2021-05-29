@@ -2,7 +2,7 @@
 @section('titulo', 'Listado de Mezclas')
 @section('contenido')
 <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
-<div class="container-fluid">
+<div >
     <div class="row imagenMezclaAleatoria ">
 
 
