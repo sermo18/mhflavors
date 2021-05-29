@@ -99,8 +99,8 @@
 </div>
 @forelse($posts as $post)
 
-
-    <div class="col-12 mt-3">
+<div class="row mt-3">
+    <div class="col-12">
         @if($post->sabor_id == $sabor->id)
         <div class="card comentarios">
             <div class="card-header"> 
@@ -116,13 +116,14 @@
                         {{$post->contenido}}
                     </p>
                     <footer class="blockquote-footer">
-                        fecha: <cite title="Source Title">{{date('Y-m-d H:i:s')}}</cite>
+                        <cite title="Source Title">{{date('Y-m-d H:i:s')}}</cite>
                     </footer>
                 </blockquote>
             </div>
         </div>
         @endif
     </div>
+</div>
 @empty
 </div>
 @endforelse
