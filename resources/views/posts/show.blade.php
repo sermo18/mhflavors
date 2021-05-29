@@ -115,7 +115,7 @@
                     <p>
                         {{$post->contenido}}
                     </p>
-                    <footer class="blockquote-footer">
+                    <footer>
                         <cite title="Source Title">{{date('Y-m-d H:i:s')}}</cite>
                     </footer>
                 </blockquote>
