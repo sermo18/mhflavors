@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
-<div class="container-fluid " style="height: 100vh;">
+<div class="container-fluid" style="height: 100vh;">
 
     <form action="{{ route('mezclas.store') }}" class="imagenMezclaCreada" method="GET">
         @csrf
@@ -9,7 +9,7 @@
         <!-- This page its for create a new mixing  -->
         <div class="row  ">
 
-            <div class="col-12 text-light text-center">
+            <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
             </div>
             @for ($i = 1; $i < 4; $i++) 
@@ -97,6 +97,5 @@
 <input type="submit" name="enviar" value="Enviar" class="btn btn-dark btn-block">
 @endif
 </form>
-</div>
 </div>
 @endsection
