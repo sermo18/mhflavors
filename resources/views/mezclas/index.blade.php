@@ -22,7 +22,7 @@
             <th>Valoración</th>
             <th class="text-center">Actions</th>
         </tr>
-        @forelse($mezclas as $mezcla)
+        @forelse($mezclasFavoritas as $mezclaFavorita)
 
 
         <div class="modal fade" id="modalCompartir" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3"
@@ -94,15 +94,15 @@
             <td>
                 @forelse($sabores as $sabor)
                 @switch($sabor->id)
-                @case($mezcla->sabor1)
+                @case($mezclaFavorita->mezcla->sabor1)
                 <span>{{$sabor->nombre}}</span>
                 @break
 
-                @case($mezcla->sabor2)
+                @case($mezclaFavorita->mezcla->sabor2)
                 <span>, {{$sabor->nombre}}</span>
                 @break
 
-                @case($mezcla->sabor3)
+                @case($mezclaFavorita->mezcla->sabor3)
 
                 @if($sabor->nombre)
                 <span>, {{$sabor->nombre}}</span>
@@ -118,31 +118,31 @@
             </td>
 
 
-            <td>{{$mezcla->porcentaje1}}%, {{$mezcla->porcentaje2}}%
-                @if($mezcla->porcentaje3)
-                <span>, {{$mezcla->porcentaje3}}%</span>
+            <td>{{$mezclaFavorita->mezcla->porcentaje1}}%, {{$mezclaFavorita->mezcla->porcentaje2}}%
+                @if($mezclaFavorita->mezcla->porcentaje3)
+                <span>, {{$mezclaFavorita->mezcla>porcentaje3}}%</span>
                 @endif
             </td>
 
             <td>
                 @foreach ($usuarios as $usuario)
-                @if($mezcla->usuario_id == $usuario->id)
+                @if($mezclaFavorita->mezcla->usuario_id == $usuario->id)
                 {{ $usuario->nombre }}
                 @endif
                 @endforeach
             </td>
             <td>
-            @if(!$mezcla->valoracion)
+            @if(!$mezclaFavorita->mezcla->valoracion)
                     N/S
             @else
-            {{ $mezcla->valoracion / $mezcla->votos}} / 5
+            {{ $$mezclaFavorita->mezcla->valoracion / $mezclaFavorita->mezcla->votos}} / 5
             @endif
             </td>
             <td class="text-center">
 
                 @if(auth()->check())
                 @if( auth()->user()->rol === 'premium')
-                @if(!$mezclasFavoritas && $mezcla->usuario_id == $mezclasFavoritas->usuario_id && $mezcla->id == $mezclasFavoritas->mezcla_id )
+                @if(!$mezclasFavoritas && $mezclaFavorita->mezcla->usuario_id == $mezclaFavorita->usuario_id && $mezclaFavorita->mezcla->id == $mezclasFavoritas->mezcla_id )
                 <a class="m-1 " title="Añadir a favoritas"><button type="button" class="btn btn-dark px-3"><svg xmlns="http://www.w3.org/2000/svg"
                             width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
                             <path fill-rule="evenodd"
