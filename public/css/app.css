@@ -4502,6 +4502,18 @@ input[type=button].btn-block {
     align-items: center;
 }
 
+.notiback {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/map.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ocultar {
     display: none;
     overflow: hidden;

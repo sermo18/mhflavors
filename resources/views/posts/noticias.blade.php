@@ -2,11 +2,11 @@
 @section('titulo', 'Ultimas Noticias')
 @section('contenido')
 <div class="container-fluid">
-    <div class="row m-4">
-        <h1>Últimas Noticias</h1>
-    </div>
+    
     <!-- This page show us the last news -->
-    <div class="row">
+    <div class="row p-4 notiback">
+        <h1>Últimas Noticias</h1>
+
         <div class="col-12 col-md-6">
             <div class="card">
                 <img src="https://www.diariodecadiz.es/2021/05/14/cadiz/cachimbas-moda-ano-pandemia_1573952634_138491982_667x375.jpg" class="card-img" alt="...">
