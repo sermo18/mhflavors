@@ -6,6 +6,7 @@ use App\Models\Post;
 use App\Models\Sabor;
 use App\Models\Mezcla;
 use App\Models\Usuario;
+use App\Models\MezclaFavorita;
 use App\Http\Requests\PostRequest;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -45,7 +46,8 @@ class PostController extends Controller
                 array_push($marcas, $allSabores[$i]->marca);
             }
         }
-        return view('posts.index', compact('mezclas','sabores','marcas'));
+        $mezclasFavoritas = MezclaFavorita::get();
+        return view('posts.index', compact('mezclas','sabores','marcas','mezclasFavoritas'));
     }
 
     // This function take the flavors with the brand that we pass in the parametrer '$marca' and send it to the index

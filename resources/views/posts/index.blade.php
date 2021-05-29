@@ -7,6 +7,7 @@
     <div class="row m-4">
         <h1 class="text-dark">Todos los Sabores</h1>
     </div>
+    {{$mezclasFavoritas[0]}}
     <input class="form-control buscador" id="myInput" type="text" placeholder="Search..">
     <br>
 <!-- This page shows all the flavors -->
