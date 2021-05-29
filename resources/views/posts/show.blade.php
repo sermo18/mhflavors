@@ -102,7 +102,7 @@
 <div class="row mt-3">
     <div class="col-12">
         @if($post->sabor_id == $sabor->id)
-        <div class="card">
+        <div class="card comentarios">
             <div class="card-header"> 
             @foreach ($usuarios as $usuario)
                 @if($post->usuario_id == $usuario->id)
@@ -127,6 +127,9 @@
 @empty
 </div>
 @endforelse
+<div class="col-12 text-center">
+    <button class="vermas">Ver más</button>
+</div>
 <div class="row justify-content-md-center align-items-center mt-3">
     <div class="col-12 mt-3">
         <h3 class="text-secondary text-center">Más sabores de {{$sabor->marca}}</h3>

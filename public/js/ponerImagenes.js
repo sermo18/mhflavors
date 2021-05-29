@@ -6,14 +6,20 @@ function cargar() {
 
     //Get the cards of the view and her brand, depending on the brand of this flavor we put a image of the brand on the background
     cards = document.getElementsByClassName("ponerImagenes");
+    // Get the comments of the view to show only 2 comments, until the user click on the button 'Ver más'
+    comentarios = document.getElementsByClassName("comentarios");
 
+    if (comentarios.length > 2) {
+        verMenosComentarios();
+    }
+    botonVerMas = document.getElementsByClassName("vermas");
+    botonVerMas[0].addEventListener("click", verMasComentarios);
     //Getting the input that his class name it's `buscador` and we will filter the flavors name with the function filtrar()
     buscar = document.getElementsByClassName("buscador");
     if (buscar[0] != undefined) {
         buscar[0].addEventListener("keyup", filtrar);
         palabra = "";
     }
-
 
     function filtrar() {
         for (let index = 0; index < cards.length; index++) {
@@ -25,6 +31,25 @@ function cargar() {
             }
         }
     }
+
+    function verMenosComentarios() {
+
+        for (let index = 2; index < comentarios.length; index++) {
+
+            comentarios[index].classList.add("ocultar");
+        }
+    }
+
+    function verMasComentarios() {
+
+        for (let index = 0; index < comentarios.length; index++) {
+            comentarios[index].classList.remove("ocultar");
+            botonVerMas[0].classList.toggle("ocultar");
+        }
+
+    }
+
+
 
     for (let index = 0; index < cards.length; index++) {
 
