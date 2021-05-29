@@ -5,9 +5,10 @@
     
     <!-- This page show us the last news -->
     <div class="row p-4 notiback">
+        <div class="col-12">
         <h1>Últimas Noticias</h1>
-
-        <div class="col-12 col-md-6">
+        </div>
+        <div class="col-12">
             <div class="card">
                 <img src="https://www.diariodecadiz.es/2021/05/14/cadiz/cachimbas-moda-ano-pandemia_1573952634_138491982_667x375.jpg" class="card-img" alt="...">
                 <div class="card-body">
@@ -21,7 +22,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-6">
+        <div class="col-12">
             <div class="row">
                 <div class="col-12">
                     <div class="card ">
@@ -69,7 +70,7 @@
         </div>
     </div>
     <div class="row mt-4">
-        <div class="col-12 col-md-3">
+        <div class="col-12">
             <div class="card mb-3">
                 <img src="https://21noticias.com/wp-content/uploads/2021/02/91e4ccec5e1a902ba74fd6c66373a852-400x280.jpg"  style="height: 200px;" class="card-img" alt="...">
                 <div class="card-body">
@@ -83,7 +84,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12">
             <div class="card mb-3">
                 <img src="https://879669.smushcdn.com/1707657/wp-content/uploads/2021/03/oficios-cachimba.jpg?lossy=1&strip=1&webp=1" style="height: 200px;" class="card-img" alt="...">
                 <div class="card-body">
@@ -97,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12">
             <div class="card mb-3">
                 <img src="https://879669.smushcdn.com/1707657/wp-content/uploads/2020/03/como-limpiar-shisha.jpg?lossy=1&strip=1&webp=1" class="card-img" style="height: 200px;" alt="...">
                 <div class="card-body">
@@ -111,7 +112,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 col-md-3">
+        <div class="col-12 ">
             <div class="card mb-3">
                 <img src="https://estaticos-cdn.prensaiberica.es/clip/09190588-d4d0-49ac-a40e-bbfbab69a6fb_16-9-aspect-ratio_default_0.jpg" class="card-img" style="height: 200px;" alt="...">
                 <div class="card-body">
