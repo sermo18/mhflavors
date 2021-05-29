@@ -4467,7 +4467,7 @@ input[type=button].btn-block {
 }
 
 .loginback {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/loginback.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/login.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -4479,7 +4479,7 @@ input[type=button].btn-block {
 }
 
 .registroback {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/loginback.jpg");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/login.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
