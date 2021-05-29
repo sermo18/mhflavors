@@ -11,7 +11,7 @@
         <div class="col-12 m-4">
             <div class="row">
                 <div class="col-12">
-                    <div class="card  text-light" style=" background: rgba(0,0,0,0.2);">
+                    <div class="card  text-light" style=" background: rgba(0,0,0,0.75);">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="https://www.diariodecadiz.es/2021/05/14/cadiz/cachimbas-moda-ano-pandemia_1573952634_138491982_667x375.jpg" class="card-img" alt="...">
@@ -37,7 +37,7 @@
         <div class="col-12 m-4">
             <div class="row">
                 <div class="col-12">
-                    <div class="card  text-light" style=" background: rgba(0,0,0,0.3);">
+                    <div class="card  text-light" style=" background: rgba(0,0,0,0.75);">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="https://www.madridiario.es/fotos/1/231545_unnamed-71_thumb_722.jpg" class="card-img" alt="...">
@@ -59,7 +59,7 @@
                     </div>
                 </div>
                 <div class="col-12 m-4 ">
-                    <div class="card  text-light" style=" background: rgba(0,0,0,0.4);">
+                    <div class="card  text-light" style=" background: rgba(0,0,0,0.75);">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="https://static.eldiario.es/clip/d960ea2b-1cd0-4930-ba58-9d6a2a7be296_16-9-aspect-ratio_default_0.jpg" class="card-img" alt="...">
@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="col-12 m-4 ">
-                    <div class="card  text-light" style=" background: rgba(0,0,0,0.5);">
+                    <div class="card  text-light" style=" background: rgba(0,0,0,0.75);">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="https://879669.smushcdn.com/1707657/wp-content/uploads/2021/03/oficios-cachimba.jpg?lossy=1&strip=1&webp=1" class="card-img" alt="...">
@@ -99,7 +99,7 @@
                     </div>
                 </div>
                 <div class="col-12 m-4">
-                    <div class="card text-light" style=" background: rgba(0,0,0,0.6);">
+                    <div class="card text-light" style=" background: rgba(0,0,0,0.75);">
                         <div class="row no-gutters">
                             <div class="col-md-4">
                                 <img src="https://21noticias.com/wp-content/uploads/2021/02/91e4ccec5e1a902ba74fd6c66373a852-400x280.jpg" class="card-img" alt="...">
