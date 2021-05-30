@@ -60,16 +60,16 @@ function cargar() {
     mostrarBotones = document.getElementsByClassName("tuya");
     parentBotones = document.getElementsByClassName("cajaMostrar");
 
-    console.log(this.parentBotones);
+    console.log(parentBotones[0].children[0])
 
-    for (let index = 0; index < mostrarBotones.length; index++) {
-        for (let i = 0; i < ocultarBotones.length; i++) {
+    for (let index = 0; index < parentBotones.length; index++) {
 
-            if (ocultarBotones[index]) {
 
-            }
+        if (parentBotones[index].children[0]) {
 
         }
+
+
 
     }
 
