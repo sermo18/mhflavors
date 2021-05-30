@@ -67,7 +67,7 @@ function cargar() {
 
             if (parentBotones[index].children[0] == mostrarBotones[index]) {
 
-                if (parentBotones[index].children[0].classList.value && parentBotones[index].children[0].classList.value.indexOf("tuya") == 4) {
+                if (parentBotones[index].children[0].classList.value != undefined && parentBotones[index].children[0].classList.value.indexOf("tuya") == 4) {
                     console.log("entra")
                 }
             }
