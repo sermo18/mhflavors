@@ -65,8 +65,12 @@ function cargar() {
     for (let index = 0; index < parentBotones.length; index++) {
 
 
-        if (parentBotones[index].children[0]) {
+        if (parentBotones[index].children[0] == ocultarBotones[index]) {
+            for (let i = 0; i < 3; i++) {
 
+                parentBotones[index].children[i + 3].classList.add("ocultar");
+
+            }
         }
 
 
