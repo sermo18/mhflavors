@@ -65,16 +65,15 @@ function cargar() {
 
         for (let index = 0; index < parentBotones.length; index++) {
 
-            if (parentBotones[index].children[0] == mostrarBotones[index]) {
 
-                if (parentBotones[index].children[0].classList.value.indexOf("tuya") == 4) {
+            if (parentBotones[index].children[0].classList.value.indexOf("tuya") == 4) {
 
-                    for (let i = 0; i < parentBotones[index].getElementsByClassName("notuya").length; i++) {
+                for (let i = 0; i < parentBotones[index].getElementsByClassName("notuya").length; i++) {
 
-                        parentBotones[index].getElementsByClassName("notuya")[i].classList.add("ocultar");
+                    parentBotones[index].getElementsByClassName("notuya")[i].classList.add("ocultar");
 
 
-                    }
+
                 }
             }
 
