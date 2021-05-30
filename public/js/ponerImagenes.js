@@ -60,9 +60,11 @@ function cargar() {
     mostrarBotones = document.getElementsByClassName("tuya");
     parentBotones = document.getElementsByClassName("cajaMostrar");
 
-    console.log(parentBotones[0].children[0].classList.value.indexOf("tuya"));
 
     if (parentBotones) {
+        if (parentBotones[0].children[0].classList.includes("tuya")) {
+            console.log("entra")
+        }
         for (let index = 0; index < parentBotones.length; index++) {
 
 
