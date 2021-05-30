@@ -55,6 +55,23 @@ function cargar() {
 
     }
 
+    //Get the buttons that we need to show or not
+    ocultarBotones = document.getElementsByClassName("notuya");
+    mostrarBotones = document.getElementsByClassName("tuya");
+    parentBotones = document.getElementsByClassName("cajaMostrar");
+
+    console.log("parentBotones");
+
+    for (let index = 0; index < mostrarBotones.length; index++) {
+        for (let i = 0; i < ocultarBotones.length; i++) {
+
+            if (ocultarBotones[index]) {
+
+            }
+
+        }
+
+    }
 
 
     for (let index = 0; index < cards.length; index++) {
