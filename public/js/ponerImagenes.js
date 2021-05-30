@@ -60,7 +60,7 @@ function cargar() {
     mostrarBotones = document.getElementsByClassName("tuya");
     parentBotones = document.getElementsByClassName("cajaMostrar");
 
-    console.log(parentBotones[0].children[0])
+
     if (parentBotones) {
         for (let index = 0; index < parentBotones.length; index++) {
 
@@ -68,7 +68,7 @@ function cargar() {
 
                 if (parentBotones[index].children[0] == mostrarBotones[index]) {
                     for (let z = 0; z < 3; z++) {
-
+                        console.log(parentBotones[index].children[i + 2])
                         parentBotones[index].children[i + 2].classList.add("ocultar");
 
                     }
