@@ -65,11 +65,10 @@ function cargar() {
 
         for (let index = 0; index < parentBotones.length; index++) {
 
-            console.log(parentBotones[index].children[0].classList);
             if (parentBotones[index].children[0] == mostrarBotones[index]) {
 
                 if (parentBotones[index].children[0].classList.value.indexOf("tuya") == 4) {
-                    console.log("entra")
+                    parentBotones[index].getElementsByClassName("notuya").classList.add("ocultar");
                 }
             }
 
