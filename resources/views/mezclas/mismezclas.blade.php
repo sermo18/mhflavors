@@ -32,9 +32,9 @@
 
             </tr>
 
-            @forelse($mezclas as $mezcla)
+            @forelse($mezclasFavoritas as $mezclaFavorita)
 
-            @if($mezcla->usuario->login == auth()->user()->login )
+            @if($mezclaFavorita->usuario->login == auth()->user()->login )
 
             <tr>
 
@@ -45,15 +45,15 @@
                 <td>
                     @forelse($sabores as $sabor)
                     @switch($sabor->id)
-                    @case($mezcla->sabor1)
+                    @case($mezclaFavorita->mezcla->sabor1)
                     <span>{{$sabor->nombre}}</span>
                     @break
 
-                    @case($mezcla->sabor2)
+                    @case($mezclaFavorita->mezcla->sabor2)
                     <span>, {{$sabor->nombre}}</span>
                     @break
 
-                    @case($mezcla->sabor3)
+                    @case($mezclaFavorita->mezcla->sabor3)
 
                     @if($sabor->nombre)
                     <span>, {{$sabor->nombre}}</span>
@@ -69,14 +69,14 @@
                 </td>
 
 
-                <td>{{$mezcla->porcentaje1}}%, {{$mezcla->porcentaje2}}%
-                    @if($mezcla->porcentaje3)
-                    <span>, {{$mezcla->porcentaje3}}%</span>
+                <td>{{$mezclaFavorita->mezcla->porcentaje1}}%, {{$mezclaFavorita->mezcla->porcentaje2}}%
+                    @if($mezclaFavorita->mezcla->porcentaje3)
+                    <span>, {{$mezclaFavorita->mezcla->porcentaje3}}%</span>
                     @endif
                 </td>
 
                 <td>
-                    <a href="{{ route('mezclas.destroy', $mezcla->id) }}" class="m-1 "><input type="button" class="btn btn-dark btn-circle" value="-" style="color: white;  width: 30px;
+                    <a href="{{ route('mezclas.destroy', $mezclaFavorita->mezcla->id) }}" class="m-1 "><input type="button" class="btn btn-dark btn-circle" value="-" style="color: white;  width: 30px;
     height: 30px;
     padding: 6px 0px;
     border-radius: 15px;
