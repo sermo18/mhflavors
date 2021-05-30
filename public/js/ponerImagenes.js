@@ -61,26 +61,26 @@ function cargar() {
     parentBotones = document.getElementsByClassName("cajaMostrar");
 
     console.log(parentBotones[0].children[0])
+    if (parentBotones) {
+        for (let index = 0; index < parentBotones.length; index++) {
 
-    for (let index = 0; index < parentBotones.length; index++) {
+            for (let i = 0; i < mostrarBotones.length; i++) {
 
-        for (let i = 0; i < mostrarBotones.length; i++) {
+                if (parentBotones[index].children[index] == mostrarBotones[index]) {
+                    for (let z = 0; z < 3; z++) {
 
-            if (parentBotones[index].children[0] == mostrarBotones[index]) {
-                for (let z = 0; z < 3; z++) {
+                        parentBotones[index].children[i + 2].classList.add("ocultar");
 
-                    parentBotones[index].children[i + 3].classList.add("ocultar");
-
+                    }
                 }
+
             }
 
+
+
+
         }
-
-
-
-
     }
-
 
     for (let index = 0; index < cards.length; index++) {
 
