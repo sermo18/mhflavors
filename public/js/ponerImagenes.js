@@ -68,8 +68,8 @@ function cargar() {
 
                 if (parentBotones[index].children[0] == mostrarBotones[index]) {
                     for (let z = 0; z < 3; z++) {
-                        console.log(parentBotones[index].children[i + 2])
-                        parentBotones[index].children[i + 2].classList.add("ocultar");
+                        console.log(parentBotones[index].children[z + 2])
+                        parentBotones[index].children[z + 2].classList.add("ocultar");
 
                     }
                 }
