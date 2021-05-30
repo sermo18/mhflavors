@@ -60,7 +60,7 @@ function cargar() {
     mostrarBotones = document.getElementsByClassName("tuya");
     parentBotones = document.getElementsByClassName("cajaMostrar");
 
-
+    console.log(parentBotones[index].getElementsByClassName("notuya"));
     if (parentBotones) {
 
         for (let index = 0; index < parentBotones.length; index++) {
@@ -68,7 +68,7 @@ function cargar() {
             if (parentBotones[index].children[0] == mostrarBotones[index]) {
 
                 if (parentBotones[index].children[0].classList.value.indexOf("tuya") == 4) {
-                    parentBotones[index].getElementsByClassName("notuya").classList.add("ocultar");
+                    // parentBotones[index].getElementsByClassName("notuya").classList.add("ocultar");
                 }
             }
 
