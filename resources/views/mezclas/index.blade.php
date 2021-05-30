@@ -130,7 +130,7 @@
                     @if( auth()->user()->rol === 'premium')
                         @foreach ($mezclasFavoritas as $mezclaFavorita)
                             @if($mezclaFavorita->mezclas_id == $mezcla->id && $mezclaFavorita->usuario->id == $userid)
-                    <a class="m-1 tuya" title="Añadir a favoritas"><button type="button" class="btn btn-dark px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                    <a href="{{ route('mezclas.quitar', $mezclaFavorita->id) }}" class="m-1 tuya" title="Añadir a favoritas"><button type="button" class="btn btn-dark px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
                             </svg></button></a>
                     <a class="m-1 " title="Compartir"><button type="button" class="btn btn-dark px-3" data-toggle="modal" data-target="#modalCompartir"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cursor-fill" viewBox="0 0 16 16">

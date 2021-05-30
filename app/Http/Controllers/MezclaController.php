@@ -112,6 +112,12 @@ class MezclaController extends Controller
         return redirect()->route('mezclas.mismezclas');
     }
 
+    public function quitarMezcla($id){
+        $mezclaFavorita = MezclaFavorita::findOrFail($id);
+        $mezclaFavorita->delete();
+        return redirect()->route('mezclas.mismezclas');
+    }
+
 
     /**
      * Display the specified resource.

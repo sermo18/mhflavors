@@ -87,7 +87,7 @@ Route::get('mezclas', [MezclaController::class, 'index'])->name('mezclas.index')
 Route::get('mezclas/usuario', [MezclaController::class, 'misMezclas'])->name('mezclas.mismezclas');
 
 Route::get('mezclas/create', [MezclaController::class, 'create'])->name('mezclas.crear');
-
+Route::get('mezclas/quitar/{id}', [MezclaController::class, 'quitar'])->name('mezclas.quitar');
 Route::get('mezclas/store', [MezclaController::class, 'store'])->name('mezclas.store');
 Route::get('mezclas/añadir/{mezclaA}', [MezclaController::class, 'añadirMezcla'])->name('mezclas.añadir');
 Route::get('mezclas/destroy/{mezclaA}', [MezclaController::class, 'destroy'])->name('mezclas.destroy');
