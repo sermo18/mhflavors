@@ -62,15 +62,14 @@ function cargar() {
 
 
     if (parentBotones) {
-        if (parentBotones[0].children[0].classList.value.indexOf("tuya") == 4) {
-            console.log("entra")
-        }
+
         for (let index = 0; index < parentBotones.length; index++) {
-
-
 
             if (parentBotones[index].children[0] == mostrarBotones[index]) {
 
+                if (parentBotones[index].children[0].classList.value.indexOf("tuya") == 4) {
+                    console.log("entra")
+                }
             }
 
         }
