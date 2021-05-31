@@ -13,7 +13,7 @@
             </div>
             <form action="{{ route('mezclas.store') }}" class="col-12" method="GET">
             @csrf
-
+                <div class="row">
                 @for ($i = 1; $i < 4; $i++)
 
 
@@ -88,7 +88,7 @@
 
 
                 @endfor
-
+                </div>
                 <div class="form-group">
                 <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
                 </div>
