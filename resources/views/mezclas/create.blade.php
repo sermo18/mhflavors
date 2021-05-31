@@ -18,7 +18,7 @@
                 @for ($i = 1; $i < 4; $i++)
 
 
-                    <div class="card text-center shadow p-3 col-12 col-md-4 " style=" background: rgba(0,0,0,0.4);">
+                    <div class="card text-center shadow p-3 col-8 col-md-4 " style=" background: rgba(0,0,0,0.4);">
                         @if($i == 1)
 
 
