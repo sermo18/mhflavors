@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
-<div class="p-0 m-0">
+
 
     <form action="{{ route('mezclas.store') }}" class="imagenMezclaCreada" method="GET">
         @csrf
@@ -99,5 +99,4 @@
 
 @endif
 </form>
-</div>
 @endsection
