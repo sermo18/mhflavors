@@ -3,11 +3,12 @@
 @section('contenido')
 <div class="container-fluid p-0 m-0">
 
-    <form action="{{ route('mezclas.store') }}" method="GET">
-        @csrf
+    <div class="row imagenMezclaCreada">
+        <form action="{{ route('mezclas.store') }}" method="GET">
+            @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row imagenMezclaCreada">
+
 
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
@@ -87,19 +88,20 @@
                 </div>
 
                 @endfor
-            </div>
+
                 <div class="form-group">
                 <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
                 </div>
 
-@if(auth()->check())
-<div class="my-1 col-12 align-content-center justify-content-center text-center">
+                @if(auth()->check())
+                <div class="my-1 col-12 align-content-center justify-content-center text-center">
 
-    <input type="submit" name="enviar" value="Enviar" class="btn btn-dark">
+                <input type="submit" name="enviar" value="Enviar" class="btn btn-dark">
 
-</div>
+                </div>
 
-@endif
-</form>
-</div>
+                @endif
+            </form>
+        </div>
+    </div>
 @endsection
