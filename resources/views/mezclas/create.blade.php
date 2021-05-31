@@ -8,12 +8,13 @@
         <!-- This page its for create a new mixing  -->
 
 
-            <div class="col-12 text-light text-center mb-4">
-                <h1>Crea tu nueva Mezcla</h1>
-            </div>
+
             <form action="{{ route('mezclas.store') }}" class="col-12" method="GET">
             @csrf
                 <div class="row">
+                <div class="col-12 text-light text-center mb-4">
+                <h1>Crea tu nueva Mezcla</h1>
+            </div>
                 @for ($i = 1; $i < 4; $i++)
 
 
