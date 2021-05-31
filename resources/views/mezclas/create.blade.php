@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
-<div class="container-fluid p-0 m-0" style="height: 100%;">
+<div class="container-fluid p-0 m-0">
 
     <form action="{{ route('mezclas.store') }}" class="imagenMezclaCreada" method="GET">
         @csrf
