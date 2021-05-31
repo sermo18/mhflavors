@@ -11,7 +11,7 @@
 
             <form action="{{ route('mezclas.store') }}" class="col-12" method="GET">
             @csrf
-                <div class="row">
+                <div class="row text-center align-content-center justify-content-center">
                     <div class="col-12 text-light text-center mb-4">
                     <h1>Crea tu nueva Mezcla</h1>
                     </div>
