@@ -136,7 +136,7 @@
     </div>
 
     @forelse($saboresmarca as $sabormarca)
-    <a class="col-12 col-sm-6 col-md-3" href="{{ route('post.show', $sabormarca) }}" style="text-decoration: none;">
+    <a class="col-12 col-sm-6 col-md-3 my-2" href="{{ route('post.show', $sabormarca) }}" style="text-decoration: none;">
         <div class="card text-left ponerImagenes  agrandar" style="height: 200px; width: 200px;">
             <div class="card-body text-white ">
                 <h3 class="card-title text-left" style="height: 30px;">{{ $sabormarca->nombre }}</h3>
