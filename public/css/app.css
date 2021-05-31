@@ -4377,7 +4377,6 @@ input[type=button].btn-block {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: auto;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
