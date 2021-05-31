@@ -11,7 +11,8 @@
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
             </div>
-            @for ($i = 1; $i < 4; $i++) <div class="col-12 col-md-4 mb-3 ">
+            @for ($i = 1; $i < 4; $i++)
+            <div class="col-12 col-md-4 mb-3 ">
 
                 <div class="card text-center shadow p-3" style=" background: rgba(0,0,0,0.4);">
                     @if($i == 1)
@@ -81,6 +82,7 @@
         </div>
 @endif
 </div>
+</div>
 @endfor
 </div>
 
@@ -98,7 +100,7 @@
 
 @endif
 </form>
-</div>
+
 </div>
 
 @endsection
