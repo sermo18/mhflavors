@@ -3,7 +3,7 @@
 @section('contenido')
 <div class="container-fluid p-0 m-0">
 
-    <div class="row imagenMezclaCreada">
+    <div class="imagenMezclaCreada">
 
         <!-- This page its for create a new mixing  -->
 
