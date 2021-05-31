@@ -37,8 +37,6 @@
 
                             </div>
 
-                    </div>
-                </div>
 
                          @elseif($i == 2)
                             <div class="card-body text-light py-4">
@@ -59,8 +57,6 @@
                                 </div>
 
                             </div>
-                     </div>
-                </div>
 
                         @elseif($i == 3)
 
@@ -84,14 +80,16 @@
 
 
                             </div>
-                    </div>
-                </div>
+
                         @endif
-        </div>
+                        </div>
+                </div>
+
                 @endfor
-<div class="form-group">
-    <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
-</div>
+            </div>
+                <div class="form-group">
+                <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
+                </div>
 
 @if(auth()->check())
 <div class="my-1 col-12 align-content-center justify-content-center text-center">
