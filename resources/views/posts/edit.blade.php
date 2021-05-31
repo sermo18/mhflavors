@@ -6,7 +6,7 @@
     <!-- This view it's to valorate the flavors -->
     <div class="row mt-4 justify-content-md-center align-items-center">
 
-        <div class="card text-center ponerImagenes  col-4 mt-4 " >
+        <div class="card text-center ponerImagenes  col-12 col-md-6 mt-4 " >
             <div class="card-body text-white " style="height: 400px; width: 400px;">
                 <h3 class="card-title text-left" style="height: 70px;">{{ $sabor->nombre }}</h3>
                 <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
