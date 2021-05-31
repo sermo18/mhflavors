@@ -11,7 +11,7 @@
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
             </div>
-            <form action="{{ route('mezclas.store') }}" method="GET">
+            <form action="{{ route('mezclas.store') }}" class="col-12" method="GET">
             @csrf
 
                 @for ($i = 1; $i < 4; $i++)
@@ -102,6 +102,6 @@
 
                 @endif
             </form>
-        </div>
     </div>
+</div>
 @endsection
