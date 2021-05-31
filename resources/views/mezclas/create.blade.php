@@ -3,7 +3,7 @@
 @section('contenido')
 <div class="container-fluid p-0 m-0">
 
-    <form action="{{ route('mezclas.store') }}" class="" method="GET">
+    <form action="{{ route('mezclas.store') }}" class="imagenMezclaCreada" method="GET">
         @csrf
 
         <!-- This page its for create a new mixing  -->
