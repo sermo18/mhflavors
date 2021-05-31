@@ -83,7 +83,7 @@
 @endif
 </div>
 @endfor
-</div>
+
 
 <div class="form-group">
     <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
@@ -101,5 +101,5 @@
 </form>
 
 </div>
-
+</div>
 @endsection
