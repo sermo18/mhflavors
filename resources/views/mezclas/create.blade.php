@@ -82,7 +82,6 @@
         </div>
 @endif
 </div>
-</div>
 @endfor
 </div>
 
