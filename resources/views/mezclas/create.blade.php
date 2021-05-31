@@ -12,13 +12,13 @@
             <form action="{{ route('mezclas.store') }}" class="col-12" method="GET">
             @csrf
                 <div class="row">
-                <div class="col-12 text-light text-center mb-4">
-                <h1>Crea tu nueva Mezcla</h1>
-            </div>
+                    <div class="col-12 text-light text-center mb-4">
+                    <h1>Crea tu nueva Mezcla</h1>
+                    </div>
                 @for ($i = 1; $i < 4; $i++)
 
 
-                    <div class="card text-center shadow p-3 col-8 col-md-4 " style=" background: rgba(0,0,0,0.4);">
+                    <div class="card text-center shadow p-3 col-8 col-md-4 my-2" style=" background: rgba(0,0,0,0.4);">
                         @if($i == 1)
 
 
