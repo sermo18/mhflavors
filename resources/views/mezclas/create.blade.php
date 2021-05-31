@@ -3,15 +3,16 @@
 @section('contenido')
 <div class="container-fluid p-0 m-0">
 
-    <form action="{{ route('mezclas.store') }}" class="imagenMezclaCreada" method="GET">
+    <form action="{{ route('mezclas.store') }}"method="GET">
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row ">
+        <div class="row imagenMezclaCreada ">
 
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
             </div>
+            <div class="col-12 ">
                 @for ($i = 1; $i < 4; $i++)
                 <div class="col-12 col-md-4 mb-3 ">
 
@@ -86,6 +87,7 @@
                 </div>
 
                 @endfor
+                </div>
             </div>
                 <div class="form-group">
                 <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
