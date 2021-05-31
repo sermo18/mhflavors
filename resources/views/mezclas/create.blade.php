@@ -5,7 +5,7 @@
 <div class="row  ">
     <form action="{{ route('mezclas.store') }}" class="imagenMezclaCreada" method="GET">
         @csrf
-
+        <div class="row" >
         <!-- This page its for create a new mixing  -->
 
 
@@ -99,5 +99,6 @@
 
 @endif
 </form>
+</div>
 </div>
 @endsection
