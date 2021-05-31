@@ -15,7 +15,7 @@
             @csrf
 
                 @for ($i = 1; $i < 4; $i++)
-                <div class="col-12 col-md-4 mb-3 ">
+
 
                     <div class="card text-center shadow p-3" style=" background: rgba(0,0,0,0.4);">
                         @if($i == 1)
@@ -85,7 +85,7 @@
 
                         @endif
                         </div>
-                </div>
+
 
                 @endfor
 
