@@ -43,7 +43,31 @@
 
 
                 <td>
-                    
+
+                    @forelse($sabores as $sabor)
+
+                    @switch($sabor->id)
+                    @case($mezclaFavorita->mezcla->sabor1)
+                    <span>{{$sabor->nombre}}</span>
+                    @break
+
+                    @case($mezclaFavorita->mezcla->sabor2)
+                    <span>, {{$sabor->nombre}}</span>
+                    @break
+
+                    @case($mezclaFavorita->mezcla->sabor3)
+
+                    @if($sabor->nombre)
+                    <span>, {{$sabor->nombre}}</span>
+                    @endif
+
+                    @break
+
+                    @default
+
+                    @endswitch
+                    @empty
+                    @endforelse
                 </td>
 
 
@@ -54,7 +78,7 @@
                 </td>
 
                 <td>
-                    <a href="{{ route('mezclas.destroy', $mezclaFavorita->mezcla->id) }}" class="m-1 "><input type="button" class="btn btn-dark btn-circle" value="-" style="color: white;  width: 30px;
+                    <a href="{{ route('mezclas.destroy', $mezclaFavorita->id) }}" class="m-1 "><input type="button" class="btn btn-dark btn-circle" value="-" style="color: white;  width: 30px;
     height: 30px;
     padding: 6px 0px;
     border-radius: 15px;
