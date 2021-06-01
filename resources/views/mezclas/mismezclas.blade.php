@@ -2,21 +2,21 @@
 @section('titulo', 'Tus Mezclas Favoritas ♡')
 @section('contenido')
 <div class="container-fluid" style="height: 100vh;">
-    @if($errors->any())
+@if($errors->any())
 
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        <strong>{{$errors->first()}}</strong>
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>{{$errors->first()}}</strong>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
 
 
-    @endif
+@endif
     <div class="row m-4">
         <h1>Tus Mezclas</h1>
     </div>
-    <!-- This page shows all of your favourite mixings -->
+<!-- This page shows all of your favourite mixings -->
     <div class="table-responsive">
 
         <table class="table table-striped">
@@ -43,9 +43,7 @@
 
 
                 <td>
-                    @if($mezclaFavorita->mezcla->sabor1 && $mezclaFavorita->mezcla->sabor2)
-
-                    @forelse($sabores as $sabor)
+                    <!-- @forelse($sabores as $sabor)
 
                     @switch($sabor->id)
                     @case($mezclaFavorita->mezcla->sabor1)
@@ -68,8 +66,7 @@
 
                     @endswitch
                     @empty
-                    @endforelse
-                    @endif
+                    @endforelse -->
                 </td>
 
 
