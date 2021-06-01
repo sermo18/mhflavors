@@ -12,7 +12,7 @@
 <!-- This page its for valorate the mixing that you have smoked -->
         <div class="col-12 align-self-center">
             <div class="row ">
-                <div class="col-4 ">
+                <div class="col-12 col-md-4 ">
                     <div class="card">
                             <div class="ponerImagenes shadow p-3">
                                 <div class="card-body" style="height: 400px;">
@@ -35,7 +35,7 @@
 
                 </div>
                 @if($mezcla->porcentaje3)
-                <div class="col-4">
+                <div class="col-12 col-md-4 ">
 
                     <div class="card  " >
                         
@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 @endif
-                <div class="col-4">
+                <div class="col-12 col-md-4 ">
                     <div class="card" >
                         
                             <div class="ponerImagenes shadow p-3">
