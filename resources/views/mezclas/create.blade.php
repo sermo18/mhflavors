@@ -12,7 +12,7 @@
                 <h1>Crea tu nueva Mezcla</h1>
             </div>
             @for ($i = 1; $i < 4; $i++)
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 py-4">
 
                 <div class="card text-center" style="background: rgba(0,0,0,0.4);">
         
