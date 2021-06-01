@@ -78,7 +78,7 @@
                 </td>
 
                 <td>
-                    <a href="{{ route('mezclas.destroy', $mezclaFavorita->id) }}" class="m-1 "><input type="button" class="btn btn-dark btn-circle" value="-" style="color: white;  width: 30px;
+                    <a href="{{ route('mezclas.quitar', $mezclaFavorita->id) }}" class="m-1 "><input type="button" class="btn btn-dark btn-circle" value="-" style="color: white;  width: 30px;
     height: 30px;
     padding: 6px 0px;
     border-radius: 15px;
