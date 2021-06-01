@@ -4,7 +4,7 @@
 <div class="container-fluid p-0 m-0">
 
     <!-- This page show us the last news -->
-    <div class="row p-0 m-0 notiback">
+    <div class="row p-0 m-0 imagenMezclaCreada">
         <div class="col-12 p-4">
             <h1 class="text-white">Últimas Noticias</h1>
         </div>
