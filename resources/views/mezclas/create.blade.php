@@ -5,8 +5,8 @@
     
 
         <!-- This page its for create a new mixing  -->
-        <div class="row p-0 m-0 imagenMezclaCreada">
-        <form action="{{ route('mezclas.store') }}" class="p-0 m-0 col-12" method="GET">
+        <div class="p-0 m-0 imagenMezclaCreada">
+        <form action="{{ route('mezclas.store') }}" class="p-0 m-0 row" method="GET">
         @csrf
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
