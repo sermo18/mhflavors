@@ -14,7 +14,7 @@
             @for ($i = 1; $i < 4; $i++)
             <div class="col-12 col-md-4">
 
-                <div class="card text-center" style=" background: rgba(0,0,0,0.4);">
+                <div class="card text-center" style=" height: 50%; background: rgba(0,0,0,0.4);">
         
                     <div class="card-body text-light py-4 ">
                         <p class="card-text py-4 my-2">Elige el sabor e indica la cantidad que quieres ponerle.</p>
