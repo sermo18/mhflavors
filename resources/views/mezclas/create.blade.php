@@ -35,9 +35,10 @@
                     </div>
 
                 </div>
+                </div>
 
             @endfor
-            </div>
+        </div>
 
 <div class="form-group">
     <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
