@@ -105,7 +105,7 @@
                         <input class="estrellas" id="radio5" type="radio" name="valoracion" value="1">
 
                         <label class="radioEstrellas" for="radio5">★</label>
-                        <button type="submit" class="mt-2" style="float: right;">Valorar</button>
+                        <button type="submit" class="mt-2 btn btn-dark" style="float: right;">Valorar</button>
                     </p>
 
                 </form>
