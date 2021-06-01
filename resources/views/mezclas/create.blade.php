@@ -2,11 +2,11 @@
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
 <div class="container-fluid p-0 m-0">
-    <form action="{{ route('mezclas.store') }}" method="GET">
+    <form action="{{ route('mezclas.store') }}" class="imagenMezclaCreada" method="GET">
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row imagenMezclaCreada p-4 m-0">
+        <div class="row p-4 m-0 justify-content-center">
 
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
@@ -14,7 +14,7 @@
             @for ($i = 1; $i < 4; $i++)
             <div class="col-12 col-md-4">
 
-                <div class="card text-center" style=" height: 50%; background: rgba(0,0,0,0.4);">
+                <div class="card text-center" style="background: rgba(0,0,0,0.4);">
         
                     <div class="card-body text-light py-4 ">
                         <p class="card-text py-4 my-2">Elige el sabor e indica la cantidad que quieres ponerle.</p>
@@ -40,10 +40,10 @@
             @endfor
         
 
-            <div class="form-group">
+            <div class="form-group col-12">
                 <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
             </div>
-            </div>
+        </div>
 
             @if(auth()->check())
                 <div class="my-1 row align-content-center justify-content-center text-center">
