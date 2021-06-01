@@ -3,7 +3,7 @@
 @section('contenido')
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 <!-- This is the contact page -->
-<div class="container-fluid" height="100%">
+<div class="container-fluid">
 
     <div class="row">
         <div class="col-12 text-center contactoback2">
