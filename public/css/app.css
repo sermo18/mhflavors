@@ -4462,6 +4462,16 @@ input[type=button].btn-block {
     align-items: center;
 }
 
+.navegador {
+    height: 96px;
+}
+
+@media (max-width: 576px) {
+    .navegador {
+        height: 156px;
+    }
+}
+
 .loginback {
     background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imgs/login.jpg");
     background-size: cover;

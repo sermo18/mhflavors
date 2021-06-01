@@ -9,7 +9,7 @@
 
 <body>
     @include('partials.nav')
-    <div style="height:96px;"></div>
+    <div class="navegador"></div>
     
     @yield('contenido')
 
