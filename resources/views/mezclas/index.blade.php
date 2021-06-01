@@ -125,7 +125,7 @@
                     @endif
                 </td>
                 <td class="text-center cajaMostrar">
-
+                <!-- If the user it's logged and premium we show the mixings that he has in the favourites mixings -->
                 @if(auth()->check())
                     @if( auth()->user()->rol === 'premium')
                         @foreach ($mezclasFavoritas as $mezclaFavorita)

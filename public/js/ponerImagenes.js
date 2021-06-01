@@ -36,6 +36,7 @@ function cargar() {
         }
     }
 
+    //Function to show less comments in the view show.posts
     function verMenosComentarios() {
 
         for (let index = 2; index < comentarios.length; index++) {
@@ -43,6 +44,7 @@ function cargar() {
             comentarios[index].classList.add("ocultar");
         }
     }
+    //Function to show more comments in the view show.posts
 
     function verMasComentarios() {
 
@@ -60,7 +62,8 @@ function cargar() {
     mostrarBotones = document.getElementsByClassName("tuya");
     parentBotones = document.getElementsByClassName("cajaMostrar");
 
-    console.log(parentBotones[1]);
+    //Get the elements with classname tuya and ocult the elements with the 
+    // class notuya if the parent node have a children with class tuya
     if (parentBotones) {
 
         for (let index = 0; index < parentBotones.length; index++) {

@@ -23,6 +23,7 @@ class MezclaController extends Controller
      // This function show all mixings ordered by valoration
     public function index()
     {
+        // We take all mixings, flavors, users and favourite mixings and we pass this variables to the view index
         $mezclas = Mezcla::orderBy('valoracion', 'DESC')->paginate(20);
         $sabores= Sabor::get();
         $usuarios = Usuario::get();
@@ -30,7 +31,7 @@ class MezclaController extends Controller
         if( Auth::id()){
             $userid = Auth::id();
         }else{
-            $userid = 0;
+            $userid = null;
         }
 
         return view('mezclas.index', compact('mezclas','sabores','usuarios','userid','mezclasFavoritas'));
@@ -79,9 +80,14 @@ class MezclaController extends Controller
      // This function add a new mixing created by the user, if the percentage of mixing it's bigger than 100% will send error
     public function store(Request $request)
     {
+        //If the request has more than 100% or less we send an error to the view mismezclas
         if ($request->get('porcentaje1') + $request->get('porcentaje2') + $request->get('porcentaje3') > 100) {
             return  redirect()->route('mezclas.mismezclas')->withErrors(['El porcentaje de sabores no puede ser superior a 100%']);
+        }else if($request->get('porcentaje1') + $request->get('porcentaje2') + $request->get('porcentaje3') < 100){
+            return  redirect()->route('mezclas.mismezclas')->withErrors(['El porcentaje de sabores no puede ser inferior a 100%']);
         }else{
+
+        //Else we save the new mixing
         $mezcla = new Mezcla();
         $mezcla->sabor1 = $request->get('sabor1');
         $mezcla->sabor2 = $request->get('sabor2');
@@ -105,6 +111,7 @@ class MezclaController extends Controller
     //This function add a new mixing to the mixings of the users.
     public function añadirMezcla(Mezcla $mezclaA)
     {
+        //Show the view to create a new mixing 
         $mezclaFavorita = new MezclaFavorita();
         $mezclaFavorita->mezclas_id = $mezclaA->id;
         $mezclaFavorita->usuario_id = Auth::id();
@@ -113,6 +120,7 @@ class MezclaController extends Controller
     }
 
     public function quitarMezcla($id){
+        //Delete the favourite mixing
         $mezclaFavorita = MezclaFavorita::findOrFail($id);
         $mezclaFavorita->delete();
         return redirect()->route('mezclas.mismezclas');
@@ -153,7 +161,6 @@ class MezclaController extends Controller
 
     // This function add to the mixing valoration the request valoration and divides it between the number of votes
     public function valorarMezcla(Request $request, $id){
-
         $mezcla = Mezcla::findOrFail($id);
         $mezcla->votos += 1;
         $mezcla->valoracion = ($mezcla->valoracion + $request->get('valoracion'));

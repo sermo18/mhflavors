@@ -4,12 +4,7 @@
 <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
 <div >
     <div class="row imagenMezclaAleatoria ">
-
-
         <h1 class="col-12 text-light text-center">¿Qué Fumo Hoy?</h1>
-
-
-
         <div class="col-12 align-self-center">
             <div class="row justify-content-between">
                 <div class="col-4 ">

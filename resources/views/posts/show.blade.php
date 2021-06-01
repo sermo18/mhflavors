@@ -97,6 +97,8 @@
         </form>
     </div>
 </div>
+
+<!-- We show the posts or comments of our flavor -->
 @forelse($posts as $post)
 
 <div class="row mt-3">
@@ -134,7 +136,7 @@
     <div class="col-12 mt-3">
         <h3 class="text-secondary text-center">Más sabores de {{$sabor->marca}}</h3>
     </div>
-
+ <!-- We show the other flavors with the same brand-->
     @forelse($saboresmarca as $sabormarca)
     <a class="col-12 col-sm-6 col-md-3 my-2" href="{{ route('post.show', $sabormarca) }}" style="text-decoration: none;">
         <div class="card text-left ponerImagenes  agrandar" style="height: 200px; width: 200px;">

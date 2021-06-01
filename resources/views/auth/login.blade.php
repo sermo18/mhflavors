@@ -6,7 +6,7 @@
     <div class="row ">
 
         <div class="col-12  text-center loginback">
-
+    <!-- Little form to log in to the page -->
             <form action="{{ route('auth.login') }}" class="p-4 col-6" style="background-color: white;  opacity: 0.85; border-radius:22px;" method="POST">
                 @csrf
                 @if (!empty($error))

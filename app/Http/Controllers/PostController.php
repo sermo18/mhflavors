@@ -113,6 +113,7 @@ class PostController extends Controller
         if(auth()->check()){
             $post->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
         }else{
+            //If the user it's not logged in we put the comment to anonimous user
             $post->usuario()->associate(Usuario::find(999));
         }
 

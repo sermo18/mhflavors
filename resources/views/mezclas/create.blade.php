@@ -11,6 +11,8 @@
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
             </div>
+
+            <!-- We made a loop to create the 3 flavors of the mixings -->
             @for ($i = 1; $i < 4; $i++)
             <div class="col-12 col-md-4 py-4">
 
