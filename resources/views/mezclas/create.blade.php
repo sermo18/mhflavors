@@ -2,11 +2,11 @@
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
 <div class="container-fluid p-0 m-0">
-    <form action="{{ route('mezclas.store') }}" class="imagenMezclaCreada" method="GET">
+    <form action="{{ route('mezclas.store') }}"  method="GET">
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row p-4 m-0 justify-content-center">
+        <div class="row p-4 m-0 justify-content-center imagenMezclaCreada">
 
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
