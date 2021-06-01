@@ -1,20 +1,20 @@
 @extends('plantilla')
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
-<div class="container-fluid">
+<div class="container-fluid p-0 m-0">
     <form action="{{ route('mezclas.store') }}" method="GET">
         @csrf
 
         <!-- This page its for create a new mixing  -->
-        <div class="row imagenMezclaCreada ">
+        <div class="row imagenMezclaCreada p-4 m-0">
 
             <div class="col-12 text-light text-center mb-4">
                 <h1>Crea tu nueva Mezcla</h1>
             </div>
             @for ($i = 1; $i < 4; $i++)
-            <div class="col-12 col-md-4 mb-3 ">
+            <div class="col-12 col-md-4">
 
-                <div class="card text-center shadow p-3" style=" background: rgba(0,0,0,0.4);">
+                <div class="card text-center" style=" background: rgba(0,0,0,0.4);">
         
                     <div class="card-body text-light py-4 ">
                         <p class="card-text py-4 my-2">Elige el sabor e indica la cantidad que quieres ponerle.</p>
