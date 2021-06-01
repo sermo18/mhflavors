@@ -17,7 +17,7 @@
                 <div class="card text-center" style="background: rgba(0,0,0,0.4);">
         
                     <div class="card-body text-light py-4 ">
-                        <p class="card-text py-4 my-2">Elige el sabor e indica la cantidad que quieres ponerle.</p>
+                        <p class="card-text py-4 my-2">Elige el sabor:</p>
                         <input class="form-control  buscador1 my-2" list="datalistOptions" name="sabor{{$i}}" id="sabor{{$i}}" placeholder="Type to search...">
                         <datalist id="datalistOptions">
                             @foreach ($sabores as $sabor)
