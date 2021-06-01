@@ -43,30 +43,7 @@
 
 
                 <td>
-                    <!-- @forelse($sabores as $sabor)
-
-                    @switch($sabor->id)
-                    @case($mezclaFavorita->mezcla->sabor1)
-                    <span>{{$sabor->nombre}}</span>
-                    @break
-
-                    @case($mezclaFavorita->mezcla->sabor2)
-                    <span>, {{$sabor->nombre}}</span>
-                    @break
-
-                    @case($mezclaFavorita->mezcla->sabor3)
-
-                    @if($sabor->nombre)
-                    <span>, {{$sabor->nombre}}</span>
-                    @endif
-
-                    @break
-
-                    @default
-
-                    @endswitch
-                    @empty
-                    @endforelse -->
+                    
                 </td>
 
 
