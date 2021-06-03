@@ -8,8 +8,6 @@ use App\Models\Mezcla;
 use App\Models\Usuario;
 use App\Models\MezclaFavorita;
 use Illuminate\Support\Facades\Auth;
-
-
 use Illuminate\Http\Request;
 
 class MezclaController extends Controller
