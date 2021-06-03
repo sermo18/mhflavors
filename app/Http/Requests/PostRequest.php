@@ -21,7 +21,7 @@ class PostRequest extends FormRequest
 
             'nombre.required' => 'El nombre es ¡Obligatorio!',
             'nacimiento.required' => 'Es necesario saber tu fecha de nacimiento',
-            'rol.required' => 'Debe seleccionar una opcion',
+            'rol.required' => 'Debe seleccionar una opcion ',
             'asunto.required' => 'Necesitas especificar un asunto',
             'inputEmail3.required' => 'Es necesario tu correo electrónico',
             'password.required' => 'Su contraseña es necesaria',
