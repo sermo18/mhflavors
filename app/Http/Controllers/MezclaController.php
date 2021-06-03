@@ -99,7 +99,7 @@ class MezclaController extends Controller
         $mezcla->votos = 0;
         $mezcla->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
         $mezcla->save();
-        
+
         $mezclaFavorita = new MezclaFavorita();
         $mezclaFavorita->mezcla_id = $mezcla->id;
         $mezclaFavorita->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
@@ -111,7 +111,7 @@ class MezclaController extends Controller
     //This function add a new mixing to the mixings of the users.
     public function añadirMezcla(Mezcla $mezclaA)
     {
-        //Show the view to create a new mixing 
+        //Show the view to create a new mixing
         $mezclaFavorita = new MezclaFavorita();
         $mezclaFavorita->mezclas_id = $mezclaA->id;
         $mezclaFavorita->usuario_id = Auth::id();

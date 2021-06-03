@@ -105,7 +105,7 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
     //Save new comment in the post
-    public function store(PostRequest $request)
+    public function store(Request $request)
     {
         $post = new Post();
         $post->titulo = "P";
@@ -168,7 +168,7 @@ class PostController extends Controller
      */
 
     //This function adds the value of the petition to that of the flavor and divides it between the votes
-    public function update(PostRequest $request, $id)
+    public function update(Request $request, $id)
     {
         $sabor = Sabor::findOrFail($id);
         $sabor->votos += 1;

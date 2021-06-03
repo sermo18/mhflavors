@@ -4,13 +4,6 @@
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 <!-- This is the contact page -->
 <div class="container-fluid">
-@if ($errors->any())
-                <ul>
-                    @foreach($errors->all() as $error)
-                    <li class="text-danger">{{ $error }}</li>
-                    @endforeach
-                </ul>
-                @endif
     <div class="row">
         <div class="col-12 text-center contactoback2 p-4">
             <form class="p-4 m-4 " style="background-color: white;opacity: 0.85; border-radius:22px;">
