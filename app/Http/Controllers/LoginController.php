@@ -16,7 +16,7 @@ class LoginController extends Controller
         {
         return view('auth.login');
         }
-    public function login(Request $request)
+    public function login(PostRequest $request)
     {
         $credenciales = $request->only('login', 'password');
             if (Auth::attempt($credenciales))
@@ -40,7 +40,7 @@ class LoginController extends Controller
         return view('auth.registro', compact('usuarios'));
     }
 
-    public function registrarUsuario(Request $request)
+    public function registrarUsuario(PostRequest $request)
     {
         $usuario = new Usuario();
         $usuario->nombre = $request->get('nombre');
@@ -51,5 +51,5 @@ class LoginController extends Controller
         $usuario->save();
         return view('auth.login');
     }
-    
+
 }
