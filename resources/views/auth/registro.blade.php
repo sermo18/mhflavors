@@ -9,10 +9,12 @@
             <!-- Little form to register into the page -->
             <form action="{{ route('auth.registrarUsuario') }}" class="p-4 col-6 m-4" style="background-color: white;  opacity: 0.85; border-radius:22px;" method="POST">
                 @csrf
-                @if (!empty($error))
-                <div class="text-danger">
-                    {{ $error }}
-                </div>
+                @if ($errors->any())
+                <ul>
+                    @foreach($errors->all() as $error)
+                    <li class="text-danger">{{ $error }}</li>
+                    @endforeach
+                </ul>
                 @endif
                 <h1>Registro</h1>
                 <div class="form-group">

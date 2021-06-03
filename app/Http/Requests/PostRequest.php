@@ -18,13 +18,17 @@ class PostRequest extends FormRequest
     public function messages()
     {
         return [
-            
-            'titulo.required' => 'El titulo es ¡Obligatorio!',
-            'contenido.required' => 'El post requiere un contenido',
-            'valoracion.required' => 'required valoration',
-            'titulo.min' => 'El titulo es demasiado corto',
-            'contenido.min' => 'El contenido es demasiado corto',
-            
+
+            'nombre.required' => 'El nombre es ¡Obligatorio!',
+            'nacimiento.required' => 'Es necesario saber tu fecha de nacimiento',
+            'rol.required' => 'Debe seleccionar una opcion',
+            'asunto.required' => 'Necesitas especificar un asunto',
+            'inputEmail3.required' => 'Es necesario tu correo electrónico',
+            'password.required' => 'Su contraseña es necesaria',
+            'login.required' => 'Su nombre de usuario es necesario',
+            'password.min' => 'Su contraseña debe tener al menos 8 caracteres',
+            'login.min' => 'Su nombre de usuario debe tener al menos 5 caracteres',
+
         ];
     }
     /**
@@ -35,10 +39,14 @@ class PostRequest extends FormRequest
     public function rules()
     {
         return [
-            
-                'titulo' => 'required|min:5',
-                'contenido' => 'required|min:50',
-                'valoracion' => 'required'
+
+                'nombre' => 'required',
+                'login' => 'required|min:5',
+                'password' => 'required|min:8',
+                'nacimiento' => 'required',
+                'rol' => 'required',
+                'inputEmail3' => 'required',
+                'asunto' => 'required',
             ];
     }
 }

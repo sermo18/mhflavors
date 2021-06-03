@@ -22,9 +22,9 @@
                     </div>
                 </div>
                 <div class="form-group row p-3">
-                    <label for="exampleFormControlFile1" class="col-sm-2 col-form-label">Archivo adjunto</label>
+                    <label for="rol" class="col-sm-2 col-form-label">Archivo adjunto</label>
                     <div class="col-sm-10">
-                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        <input type="file" class="form-control-file" id="rol">
                     </div>
                 </div>
                 <div class="form-group row p-3">
