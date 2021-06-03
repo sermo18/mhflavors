@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\Post;
 use App\Models\Usuario;
+use App\Http\Requests\PostRequest;
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use Illuminate\Support\Facades\DB;
@@ -17,7 +18,7 @@ class LoginController extends Controller
         {
         return view('auth.login');
         }
-    public function login(LoginRequest $request)
+    public function login(PostRequest $request)
     {
         $credenciales = $request->only('login', 'password');
             if (Auth::attempt($credenciales))
@@ -41,7 +42,7 @@ class LoginController extends Controller
         return view('auth.registro', compact('usuarios'));
     }
 
-    public function registrarUsuario(RegisterRequest $request)
+    public function registrarUsuario(PostRequest $request)
     {
         $usuario = new Usuario();
         $usuario->nombre = $request->get('nombre');
