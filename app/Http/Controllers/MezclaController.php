@@ -29,7 +29,7 @@ class MezclaController extends Controller
         if( Auth::id()){
             $userid = Auth::id();
         }else{
-            $userid = null;
+            $userid = 0;
         }
 
         return view('mezclas.index', compact('mezclas','sabores','usuarios','userid','mezclasFavoritas'));
