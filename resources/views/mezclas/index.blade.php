@@ -127,7 +127,7 @@
                 <td class="text-center cajaMostrar">
                 <!-- If the user it's logged and premium we show the mixings that he has in the favourites mixings -->
                 @if(auth()->check())
-                    @if( auth()->user()->rol === 'premium')
+                    @if( auth()->user()->rol === 'premium' || auth()->user()->rol === 'admin' )
                         @foreach ($mezclasFavoritas as $mezclaFavorita)
                             @if($mezclaFavorita->mezclas_id == $mezcla->id && $mezclaFavorita->usuario->id == $userid)
                     <a href="{{ route('mezclas.quitar', $mezclaFavorita->id) }}" class="m-1 tuya" title="Añadir a favoritas"><button type="button" class="btn btn-dark px-3"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart-fill" viewBox="0 0 16 16">

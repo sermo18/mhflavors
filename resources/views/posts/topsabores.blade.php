@@ -44,7 +44,7 @@
             <td>{{ $sabor->valoracion / $sabor->votos}} / 5 </td>
             @endif
             @if(auth()->check())
-            @if( auth()->user()->rol === 'premium')
+            @if( auth()->user()->rol === 'premium' || auth()->user()->rol === 'admin')
             <td><a class="nav-link" href="{{ route('posts.edit', $sabor->id) }}">
                     <input type="submit" class="btn btn-secondary" value="Valorar Sabor" /></a></td>
             @else

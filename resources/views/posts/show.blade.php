@@ -16,7 +16,7 @@
                 @endif
 
                 @if(auth()->check())
-                @if (auth()->user()->rol === 'premium')
+                @if (auth()->user()->rol === 'premium' || auth()->user()->rol === 'admin')
                 <div class="row justify-content-center align-items-right">
                     <a class="nav-link" href="{{ route('posts.edit', $sabor->id) }}">
                         <input type="submit" class="btn btn-secondary" value="Valorar Sabor" /></a>
