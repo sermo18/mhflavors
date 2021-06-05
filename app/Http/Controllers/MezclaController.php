@@ -100,7 +100,7 @@ class MezclaController extends Controller
 
         $mezclaFavorita = new MezclaFavorita();
         $mezclaFavorita->mezcla_id = $mezcla->id;
-        $mezclaFavorita->usuario()->associate(Usuario::findOrFail($request->get('usuario')));
+        $mezclaFavorita->usuario_id = Auth::id();
 
         return redirect()->route('mezclas.mismezclas');
         }
