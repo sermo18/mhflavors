@@ -122,6 +122,11 @@ class MezclaController extends Controller
         //Delete the favourite mixing
         $mezclaFavorita = MezclaFavorita::findOrFail($id);
         $mezclaFavorita->delete();
+
+        if(Auth::id() === $mezclaFavorita->usuario_id){
+            $mezcla = Mezcla::findOrFail($mezclaFavorita->mezclas_id);
+            $mezcla->delete()
+        }
         return redirect()->route('mezclas.mismezclas');
     }
 
