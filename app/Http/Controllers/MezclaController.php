@@ -99,7 +99,7 @@ class MezclaController extends Controller
         $mezcla->save();
 
         $mezclaFavorita = new MezclaFavorita();
-        $mezclaFavorita->mezcla_id = $mezcla->id;
+        $mezclaFavorita->mezclas_id = $mezcla->id;
         $mezclaFavorita->usuario_id = Auth::id();
         $mezclaFavorita->save();
 
