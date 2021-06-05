@@ -123,8 +123,8 @@ class MezclaController extends Controller
         $mezclaFavorita = MezclaFavorita::findOrFail($id);
         $mezclaFavorita->delete();
 
-        if(Auth::id() === $mezclaFavorita->usuario_id){
-            $mezcla = Mezcla::findOrFail($mezclaFavorita->mezclas_id);
+        $mezcla = Mezcla::findOrFail($mezclaFavorita->mezclas_id);
+        if(Auth::id() === $mezcla->usuario_id){
             $mezcla->delete();
         }
 
