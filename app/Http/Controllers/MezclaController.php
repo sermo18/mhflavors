@@ -7,6 +7,7 @@ use App\Models\Sabor;
 use App\Models\Mezcla;
 use App\Models\Usuario;
 use App\Models\MezclaFavorita;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
