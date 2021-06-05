@@ -184,7 +184,7 @@ class PostController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-     //Deprecated
+     //Deletes de flavor
     public function destroy($id)
     {
 

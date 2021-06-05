@@ -4606,6 +4606,12 @@ input[type=button].btn-block {
     background-position: center center;
 }
 
+.adminSabores {
+    position: relative;
+    float: right;
+    top: 10;
+}
+
 .imgContacto {
     background-image: url("./imgs/contacto.jpg");
     background-repeat: no-repeat;
