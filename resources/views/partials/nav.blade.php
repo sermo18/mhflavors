@@ -32,7 +32,7 @@
 
                     <a class="nav-link" href="{{ route('mezclas.index') }}">Mezclas</a>
                     @if(auth()->check())
-                    @if( auth()->user()->rol === 'premium' auth()->user()->rol === 'admin')
+                    @if( auth()->user()->rol === 'premium' || auth()->user()->rol === 'admin')
 
                     <a class="nav-link" href="{{ route('mezclas.crear') }}">
                         Nueva Mezcla</a>
