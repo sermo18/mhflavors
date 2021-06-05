@@ -204,8 +204,14 @@ class MezclaController extends Controller
      //This function it's for destroy a mixing of your favourite mixings
     public function destroy($id)
     {
-        $mezcla = Mezcla::findOrFail($id);
+       
+
+        $mezclaFavorita = MezclaFavorita::findOrFail($id);
+        $mezclaFavorita->delete();
+
+        $mezcla = Mezcla::findOrFail($mezclaFavorita->mezclas_id);
         $mezcla->delete();
-        return redirect()->route('mezclas.mismezclas');
+
+        return redirect()->route('mezclas.index');
     }
 }
