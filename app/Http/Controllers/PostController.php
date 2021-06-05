@@ -82,7 +82,7 @@ class PostController extends Controller
     // Take all flavors ordered by the valoration of these flavors
     public function topSabores()
     {
-        $sabores =  Sabor::orderBy('valoracion', 'DESC')->get()->take(10);
+        $sabores =  Sabor::orderBy('valoracion'/'votos', 'DESC')->get()->take(10);
         return view('posts.topsabores', compact('sabores'));
     }
     /**
