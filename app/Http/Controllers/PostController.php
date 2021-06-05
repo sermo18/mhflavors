@@ -82,7 +82,7 @@ class PostController extends Controller
     // Take all flavors ordered by the valoration of these flavors
     public function topSabores()
     {
-        $sabores = DB::select( DB::raw("SELECT * FROM sabores ORDER BY (valoracion/votos) DESC") );
+        $sabores = DB::select( DB::raw("SELECT * FROM sabores ORDER BY (valoracion/votos) DESC") )->take(10);
 
         return view('posts.topsabores', compact('sabores'));
     }
