@@ -23,7 +23,8 @@ class MezclaController extends Controller
     public function index()
     {
         // We take all mixings, flavors, users and favourite mixings and we pass this variables to the view index
-        $mezclas = DB::select( DB::raw("SELECT * FROM mezclas ORDER BY (valoracion/votos) DESC") )->paginate(20);
+        $query = DB::select( DB::raw("SELECT * FROM mezclas ORDER BY (valoracion/votos) DESC") )->paginate(20);
+        $mezclas = $query->get()->paginate(20);
         $sabores= Sabor::get();
         $usuarios = Usuario::get();
         $mezclasFavoritas = MezclaFavorita::get();
