@@ -34,7 +34,7 @@
 
             @forelse($mezclasFavoritas as $mezclaFavorita)
 
-            @if($mezclaFavorita->usuario->login == auth()->user()->login )
+            @if($mezclaFavorita->usuario->id == auth()->user()->id )
 
             <tr>
 
