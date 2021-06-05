@@ -125,8 +125,9 @@ class MezclaController extends Controller
 
         if(Auth::id() === $mezclaFavorita->usuario_id){
             $mezcla = Mezcla::findOrFail($mezclaFavorita->mezclas_id);
-            $mezcla->delete()
+            $mezcla->delete();
         }
+
         return redirect()->route('mezclas.mismezclas');
     }
 
