@@ -7,7 +7,6 @@ use App\Models\Sabor;
 use App\Models\Mezcla;
 use App\Models\Usuario;
 use App\Models\MezclaFavorita;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -23,8 +22,7 @@ class MezclaController extends Controller
     public function index()
     {
         // We take all mixings, flavors, users and favourite mixings and we pass this variables to the view index
-        $query = DB::select( DB::raw("SELECT * FROM mezclas ORDER BY (valoracion/votos) DESC") );
-        $mezclas = $query->get()->paginate(20);
+        $mezclas = Mezcla::orderBy('valoracion', 'DESC')->paginate(20);
         $sabores= Sabor::get();
         $usuarios = Usuario::get();
         $mezclasFavoritas = MezclaFavorita::get();
