@@ -4609,7 +4609,8 @@ input[type=button].btn-block {
 .adminSabores {
     position: relative;
     float: right;
-    top: 10;
+    top: 8;
+    right: 8;
 }
 
 .imgContacto {
