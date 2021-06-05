@@ -62,9 +62,9 @@ Route::get('posts/editarPrueba/{id}', [PostController::class, 'editarPrueba'])->
 
 Route::get('posts/nuevoPrueba', [PostController::class, 'nuevoPrueba'])->name('nuevo_Prueba');
 
-Route::delete('posts/delete/{id}', [PostController::class, 'destroy'])->name('post.destroy')->middleware('auth');
+Route::get('posts/delete/{id}', [PostController::class, 'destroy'])->name('post.destroy')->middleware('auth');
 
-Route::delete('posts/valorar/{id}/{valoracion}', [PostController::class, 'valorar'])->name('post.valorar');
+Route::get('posts/valorar/{id}/{valoracion}', [PostController::class, 'valorar'])->name('post.valorar');
 
 
 // Login
