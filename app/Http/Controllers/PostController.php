@@ -189,6 +189,19 @@ class PostController extends Controller
     {
 
         $sabor = Sabor::findOrFail($id);
+        $mezclasFavoritas = MezclaFavorita::get();
+        $mezclas = Mezcla::get();
+        
+        foreach ($mezclas as $key => $mezcla) {
+        if ($mezcla->sabor1 == $sabor->id || $mezcla->sabor2 == $sabor->id || $mezcla->sabor3 == $sabor->id) {  
+            foreach ($mezclasFavoritas as $key => $mezclaFavorita) {
+                if ($mezcla->id == $mezclaFavorita->mezclas_id) {
+                    $mezclaFavorita->delete();
+                }
+            }
+            $mezcla->delete();
+        }
+        }
         $sabor->delete();
         return redirect()->route('posts.index');
 
