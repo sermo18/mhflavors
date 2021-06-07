@@ -61,5 +61,9 @@ class Usuario extends Authenticatable
         {
         return $this->hasMany('App\Models\MezclaFavorita');
         }
-    
+        public function message()
+        {
+            return $this->hasMany('App\Models\Message');
+        }
+
 }

@@ -110,8 +110,12 @@
             </div>
             @endif
             <li class="nav-item">
+                <a class="nav-link" href="{{ route('msg.index') }}">Chat</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="{{ route('auth_logout') }}">Logout</a>
             </li>
+
             @endif
 
             @if(auth()->guest())

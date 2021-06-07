@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\MezclaController;
 use App\Http\Controllers\PostController;
 use App\Models\Usuario;
@@ -95,3 +96,9 @@ Route::get('mezclas/premium/{userid}', [MezclaController::class, 'hacerPremium']
 Route::get('mezclas/valorar/{mezclaid}', [MezclaController::class, 'valorar'])->name('mezclas.valorar');
 Route::put('mezclas/valorarMezcla/{mezclaid}', [MezclaController::class, 'valorarMezcla'])->name('mezclas.valorarMezcla');
 Route::get('mezclas/quefumohoy/{id}', [MezclaController::class, 'mezclaAleatoria'])->name('mezclas.aleatoria');
+
+
+//Routes of chat
+
+Route::get('/chat', MessageController::class,'index')->name('msg.index');
+Route::post('/chat/messages', MessageController::class, 'sentMessage')->name('msg.sent')->middleware('auth');
