@@ -100,5 +100,5 @@ Route::get('mezclas/quefumohoy/{id}', [MezclaController::class, 'mezclaAleatoria
 
 //Routes of chat
 
-Route::get('chat', MessageController::class,'index')->name('msg.index');
-Route::post('chat/messages', MessageController::class, 'sentMessage')->name('msg.sent')->middleware('auth');
+Route::get('chat', [MessageController::class,'index'])->name('msg.index');
+Route::post('chat/messages', [MessageController::class, 'sentMessage'])->name('msg.sent')->middleware('auth');
