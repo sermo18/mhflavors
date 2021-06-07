@@ -19,7 +19,8 @@
                 <div class="col-12 px-0">
                     <div class="px-4 py-5 chat-box bg-white">
                         <!-- Sender Message-->
-                        <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+                        <div class="media w-50 mb-3">
+                        <p class="text-small mb-0 text-muted">Antonio</p>
                             <div class="media-body ml-3">
                                 <div class="bg-light rounded py-2 px-3 mb-2">
                                     <p class="text-small mb-0 text-muted">Test which is a new approach all solutions</p>
