@@ -21,9 +21,8 @@ class MessageController extends Controller
         $message = new Message();
         $message->message = $request->get('message');;
         $message->usuario_id = Auth::id();
-        $message->message = date('Y-m-d H:i:s');
+        //$message->message = date('Y-m-d H:i:s');
         $message->save();
-
         return redirect()->route('msg.index');
     }
 }
