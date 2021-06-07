@@ -3,57 +3,106 @@
 @section('contenido')
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 
-<div class="container-fluid">
-    <div class="row" style="min-height: 100vh;">
-        <div class="col-sm-12">
-            <div class="chatbody">
-                <div class="panel panel-primary">
-                    <nav class="navbar navbar-dark bg-dark">
+<div class="container-fluid py-5 px-4">
 
-                        <h3 class="panel-title navbar-brand"><span class="glyphicon glyphicon-comment"></span> Chat</h3>
-                    </nav>
+  <header class="text-center">
+    <h1 class="display-4 text-white">Bootstrap Chat</h1>
+    <p class="text-white lead mb-0">An elegant chat widget compatible with Bootstrap 4</p>
+    <p class="text-white lead mb-4">Snippet by
+      <a href="https://bootstrapious.com" class="text-white">
+        <u>Bootstrapious</u></a>
+    </p>
+  </header>
 
-                    <div class="panel-body msg_container_base">
-                        <div class="row msg_container base_sent">
-                            <div class="col-md-10 col-xs-10">
-                                <div class="messages msg_sent">
-                                    <p>that mongodb thing looks good, huh?
-                                        tiny master db, and huge document store</p>
-                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-                                </div>
-                            </div>
-                            <div class="col-md-2 col-xs-2 avatar">
-                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                            </div>
-                        </div>
-                        <div class="row msg_container base_receive">
-                            <div class="col-md-2 col-xs-2 avatar">
-                                <img src="http://www.bitrebels.com/wp-content/uploads/2011/02/Original-Facebook-Geek-Profile-Avatar-1.jpg" class=" img-responsive ">
-                            </div>
-                            <div class="col-md-10 col-xs-10">
-                                <div class="messages msg_receive">
-                                    <p>that mongodb thing looks good, huh?
-                                        tiny master db, and huge document store</p>
-                                    <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel-footer">
-                        <div class="input-group">
-                            <input id="btn-input" type="text" class="form-control input-sm chat_input" placeholder="Write your message here..." />
-                            <span class="input-group-btn">
-                                <button class="btn btn-primary btn-sm" id="btn-chat"><i class="fa fa-send fa-1x" aria-hidden="true"></i></button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
+  <div class="row rounded-lg overflow-hidden shadow">
+    <!-- Users box-->
+    <div class="col-12 px-0">
+      <div class="bg-white">
 
-            </div>
+        <div class="bg-gray px-4 py-2 bg-light">
+          <p class="h5 mb-0 py-1">Recent</p>
         </div>
-    </div>
 
+
+    <!-- Chat Box-->
+    <div class="col-12 px-0">
+      <div class="px-4 py-5 chat-box bg-white">
+        <!-- Sender Message-->
+        <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+          <div class="media-body ml-3">
+            <div class="bg-light rounded py-2 px-3 mb-2">
+              <p class="text-small mb-0 text-muted">Test which is a new approach all solutions</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Reciever Message-->
+        <div class="media w-50 ml-auto mb-3">
+          <div class="media-body">
+            <div class="bg-primary rounded py-2 px-3 mb-2">
+              <p class="text-small mb-0 text-white">Test which is a new approach to have all solutions</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Sender Message-->
+        <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+          <div class="media-body ml-3">
+            <div class="bg-light rounded py-2 px-3 mb-2">
+              <p class="text-small mb-0 text-muted">Test, which is a new approach to have</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Reciever Message-->
+        <div class="media w-50 ml-auto mb-3">
+          <div class="media-body">
+            <div class="bg-primary rounded py-2 px-3 mb-2">
+              <p class="text-small mb-0 text-white">Apollo University, Delhi, India Test</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Sender Message-->
+        <div class="media w-50 mb-3"><img src="https://res.cloudinary.com/mhmd/image/upload/v1564960395/avatar_usae7z.svg" alt="user" width="50" class="rounded-circle">
+          <div class="media-body ml-3">
+            <div class="bg-light rounded py-2 px-3 mb-2">
+              <p class="text-small mb-0 text-muted">Test, which is a new approach</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+        <!-- Reciever Message-->
+        <div class="media w-50 ml-auto mb-3">
+          <div class="media-body">
+            <div class="bg-primary rounded py-2 px-3 mb-2">
+              <p class="text-small mb-0 text-white">Apollo University, Delhi, India Test</p>
+            </div>
+            <p class="small text-muted">12:00 PM | Aug 13</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Typing area -->
+      <form action="#" class="bg-light">
+        <div class="input-group">
+          <input type="text" placeholder="Type a message" aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-4 bg-light">
+          <div class="input-group-append">
+            <button id="button-addon2" type="submit" class="btn btn-link"> <i class="fa fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </form>
+
+    </div>
+  </div>
 </div>
+
 
 
 
