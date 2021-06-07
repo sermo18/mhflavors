@@ -55,6 +55,7 @@
                 <div class="col-12 px-0">
                     <!-- Typing area -->
                     <form action="{{ route('msg.sent') }}" class="bg-light" method="POST">
+                    @csrf
                         <div class="input-group">
                             <input type="text"  name="message" id="message" placeholder="Type a message" aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-4 bg-light">
                             <div class="input-group-append">
