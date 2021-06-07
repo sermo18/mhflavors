@@ -3,11 +3,15 @@
 @section('contenido')
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 
-<div class="container" style="min-height: 100vh;">
-    <div class="row">
+<div class="container">
+    <div class="row" style="min-height: 100vh;">
         <div class="col-sm-12">
             <div class="chatbody">
                 <div class="panel panel-primary">
+                    <nav class="navbar navbar-dark bg-dark">
+
+                        <h3 class="panel-title navbar-brand"><span class="glyphicon glyphicon-comment"></span> Chat</h3>
+                    </nav>
                     <div class="panel-heading top-bar">
                         <div class="col-md-8 col-xs-8">
                             <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat</h3>
@@ -51,11 +55,9 @@
 
             </div>
         </div>
-        </div>
+    </div>
 
-        </div>
-
-
+</div>
 
 
 
@@ -65,4 +67,6 @@
 
 
 
-    @endsection
+
+
+@endsection
