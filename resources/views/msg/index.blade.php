@@ -25,21 +25,21 @@
                         <div class="media w-50 ml-auto mb-3">
                             <div class="media-body">
                                 <div class="bg-primary rounded py-2 px-3 mb-2">
-                                    <p class="text-small mb-0 text-white">$message-message</p>
+                                    <p class="text-small mb-0 text-white">{{$message->message}}</p>
                                 </div>
-                                <p class="small text-muted">$message->fechaEnvio</p>
+                                <p class="small text-muted">{{$message->fechaEnvio}}</p>
                             </div>
                         </div>
 
                         @else
                         <!-- Sender Message-->
                         <div class="media w-50 mb-3">
-                            <p class="text-small mb-0 text-muted font-weight-bold">$message->usuario->login</p>
+                            <p class="text-small mb-0 text-muted font-weight-bold">{{$message->usuario->login}}</p>
                             <div class="media-body ml-3">
                                 <div class="bg-light rounded py-2 px-3 mb-2">
-                                    <p class="text-small mb-0 text-muted">$message-message</p>
+                                    <p class="text-small mb-0 text-muted">{{$message->message}}</p>
                                 </div>
-                                <p class="small text-muted">$message->fechaEnvio</p>
+                                <p class="small text-muted">{{$message->fechaEnvio}}</p>
                             </div>
                         </div>
 
