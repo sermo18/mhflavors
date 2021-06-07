@@ -3,7 +3,7 @@
 @section('contenido')
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 
-<div class="container">
+<div class="container-fluid">
     <div class="row" style="min-height: 100vh;">
         <div class="col-sm-12">
             <div class="chatbody">
@@ -12,11 +12,7 @@
 
                         <h3 class="panel-title navbar-brand"><span class="glyphicon glyphicon-comment"></span> Chat</h3>
                     </nav>
-                    <div class="panel-heading top-bar">
-                        <div class="col-md-8 col-xs-8">
-                            <h3 class="panel-title"><span class="glyphicon glyphicon-comment"></span> Chat</h3>
-                        </div>
-                    </div>
+
                     <div class="panel-body msg_container_base">
                         <div class="row msg_container base_sent">
                             <div class="col-md-10 col-xs-10">
