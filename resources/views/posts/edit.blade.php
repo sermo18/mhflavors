@@ -4,9 +4,9 @@
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
 <div class="container-fluid" style="min-height: 100vh;">
     <!-- This view it's to valorate the flavors -->
-    <div class="row mt-4 justify-content-center text-center align-items-center">
+    <div class="row mt-4 justify-content-center text-center align-items-center" style="min-height: 50vh;">
 
-        <div class="card text-center ponerImagenes  col-12 col-md-6 mt-4 " style="min-height: 50vh;">
+        <div class="card text-center ponerImagenes  col-12 col-md-6 mt-4 " >
             <div class="card-body text-white " >
                 <h3 class="card-title text-left" >{{ $sabor->nombre }}</h3>
                 <h5 class="card-text p-3">Descripcion: {{$sabor->descripcion }}</h5>
