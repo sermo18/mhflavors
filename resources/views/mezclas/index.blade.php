@@ -122,7 +122,7 @@
                     @endforeach
                 </td>
                 <td>
-                    @if(!$sabor->valoracion)
+                    @if(!$mezcla->valoracion)
                     N/S
                     @elseif(floor( $mezcla->valoracion / $mezcla->votos ) -  ($mezcla->valoracion / $mezcla->votos)== 0 )
                     {{$mezcla->valoracion / $mezcla->votos}} / 5 
