@@ -3,9 +3,9 @@
 @section('contenido')
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 
-<div class="container-fluid py-5 px-4">
+<div class="container py-5 px-4">
 
-    <div class="row rounded-lg overflow-hidden shadow">
+    <div class="row rounded-lg overflow-hidden shadow justify-comtent-center align-content-center" style="min-height: 100vh;">
         <!-- Users box-->
         <div class="col-12 px-0">
             <div class="bg-white">
@@ -16,7 +16,7 @@
 
 
                 <!-- Chat Box-->
-                <div class="col-12 px-0" style="min-height: 100vh;">
+                <div class="col-12 px-0" style="min-height: 50vh;">
                     <div class="px-4 py-5 chat-box bg-white">
                         @forelse($messages as $message)
 
