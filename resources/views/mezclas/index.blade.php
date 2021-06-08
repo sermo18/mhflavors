@@ -3,7 +3,7 @@
 @section('contenido')
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
 
-<div class="container-fluid" height=100%>
+<div class="container-fluid" style="min-height: 100vh;">
     <div class="table-responsive">
         <!-- This page shows all mixings that the users had created -->
         <table class="table table-striped">
@@ -74,9 +74,9 @@
             <tr>
 
                 <td>
-                
-              
-     
+
+
+
         {{ $loop->index + 1 }} </td>
 
 
@@ -152,7 +152,7 @@
         </a>
         @endif
                             @else
-                   
+
                             @endif
                          @endforeach
                          @if($mezcla->usuario_id != $userid )
@@ -174,9 +174,9 @@
         </a>
         @endif
                             @else
-                   
+
                             @endif
-                 
+
                     @else
 
                     <a class="m-1 " title="Añadir a favoritas"><button type="button" class="btn btn-dark px-3" data-toggle="modal" data-target="#modalPremium"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-heart" viewBox="0 0 16 16">

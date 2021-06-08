@@ -4,7 +4,7 @@
 <link href="{{ asset(mix('css/app.css')) }}" rel="stylesheet">
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
 
-<div class="container-fluid">
+<div class="container-fluid" style="min-height: 100vh;">
     <div class="row m-4">
         <h1>Valorar Mezcla</h1>
     </div>
@@ -28,7 +28,7 @@
                                         {{$mezcla->porcentaje1}}%</h6>
                                 </div>
                             </div>
-                        
+
                     </div>
 
 
@@ -38,7 +38,7 @@
                 <div class="col-12 col-md-4 ">
 
                     <div class="card  " >
-                        
+
 
                             <div class="ponerImagenes shadow p-3" >
                                 <div class="card-body" style="height: 400px; ">
@@ -53,13 +53,13 @@
                                         {{$mezcla->porcentaje3}}%</h6>
                                 </div>
                             </div>
-                       
+
                     </div>
                 </div>
                 @endif
                 <div class="col-12 col-md-4 ">
                     <div class="card" >
-                        
+
                             <div class="ponerImagenes shadow p-3">
                                 <div class="card-body" style="height: 400px; ">
                                     @foreach ($sabores as $sabor)
@@ -73,7 +73,7 @@
                                         {{$mezcla->porcentaje2}}%</h6>
                                 </div>
                             </div>
-                     
+
                     </div>
                 </div>
             </div>

@@ -2,7 +2,7 @@
 @section('titulo', 'Editar Post')
 @section('contenido')
 <script src="{{ asset('js/ponerImagenes.js') }}"></script>
-<div class="container-fluid" style="height: 80vh;">
+<div class="container-fluid" style="min-height: 100vh;">
     <!-- This view it's to valorate the flavors -->
     <div class="row mt-4 justify-content-center text-center align-items-center">
 

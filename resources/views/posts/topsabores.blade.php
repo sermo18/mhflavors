@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('titulo', 'Top 10 Mejores Sabores')
 @section('contenido')
-<div class="container-fluid ">
+<div class="container-fluid " style="min-height: 100vh;">
     <div class="row m-4">
         <h1>Top 10 Mejores Sabores</h1>
     </div>
