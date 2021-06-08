@@ -8,9 +8,9 @@
     <div class="row m-4">
         <h1>Valorar Mezcla</h1>
     </div>
-    <div class=" row ">
+    <div class=" row  ">
 <!-- This page its for valorate the mixing that you have smoked -->
-        <div class="col-12 align-self-center">
+        <div class="col-12 align-self-center justify-content-center">
             <div class="row ">
                 <div class="col-12 col-md-4 ">
                     <div class="card">
