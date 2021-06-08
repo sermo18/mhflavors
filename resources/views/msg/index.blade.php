@@ -16,7 +16,7 @@
 
 
                 <!-- Chat Box-->
-                <div class="col-12 px-0" style="min-height: 60vh; overflow-y: scroll;">
+                <div class="col-12 px-0">
                     <div class="px-4 py-5 chat-box bg-white">
                         @forelse($messages as $message)
 

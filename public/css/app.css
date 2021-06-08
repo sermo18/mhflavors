@@ -4610,22 +4610,6 @@ input[type=button].btn-block {
     float: right;
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-}
-
- ::-webkit-scrollbar-track {
-    width: 5px;
-    background: #f5f5f5;
-}
-
- ::-webkit-scrollbar-thumb {
-    width: 1em;
-    background-color: #ddd;
-    outline: 1px solid slategrey;
-    border-radius: 1rem;
-}
-
 .imgContacto {
     background-image: url("./imgs/contacto.jpg");
     background-repeat: no-repeat;
@@ -4638,6 +4622,12 @@ input[type=button].btn-block {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.messages-box,
+.chat-box {
+    height: 510px;
+    overflow-y: scroll;
 }
 
 #map {
