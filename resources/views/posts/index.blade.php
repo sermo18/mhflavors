@@ -46,7 +46,7 @@
                     <h5 class="card-text p-3">Marca: {{ $sabor->marca }}</h5>
                     @if(!$sabor->valoracion)
                     <h5 class="card-text p-3">Valoración: 0 / 5</h5>
-                    @elseif(explode(".", ($sabor->valoracion / $sabor->votos)[1] == 00))
+                    @elseif(floor( $sabor->valoracion / $sabor->votos ) -  ($sabor->valoracion / $sabor->votos)== 0 )
                     <h5 class="card-text p-3">Valoración: {{$sabor->valoracion / $sabor->votos}} / 5 </h5>
                     @else
                     <h5 class="card-text p-3">Valoración: {{ number_format($sabor->valoracion / $sabor->votos, 2, '.', '')}} / 5 </h5>
