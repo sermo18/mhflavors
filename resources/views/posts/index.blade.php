@@ -47,7 +47,7 @@
                     @if(!$sabor->valoracion)
                     <h5 class="card-text p-3">Valoración: 0 / 5</h5>
                     @else
-                    <h5 class="card-text p-3">Valoración: {{ $sabor->valoracion / $sabor->votos}} / 5 </h5>
+                    <h5 class="card-text p-3">Valoración: {{ number_format($sabor->valoracion / $sabor->votos, 2, '.', '')}} / 5 </h5>
                     @endif
 
                     <div class="row justify-content-center align-items-right" style="position: relative; bottom: 25px;">
