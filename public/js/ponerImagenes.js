@@ -62,7 +62,7 @@ function cargar() {
     mostrarBotones = document.getElementsByClassName("tuya");
     parentBotones = document.getElementsByClassName("cajaMostrar");
 
-    //Get the elements with classname tuya and ocult the elements with the 
+    //Get the elements with classname tuya and ocult the elements with the
     // class notuya if the parent node have a children with class tuya
     if (parentBotones) {
 
@@ -144,7 +144,7 @@ function cargar() {
             case "FUMARI":
                 cards[index].setAttribute(
                     "style",
-                    " background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(http://fumandoespero.com/Blog/wp-content/uploads/2017/09/logo-fumari-750x410.jpg); background-size: cover;"
+                    " background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url(http://fumandoespero.com/Blog/wp-content/uploads/2017/09/logo-fumari-750x410.jpg); background-size: contain;"
                 );
                 break;
                 //Por aqui
