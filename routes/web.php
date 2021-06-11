@@ -78,9 +78,6 @@ Route::get('registro', [LoginController::class, 'registro'])->name('auth.registr
 
 Route::post('registro', [LoginController::class, 'registrarUsuario'])->name('auth.registrarUsuario');
 
-Route::apiResource('sabores', PostController::class);
-
-
 //Routes of the mixings
 
 Route::get('mezclas', [MezclaController::class, 'index'])->name('mezclas.index');
