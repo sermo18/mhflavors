@@ -132,7 +132,7 @@
 </div>
 @endforelse
 <div class="col-12 text-center">
-    <button class="vermas">Ver más</button>
+    <button class="vermas" class="btn btn-secondary">Ver más</button>
 </div>
 <div class="row justify-content-md-center align-items-center mt-3">
     <div class="col-12 mt-3">

@@ -4626,7 +4626,7 @@ input[type=button].btn-block {
 
 .messages-box,
 .chat-box {
-    height: 510px;
+    height: 50vh;
     overflow-y: scroll;
 }
 

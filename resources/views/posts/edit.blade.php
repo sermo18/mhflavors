@@ -45,7 +45,7 @@
                             <label class="radioEstrellas" for="radio5">★</label>
 
                         </p>
-                        <p><button class="btn btn-dark m-4" type="submit">Valorar</button></p>
+                        <p><button class="btn btn-secondary m-4" type="submit">Valorar</button></p>
                     </form>
 
                 </div>
