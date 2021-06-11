@@ -25,4 +25,13 @@ class MessageController extends Controller
         $message->save();
         return redirect()->route('msg.index');
     }
+
+    public function destroy($id)
+    {
+        $message = Message::findOrFail($id);
+
+        $message->delete();
+
+        return redirect()->route('msg.index');
+    }
 }

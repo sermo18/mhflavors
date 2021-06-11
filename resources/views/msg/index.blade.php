@@ -3,7 +3,7 @@
 @section('contenido')
 <link href="{{ secure_asset(mix('css/app.css')) }}" rel="stylesheet">
 
-<div class="container py-5 px-4"  style="min-height: 100vh;">
+<div class="container py-5 px-4" style="min-height: 100vh;">
 
     <div class="row rounded-lg overflow-hidden shadow justify-comtent-center align-content-center">
         <!-- Users box-->
@@ -29,6 +29,13 @@
                                 </div>
                                 <p class="small text-muted">{{$message->fechaEnvio}}</p>
                             </div>
+
+                            <a href="{{ route('msg.destroy', $message->id) }}" class="adminSabores">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                </svg>
+                            </a>
+
                         </div>
 
                         @else
@@ -41,6 +48,13 @@
                                 </div>
                                 <p class="small text-muted">{{$message->fechaEnvio}}</p>
                             </div>
+                            @if(auth()->user()->rol === 'admin')
+                            <a href="{{ route('msg.destroy', $message->id) }}" class="adminSabores">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z" />
+                                </svg>
+                            </a>
+                            @endif
                         </div>
 
                         @endif
@@ -55,9 +69,9 @@
                 <div class="col-12 px-0">
                     <!-- Typing area -->
                     <form action="{{ route('msg.sent') }}" class="bg-light" method="POST">
-                    @csrf
+                        @csrf
                         <div class="input-group">
-                            <input type="text"  name="message" id="message" placeholder="Type a message" aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-4 bg-light">
+                            <input type="text" name="message" id="message" placeholder="Type a message" aria-describedby="button-addon2" class="form-control rounded-0 border-0 py-4 bg-light">
                             <div class="input-group-append">
                                 <button id="button-addon2" type="submit" class="btn btn-dark"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
