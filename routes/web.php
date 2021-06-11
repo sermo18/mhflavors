@@ -28,44 +28,44 @@ return view('inicio')->with('nombre', $nombre);
 
 
 
-Route::get('/posts/contacto', function() {
+Route::get('/contacto', function() {
     return view('posts.contacto');
     })->name('posts.contacto');
 
-Route::get('/posts/noticias', function() {
+Route::get('/noticias', function() {
     return view('posts.noticias');
     })->name('posts.noticias');
 
-Route::get('posts', [PostController::class, 'index'])->name('posts.index');
+Route::get('sabores', [PostController::class, 'index'])->name('posts.index');
 
-Route::get('posts/marca/{marca}', [PostController::class, 'filtrarMarca'])->name('post.filtrar');
+Route::get('sabores/marca/{marca}', [PostController::class, 'filtrarMarca'])->name('post.filtrar');
 
-Route::get('posts/{id}', [PostController::class, 'show'])
+Route::get('sabores/{id}', [PostController::class, 'show'])
 ->where('id', "[0-9]+")
 ->name('post.show');
 
 
-Route::get('posts/topsabores', [PostController::class, 'topSabores'])->name('posts.topsabores')->middleware('auth'); //quitar
+Route::get('sabores/topsabores', [PostController::class, 'topSabores'])->name('posts.topsabores');
 
-Route::get('posts/locales', [PostController::class, 'locales'])->name('posts.mapa');
+Route::get('sabores/locales', [PostController::class, 'locales'])->name('posts.mapa');
 
-Route::get('posts/logout', [LoginController::class, 'logout'])->name('auth_logout');
+Route::get('sabores/logout', [LoginController::class, 'logout'])->name('auth_logout');
 
-Route::get('posts/store', [PostController::class, 'store'])->name('post.store')->middleware('auth');
+Route::get('sabores/store', [PostController::class, 'store'])->name('post.store')->middleware('auth');
 
-Route::put('posts/update/{id}', [PostController::class, 'update'])->name('posts.update')->middleware('auth');
+Route::put('sabores/update/{id}', [PostController::class, 'update'])->name('posts.update')->middleware('auth');
 
-Route::get('posts/create', [PostController::class, 'create'])->name('posts_crear')->middleware('auth');
+Route::get('sabores/create', [PostController::class, 'create'])->name('posts_crear')->middleware('auth');
 
-Route::get('posts/edit/{id}', [PostController::class, 'edit'])->name('posts.edit')->middleware('auth');
+Route::get('sabores/edit/{id}', [PostController::class, 'edit'])->name('posts.edit')->middleware('auth');
 
-Route::get('posts/editarPrueba/{id}', [PostController::class, 'editarPrueba'])->name('editar_Prueba');
+Route::get('sabores/editarPrueba/{id}', [PostController::class, 'editarPrueba'])->name('editar_Prueba');
 
-Route::get('posts/nuevoPrueba', [PostController::class, 'nuevoPrueba'])->name('nuevo_Prueba');
+Route::get('sabores/nuevoPrueba', [PostController::class, 'nuevoPrueba'])->name('nuevo_Prueba');
 
-Route::get('posts/delete/{id}', [PostController::class, 'destroy'])->name('post.destroy')->middleware('auth');
+Route::get('sabores/delete/{id}', [PostController::class, 'destroy'])->name('post.destroy')->middleware('auth');
 
-Route::get('posts/valorar/{id}/{valoracion}', [PostController::class, 'valorar'])->name('post.valorar')->middleware('auth');
+Route::get('sabores/valorar/{id}/{valoracion}', [PostController::class, 'valorar'])->name('post.valorar')->middleware('auth');
 
 
 // Login
