@@ -45,19 +45,19 @@ Route::get('posts/{id}', [PostController::class, 'show'])
 ->name('post.show');
 
 
-Route::get('posts/topsabores', [PostController::class, 'topSabores'])->name('posts.topsabores');
+Route::get('posts/topsabores', [PostController::class, 'topSabores'])->name('posts.topsabores')->middleware('auth'); //quitar
 
 Route::get('posts/locales', [PostController::class, 'locales'])->name('posts.mapa');
 
 Route::get('posts/logout', [LoginController::class, 'logout'])->name('auth_logout');
 
-Route::get('posts/store', [PostController::class, 'store'])->name('post.store');
+Route::get('posts/store', [PostController::class, 'store'])->name('post.store')->middleware('auth');
 
-Route::put('posts/update/{id}', [PostController::class, 'update'])->name('posts.update');
+Route::put('posts/update/{id}', [PostController::class, 'update'])->name('posts.update')->middleware('auth');
 
-Route::get('posts/create', [PostController::class, 'create'])->name('posts_crear');
+Route::get('posts/create', [PostController::class, 'create'])->name('posts_crear')->middleware('auth');
 
-Route::get('posts/edit/{id}', [PostController::class, 'edit'])->name('posts.edit');
+Route::get('posts/edit/{id}', [PostController::class, 'edit'])->name('posts.edit')->middleware('auth');
 
 Route::get('posts/editarPrueba/{id}', [PostController::class, 'editarPrueba'])->name('editar_Prueba');
 
@@ -65,7 +65,7 @@ Route::get('posts/nuevoPrueba', [PostController::class, 'nuevoPrueba'])->name('n
 
 Route::get('posts/delete/{id}', [PostController::class, 'destroy'])->name('post.destroy')->middleware('auth');
 
-Route::get('posts/valorar/{id}/{valoracion}', [PostController::class, 'valorar'])->name('post.valorar');
+Route::get('posts/valorar/{id}/{valoracion}', [PostController::class, 'valorar'])->name('post.valorar')->middleware('auth');
 
 
 // Login
@@ -85,17 +85,17 @@ Route::apiResource('posts', PostController::class);
 
 Route::get('mezclas', [MezclaController::class, 'index'])->name('mezclas.index');
 
-Route::get('mezclas/usuario', [MezclaController::class, 'misMezclas'])->name('mezclas.mismezclas');
+Route::get('mezclas/usuario', [MezclaController::class, 'misMezclas'])->name('mezclas.mismezclas')->middleware('auth');
 
-Route::get('mezclas/create', [MezclaController::class, 'create'])->name('mezclas.crear');
-Route::get('mezclas/quitar/{id}', [MezclaController::class, 'quitarMezcla'])->name('mezclas.quitar');
-Route::get('mezclas/store', [MezclaController::class, 'store'])->name('mezclas.store');
-Route::get('mezclas/añadir/{mezclaA}', [MezclaController::class, 'añadirMezcla'])->name('mezclas.añadir');
-Route::get('mezclas/destroy/{mezclaA}', [MezclaController::class, 'destroy'])->name('mezclas.destroy');
-Route::get('mezclas/premium/{userid}', [MezclaController::class, 'hacerPremium'])->name('mezclas.premium');
-Route::get('mezclas/valorar/{mezclaid}', [MezclaController::class, 'valorar'])->name('mezclas.valorar');
-Route::put('mezclas/valorarMezcla/{mezclaid}', [MezclaController::class, 'valorarMezcla'])->name('mezclas.valorarMezcla');
-Route::get('mezclas/quefumohoy/{id}', [MezclaController::class, 'mezclaAleatoria'])->name('mezclas.aleatoria');
+Route::get('mezclas/create', [MezclaController::class, 'create'])->name('mezclas.crear')->middleware('auth');
+Route::get('mezclas/quitar/{id}', [MezclaController::class, 'quitarMezcla'])->name('mezclas.quitar')->middleware('auth');
+Route::get('mezclas/store', [MezclaController::class, 'store'])->name('mezclas.store')->middleware('auth');
+Route::get('mezclas/añadir/{mezclaA}', [MezclaController::class, 'añadirMezcla'])->name('mezclas.añadir')->middleware('auth');
+Route::get('mezclas/destroy/{mezclaA}', [MezclaController::class, 'destroy'])->name('mezclas.destroy')->middleware('auth');
+Route::get('mezclas/premium/{userid}', [MezclaController::class, 'hacerPremium'])->name('mezclas.premium')->middleware('auth');
+Route::get('mezclas/valorar/{mezclaid}', [MezclaController::class, 'valorar'])->name('mezclas.valorar')->middleware('auth');
+Route::put('mezclas/valorarMezcla/{mezclaid}', [MezclaController::class, 'valorarMezcla'])->name('mezclas.valorarMezcla')->middleware('auth');
+Route::get('mezclas/quefumohoy/{id}', [MezclaController::class, 'mezclaAleatoria'])->name('mezclas.aleatoria')->middleware('auth');
 
 
 //Routes of chat
