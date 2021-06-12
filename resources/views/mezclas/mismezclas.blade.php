@@ -47,15 +47,15 @@
                 -
                     @forelse($sabores as $sabor)
                     @switch($sabor->id)
-                    @case($mezcla->sabor1)
+                    @case($mezclaFavorita->mezcla->sabor1)
                     <span>{{$sabor->nombre}}{{" - "}}</span>
                     @break
 
-                    @case($mezcla->sabor2)
+                    @case($mezclaFavorita->mezcla->sabor2)
                     <span> {{$sabor->nombre}}{{" - "}}</span>
                     @break
 
-                    @case($mezcla->sabor3)
+                    @case($mezclaFavorita->mezcla->sabor3)
 
                     @if($sabor->nombre)
                     <span> {{$sabor->nombre}}{{" - "}}</span>
@@ -74,18 +74,18 @@
                 <td>
                 @forelse($sabores as $sabor)
                     @switch($sabor->id)
-                    @case($mezcla->sabor1)
-                    <span>{{$mezcla->porcentaje1}}%{{" "}}</span>
+                    @case($mezclaFavorita->mezcla->sabor1)
+                    <span>{{$mezclaFavorita->mezcla->porcentaje1}}%{{" "}}</span>
                     @break
 
-                    @case($mezcla->sabor2)
-                    <span> {{$mezcla->porcentaje2}}%{{" "}}</span>
+                    @case($mezclaFavorita->mezcla->sabor2)
+                    <span> {{$mezclaFavorita->mezcla->porcentaje2}}%{{" "}}</span>
                     @break
 
-                    @case($mezcla->sabor3)
+                    @case($mezclaFavorita->mezcla->sabor3)
 
                     @if($sabor->nombre)
-                    <span>{{$mezcla->porcentaje3}}%{{" "}}</span>
+                    <span>{{$mezclaFavorita->mezcla->porcentaje3}}%{{" "}}</span>
                     @endif
 
                     @break
