@@ -82,20 +82,21 @@
 
 
                 <td>
+                -
                     @forelse($sabores as $sabor)
                     @switch($sabor->id)
                     @case($mezcla->sabor1)
-                    <span>{{$sabor->nombre}}{{" "}}</span>
+                    <span>{{$sabor->nombre}}{{" - "}}</span>
                     @break
 
                     @case($mezcla->sabor2)
-                    <span> {{$sabor->nombre}}{{" "}}</span>
+                    <span> {{$sabor->nombre}}{{" - "}}</span>
                     @break
 
                     @case($mezcla->sabor3)
 
                     @if($sabor->nombre)
-                    <span> {{$sabor->nombre}}{{" "}}</span>
+                    <span> {{$sabor->nombre}}{{" - "}}</span>
                     @endif
 
                     @break
