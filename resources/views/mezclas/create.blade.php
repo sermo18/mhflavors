@@ -24,7 +24,7 @@
                         <datalist id="datalistOptions">
                             @foreach ($sabores as $sabor)
                             <option value="{{ $sabor->id }}">
-
+                                {{ $sabor->nombre }} de {{ $sabor->marca}}
                             </option>
                             @endforeach
                         </datalist>
