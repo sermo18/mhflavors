@@ -2,7 +2,7 @@
 @section('titulo', 'Nueva Mezcla')
 @section('contenido')
 <div class="container-fluid p-0 m-0">
-    
+
 
         <!-- This page its for create a new mixing  -->
         <div class="p-0 m-0 imagenMezclaCreada">
@@ -17,14 +17,14 @@
             <div class="col-12 col-md-4 py-4">
 
                 <div class="card text-center" style="background: rgba(0,0,0,0.4);">
-        
+
                     <div class="card-body text-light py-4 ">
                         <p class="card-text py-4 my-2">Elige el sabor:</p>
                         <input class="form-control  buscador1 my-2" list="datalistOptions" name="sabor{{$i}}" id="sabor{{$i}}" placeholder="Type to search...">
                         <datalist id="datalistOptions">
                             @foreach ($sabores as $sabor)
                             <option value="{{ $sabor->id }}">
-                                {{ $sabor->nombre }} de {{ $sabor->marca}}
+
                             </option>
                             @endforeach
                         </datalist>
@@ -40,12 +40,12 @@
             </div>
 
             @endfor
-        
+
 
             <div class="form-group col-12">
                 <input type="hidden" class="form-control" name="usuario" id="usuario" value="{{$userid}}">
             </div>
-        
+
 
             @if(auth()->check())
                 <div class="my-3 col-12 align-content-center justify-content-center text-center">
